@@ -1,17 +1,16 @@
 .header {
     display: flex;
     flex-direction: column;
+    justify-content: end;
     align-items: center;
+    height: 90vh;
+    padding-bottom: 20px;
 }
 #light-header {
     background-color: white;
-    padding-left: 33px;
-    padding-right: 33px;
 }
 #dark-header {
     background-color: black;
-    padding-left: 33px;
-    padding-right: 33px;
 }
 
 .light-h1 {
