@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#light-header {
+    background-color: white;
+    padding-left: 33px;
+    padding-right: 33px;
+}
+#dark-header {
+    background-color: black;
+    padding-left: 33px;
+    padding-right: 33px;
+}
+
+.light-h1 {
+    margin: 0;
+    color: white;
+}
+.dark-h1 {
+    margin: 0;
+    color: black;
+
+}
+.light-p {
+    color: white;
+}
+.dark-p {
+    color: black;
+}
