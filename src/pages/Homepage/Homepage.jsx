@@ -1,6 +1,6 @@
 import React from 'react'
 import LightDarkToggle from '../../components/LightDark/LightDarkToggle'
-import './homepage.css'
+import './Homepage.css'
 
 export default function Homepage(props) {
     const mode = window.localStorage.getItem('mode')
