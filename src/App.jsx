@@ -10,7 +10,7 @@ function App() {
 
   return (
 
-    <Router basename='/krezket.net'>
+    <Router>
       <Routes>
         <Route path='/' element={<Enter />}></Route>
 
