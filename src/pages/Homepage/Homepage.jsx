@@ -11,14 +11,14 @@ export default function Homepage(props) {
             <header className='header' id={
                 props.stateDark === 'dark' 
                 ? 'dark-header' 
-                : mode === 'dark' && props.stateDark === '' && props.stateLight === '' 
+                : mode === 'dark' 
                 ? 'dark-header' 
                 : 'light-header' }>
 
                 <h1 className={
                     props.stateDark === 'dark' 
                     ? 'light-h1' 
-                    : mode === 'dark' && props.stateDark === '' && props.stateLight === '' 
+                    : mode === 'dark' 
                     ? 'light-h1' 
                     : 'dark-h1'}>
 
@@ -28,7 +28,7 @@ export default function Homepage(props) {
                 <p className={
                     props.stateDark === 'dark' 
                     ? 'light-p' 
-                    : mode === 'dark' && props.stateDark === '' && props.stateLight === '' 
+                    : mode === 'dark'
                     ? 'light-p' 
                     : 'dark-p'}>
 
