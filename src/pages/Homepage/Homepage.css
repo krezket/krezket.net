@@ -4,7 +4,7 @@
     justify-content: end;
     align-items: center;
     height: 90vh;
-    padding-bottom: 20px;
+    padding-bottom: 61px;
 }
 #light-header {
     background-color: white;
@@ -14,10 +14,12 @@
 }
 
 .light-h1 {
+    font-size: 80px;
     margin: 0;
     color: white;
 }
 .dark-h1 {
+    font-size: 80px;
     margin: 0;
     color: black;
 

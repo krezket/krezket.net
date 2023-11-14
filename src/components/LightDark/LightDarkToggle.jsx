@@ -20,19 +20,6 @@ export default function LightDarkToggle(props) {
         props.setStateLight("")
         props.setStateDark("dark")
     }
-
-    // Local Storage
-    // const darkToggle = e => {
-    //     e.preventDefault()
-    //     window.localStorage.setItem('mode', 'dark')
-    //     window.location.reload()
-    // }
-    
-    // const lightToggle = e => {
-    //     e.preventDefault()
-    //     window.localStorage.setItem('mode', 'light')
-    //     window.location.reload()
-    // }
     
     return (
         <div>
