@@ -27,7 +27,7 @@
 
 .light-h1 {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 80px;
@@ -36,7 +36,7 @@
 }
 .dark-h1 {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 80px;
@@ -45,13 +45,15 @@
 
 }
 .light-p {
-    top: 50%;
+    position: absolute;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
 }
 .dark-p {
-    top: 50%;
+    position: absolute;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
