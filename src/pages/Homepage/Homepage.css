@@ -9,14 +9,11 @@
     overflow: hidden;
 }
 .triangle {
-    width: 0;
-    height: 0;
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
-    border-bottom: 86.6vh solid red; /* Adjust the color as needed */
+    border-bottom: 90vh solid red; /* Adjust the color as needed */
     position: absolute;
     top: 0;
-    left: 0;
   }
 #light-header {
     background-color: white;
