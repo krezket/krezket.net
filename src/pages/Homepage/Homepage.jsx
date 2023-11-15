@@ -15,7 +15,8 @@ export default function Homepage(props) {
                 ? 'dark-header' 
                 : 'light-header' }>
 
-
+                <div className='triangle'></div>
+                
                 <h1 className={
                     props.stateDark === 'dark' 
                     ? 'light-h1' 
