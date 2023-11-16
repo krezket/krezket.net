@@ -18,10 +18,10 @@ export default function Homepage(props) {
 
                 <div className='triangle'></div>
 
-                <h1 className='light-h1'>krezket</h1>
-                <p className='light-p'>Web Design for Artists, Creators, and Musicians.</p>
+                {/* <h1 className='light-h1'>krezket</h1> */}
+                {/* <p className='light-p'>Web Design for Artists, Creators, and Musicians.</p> */}
                 
-                {/* <h1 className={
+                <h1 className={
                     props.stateDark === 'dark' 
                     ? 'light-h1' 
                     : mode === 'dark' 
@@ -29,9 +29,9 @@ export default function Homepage(props) {
                     : 'dark-h1'}>
 
                     krezket
-                </h1> */}
+                </h1>
 
-                {/* <p className={
+                <p className={
                     props.stateDark === 'dark' 
                     ? 'light-p' 
                     : mode === 'dark'
@@ -39,7 +39,7 @@ export default function Homepage(props) {
                     : 'dark-p'}>
 
                     Web Design for Artists, Creators, and Musicians.
-                </p> */}
+                </p>
             </header>
 
             <main></main>

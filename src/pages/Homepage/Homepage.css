@@ -8,12 +8,12 @@
     position: relative;
     overflow: hidden;
 }
-.triangle {
-    /* border-left: 50vw solid transparent; */
+/* .triangle {
+    border-left: 50vw solid transparent;
     border-right: 70vw solid transparent;
     border-bottom: 100vh solid red; 
-    /* position: absolute; */
-  }
+    position: absolute;
+} */
 #light-header {
     background-color: white;
 }
@@ -25,7 +25,7 @@
     position: absolute;
     top: 70%;
     left: 50%;
-    transform: translate(-130%, -22%);
+    transform: translate(-50%, -50%);
     margin: 0;
     color: white;
 }
@@ -33,7 +33,7 @@
     position: absolute;
     top: 70%;
     left: 50%;
-    transform: translate(-130%, -22%);
+    transform: translate(-50%, -50%);
     margin: 0;
     color: black;
 
@@ -42,13 +42,13 @@
     position: absolute;
     top: 90%;
     left: 50%;
-    transform: translate(-180%, -50%);
+    transform: translate(-50%, -50%);
     color: white;
 }
 .dark-p {
     position: absolute;
     top: 90%;
     left: 50%;
-    transform: translate(-180%, -50%);
+    transform: translate(-50%, -50%);
     color: black;
 }
