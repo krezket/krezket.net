@@ -2,18 +2,17 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-    align-items: center;
+    align-items: flex-start;
     width: 100vw;
     height: 100vh;
     position: relative;
     overflow: hidden;
 }
 .triangle {
-    border-left: 50vw solid transparent;
-    border-right: 50vw solid transparent;
-    border-bottom: 90vh solid red; /* Adjust the color as needed */
-    position: absolute;
-    top: 0;
+    /* border-left: 50vw solid transparent; */
+    border-right: 70vw solid transparent;
+    border-bottom: 100vh solid red; 
+    /* position: absolute; */
   }
 #light-header {
     background-color: white;
@@ -26,8 +25,7 @@
     position: absolute;
     top: 70%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
+    transform: translate(-130%, -22%);
     margin: 0;
     color: white;
 }
@@ -35,8 +33,7 @@
     position: absolute;
     top: 70%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
+    transform: translate(-222%, -1%);
     margin: 0;
     color: black;
 
@@ -45,13 +42,13 @@
     position: absolute;
     top: 90%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-180%, -50%);
     color: white;
 }
 .dark-p {
     position: absolute;
     top: 90%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-180%, -50%);
     color: black;
 }

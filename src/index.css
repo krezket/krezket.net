@@ -3,8 +3,12 @@ body {
   margin: 0;
 }
 
-h1 {
+/* h1 {
   font-family: fondamento;
+} */
+h1 {
+  font-family: faster one;
+  font-size: 100px;
 }
 
 /* p {

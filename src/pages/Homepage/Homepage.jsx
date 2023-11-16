@@ -8,6 +8,7 @@ export default function Homepage(props) {
 
     return (
         <>
+        <LightDarkToggle setStateDark={props.setStateDark} setStateLight={props.setStateLight}/>
             <header className='header' id={
                 props.stateDark === 'dark' 
                 ? 'dark-header' 
@@ -16,18 +17,21 @@ export default function Homepage(props) {
                 : 'light-header' }>
 
                 <div className='triangle'></div>
+
+                <h1 className='light-h1'>krezket</h1>
+                <p className='light-p'>Web Design for Artists, Creators, and Musicians.</p>
                 
-                <h1 className={
+                {/* <h1 className={
                     props.stateDark === 'dark' 
                     ? 'light-h1' 
                     : mode === 'dark' 
                     ? 'light-h1' 
                     : 'dark-h1'}>
 
-                    krezket.net
-                </h1>
+                    krezket
+                </h1> */}
 
-                <p className={
+                {/* <p className={
                     props.stateDark === 'dark' 
                     ? 'light-p' 
                     : mode === 'dark'
@@ -35,8 +39,7 @@ export default function Homepage(props) {
                     : 'dark-p'}>
 
                     Web Design for Artists, Creators, and Musicians.
-                </p>
-                <LightDarkToggle setStateDark={props.setStateDark} setStateLight={props.setStateLight}/>
+                </p> */}
             </header>
 
             <main></main>
