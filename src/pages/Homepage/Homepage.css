@@ -1,23 +1,36 @@
 .container-div {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .header {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    align-items: flex-start;
     height: 50vh;
-    position: relative;
-    overflow: hidden;
+    /* justify-content: end; */
+    /* align-items: flex-start; */
+    /* position: relative; */
+    /* overflow: hidden; */
 }
+
+.h1-con {
+    display: flex;
+    flex-direction: row;
+}
+
 /* .triangle {
     border-left: 50vw solid transparent;
     border-right: 70vw solid transparent;
     border-bottom: 100vh solid red; 
     position: absolute;
 } */
+
+.flur {
+    width: 100px;
+    height: 100px;
+}
+
 #light-header {
     background-color: white;
 }
@@ -26,33 +39,33 @@
 }
 
 .light-h1 {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* position: absolute; */
+    /* top: 70%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
     margin: 0;
     color: white;
 }
 .dark-h1 {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* position: absolute; */
+    /* top: 70%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
     margin: 0;
     color: black;
 
 }
 .light-p {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* position: absolute; */
+    /* top: 90%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
     color: white;
 }
 .dark-p {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* position: absolute; */
+    /* top: 90%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
     color: black;
 }
