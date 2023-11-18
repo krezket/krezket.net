@@ -7,7 +7,7 @@ export default function Homepage(props) {
     console.log(props)
 
     return (
-        <>
+        <div className='container-div'>
         <LightDarkToggle setStateDark={props.setStateDark} setStateLight={props.setStateLight}/>
             <header className='header' id={
                 props.stateDark === 'dark' 
@@ -45,6 +45,6 @@ export default function Homepage(props) {
             <main></main>
 
             <footer></footer>
-        </>
+        </div>
     )
 }
