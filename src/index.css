@@ -1,11 +1,13 @@
 body {
-  background-color: black;
+  /* background-color: black; */
+  /* background-image: url(./assets/backgrounds/back-1.jpeg); */
+  background-image: url(./assets/backgrounds/back-2.jpeg);
   margin: 0;
 }
 
 
 h1 {
-  font-family: fondamento;
+  /* font-family: fondamento; */
   /* font-family: faster one; */
   font-size: 100px;
 }

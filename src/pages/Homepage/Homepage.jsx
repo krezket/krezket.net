@@ -32,7 +32,7 @@ export default function Homepage(props) {
                                 ? 'light-h1'
                                 : 'dark-h1'}>
 
-                        krezket
+                        KREZKET
                     </h1>
 
                     <img className='flur' src={flur} alt="flur" />
