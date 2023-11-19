@@ -1,10 +1,13 @@
 body {
   /* background-color: black; */
-  background-image: url(./assets/backgrounds/back-1.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* background-image: url(./assets/backgrounds/back-1.jpeg); */
   /* background-image: url(./assets/backgrounds/back-2.jpeg); */
+  background-image: url(./assets/backgrounds/bg-27.gif);
+  /* background-image: url(./assets/backgrounds/bg-28.gif); */
+
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
   margin: 0;
 }
 
