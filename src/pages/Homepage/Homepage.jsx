@@ -23,7 +23,8 @@ export default function Homepage(props) {
                 {/* <p className='light-p'>Web Design for Artists, Creators, and Musicians.</p> */}
 
                 <div className='h1-con'>
-                    <img className='flur' src={flur} alt="flur" />
+
+                    {/* <img className='flur' src={flur} alt="flur" /> */}
 
                     <h1 className={
                         props.stateDark === 'dark'
@@ -35,7 +36,7 @@ export default function Homepage(props) {
                         KREZKET
                     </h1>
 
-                    <img className='flur' src={flur} alt="flur" />
+                    {/* <img className='flur' src={flur} alt="flur" /> */}
 
                 </div>
 
