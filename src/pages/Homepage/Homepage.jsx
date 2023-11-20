@@ -15,7 +15,8 @@ export default function Homepage(props) {
                 ? 'dark-header' 
                 : mode === 'dark' 
                     ? 'dark-header' 
-                    : 'light-header' }>
+                    : 'light-header' 
+                }>
 
                 {/* <div className='triangle'></div> */}
 
@@ -51,7 +52,23 @@ export default function Homepage(props) {
                 </p>
             </header>
 
-            <main></main>
+            <main className='main' id={
+                props.stateDark === 'dark' 
+                ? 'dark-main' 
+                : mode === 'dark' 
+                    ? 'dark-main' 
+                    : 'light-main' 
+                }>
+
+                <p className={
+                    props.stateDark === 'dark'
+                    ? 'light-p'
+                    : mode === 'dark'
+                        ?'light-p'
+                        : 'dark-p'}>
+                    krezket is a 
+                </p>
+            </main>
 
             <footer></footer>
         </div>

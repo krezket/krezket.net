@@ -71,3 +71,22 @@
     /* transform: translate(-50%, -50%); */
     color: black;
 }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    align-items: center;
+    padding: 0 400px 0 400px;
+    /* justify-content: end; */
+    /* align-items: flex-start; */
+    /* position: relative; */
+    /* overflow: hidden; */
+}
+
+#light-header {
+    background-color: white;
+}
+#dark-header {
+    background-color: black;
+}
