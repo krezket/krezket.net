@@ -2,6 +2,8 @@ import React from 'react'
 import LightDarkToggle from '../../components/LightDark/LightDarkToggle'
 import flur from '../../assets/Heraldry/flur.gif'
 import divider1 from '../../assets/dividers/SilverGlitterBottem.gif'
+// import divider1 from '../../assets/dividers/jewel_break.gif'
+// import divider1 from '../../assets/dividers/bolt.gif'
 import './Homepage.css'
 
 export default function Homepage(props) {
