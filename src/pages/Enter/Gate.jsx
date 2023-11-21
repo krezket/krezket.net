@@ -3,10 +3,16 @@ import { Link, useNavigate } from 'react-router-dom';
 import enter from '../../assets/enter/enter-6.gif'
 import './Gate.css'
 
-export default function Gate() {
+export default function Gate(props) {
     const navigate = useNavigate();
     const thePassword = "deeznutz"
     const [password, setPassword] = useState("")
+    const code = window.sessionStorage.getItem('code')
+    
+    function generateRandom7DigitNumber() {
+        return Math.floor(Math.random() * (9999999 - 1000000 + 1)) + 1000000;
+    }
+    const seven = generateRandom7DigitNumber();
 
     const handleChange = e => {
         if (e.target.name === "password") {
@@ -16,13 +22,15 @@ export default function Gate() {
 
     const submitHandler = e => {
         e.preventDefault()
-        password: password;
         
-        if (password === thePassword) {
+        if (props.codeState === code && password === thePassword) {
+            props.setCodeState(seven)
+            window.sessionStorage.setItem("code", seven)
             navigate('/home')
         }
         else {
-            alert("")
+            window.sessionStorage.setItem("code", "")
+            alert("Incorrect Password")
         }
     
     }
