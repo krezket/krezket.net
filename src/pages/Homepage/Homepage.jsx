@@ -1,6 +1,7 @@
 import React from 'react'
 import LightDarkToggle from '../../components/LightDark/LightDarkToggle'
 import flur from '../../assets/Heraldry/flur.gif'
+import divider1 from '../../assets/dividers/SilverGlitterBottem.gif'
 import './Homepage.css'
 
 export default function Homepage(props) {
@@ -18,7 +19,7 @@ export default function Homepage(props) {
                     : 'light-header' 
                 }>
 
-                {/* <div className='triangle'></div> */}
+                <img src={divider1} alt="ornate-divider" />
 
                 {/* <h1 className='light-h1'>krezket</h1> */}
                 {/* <p className='light-p'>Web Design for Artists, Creators, and Musicians.</p> */}
@@ -50,6 +51,8 @@ export default function Homepage(props) {
 
                     Web Design for Artists, Creators, and Musicians.
                 </p>
+
+                <img src={divider1} alt="ornate-divider" />
             </header>
 
             <main className='main' id={
@@ -66,7 +69,7 @@ export default function Homepage(props) {
                     : mode === 'dark'
                         ?'light-p'
                         : 'dark-p'}>
-                    krezket is a 
+                    We strive for the best designs aligned with efficient functionality so users navigate through your website with ease. 
                 </p>
             </main>
 
