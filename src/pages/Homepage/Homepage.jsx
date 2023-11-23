@@ -34,7 +34,7 @@ export default function Homepage(props) {
                                 : 'light-header'
                     }>
 
-                        <img src={divider1} alt="ornate-divider" />
+                        {/* <img src={divider1} alt="ornate-divider" /> */}
 
                         {/* <h1 className='light-h1'>krezket</h1> */}
                         {/* <p className='light-p'>Web Design for Artists, Creators, and Musicians.</p> */}
@@ -57,6 +57,8 @@ export default function Homepage(props) {
 
                         </div>
 
+                        <img src={divider1} alt="ornate-divider" />
+                        
                         <p className={
                             props.stateDark === 'dark'
                                 ? 'light-p'
@@ -67,7 +69,6 @@ export default function Homepage(props) {
                             Web Design for Artists, Creators, and Musicians.
                         </p>
 
-                        <img src={divider1} alt="ornate-divider" />
                     </header>
 
                     <main className='main' id={
