@@ -25,14 +25,13 @@ export default function Homepage(props) {
                 </>
                 :
                 <div className='container-div'>
-                    <LightDarkToggle setStateDark={props.setStateDark} setStateLight={props.setStateLight} />
                     <header className='header' id={
                         props.stateDark === 'dark'
                             ? 'dark-header'
                             : mode === 'dark'
-                                ? 'dark-header'
-                                : 'light-header'
-                    }>
+                            ? 'dark-header'
+                            : 'light-header'
+                        }>
 
                         {/* <img src={divider1} alt="ornate-divider" /> */}
 
@@ -45,10 +44,11 @@ export default function Homepage(props) {
 
                             <h1 className={
                                 props.stateDark === 'dark'
-                                    ? 'light-h1'
-                                    : mode === 'dark'
-                                        ? 'light-h1'
-                                        : 'dark-h1'}>
+                                ? 'light-h1'
+                                : mode === 'dark'
+                                ? 'light-h1'
+                                : 'dark-h1'
+                                }>
 
                                 KREZKET
                             </h1>
@@ -61,33 +61,46 @@ export default function Homepage(props) {
                         
                         <p className={
                             props.stateDark === 'dark'
-                                ? 'light-p'
-                                : mode === 'dark'
-                                    ? 'light-p'
-                                    : 'dark-p'}>
+                            ? 'light-p'
+                            : mode === 'dark'
+                            ? 'light-p'
+                            : 'dark-p'}>
 
                             Web Design for Artists, Creators, and Musicians.
                         </p>
-
                     </header>
 
                     <main className='main' id={
                         props.stateDark === 'dark'
-                            ? 'dark-main'
+                        ? 'dark-main'
+                        : mode === 'dark'
+                        ? 'dark-main'
+                        : 'light-main'
+                        }>
+                        
+                        <section></section>
+                        <section className={
+                            props.stateDark === 'dark'
+                            ? 'light-section-mid'
                             : mode === 'dark'
-                                ? 'dark-main'
-                                : 'light-main'
-                    }>
+                            ? 'light-section-mid'
+                            : 'dark-section-mid'
+                            }>
+                            <p>Specify your offer, list your skills. Based on your skills, list down your services, and for each service write down a list of deliverables.</p>
+                        </section>
+                        <section></section>
 
                         <p className={
                             props.stateDark === 'dark'
-                                ? 'light-p'
-                                : mode === 'dark'
-                                    ? 'light-p'
-                                    : 'dark-p'}>
-                            We strive for the best designs aligned with efficient functionality so users navigate through your website with ease.
+                            ? 'light-p'
+                            : mode === 'dark'
+                            ? 'light-p'
+                            : 'dark-p'
+                            }>
                         </p>
                     </main>
+
+                    <LightDarkToggle setStateDark={props.setStateDark} setStateLight={props.setStateLight} />
 
                     <footer></footer>
                 </div>
