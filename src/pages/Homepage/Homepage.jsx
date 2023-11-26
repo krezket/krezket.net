@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import LightDarkToggle from '../../components/LightDark/LightDarkToggle'
-import flur from '../../assets/Heraldry/flur.gif'
+// import flur from '../../assets/Heraldry/flur.gif'
+import pillar from '../../assets/fire/pillarfire.gif'
 import divider1 from '../../assets/dividers/SilverGlitterBottem.gif'
 // import divider1 from '../../assets/dividers/jewel_break.gif'
 // import divider1 from '../../assets/dividers/bolt.gif'
@@ -33,6 +34,8 @@ export default function Homepage(props) {
                             : 'light-header'
                         }>
 
+                        <img className='flur' src={pillar} alt="flur" />
+
                         {/* <img src={divider1} alt="ornate-divider" /> */}
 
                         {/* <h1 className='light-h1'>krezket</h1> */}
@@ -44,30 +47,30 @@ export default function Homepage(props) {
 
                             <h1 className={
                                 props.stateDark === 'dark'
-                                ? 'light-h1'
-                                : mode === 'dark'
-                                ? 'light-h1'
-                                : 'dark-h1'
-                                }>
+                                    ? 'light-h1'
+                                    : mode === 'dark'
+                                        ? 'light-h1'
+                                        : 'dark-h1'
+                            }>
 
                                 KREZKET
                             </h1>
 
-                            {/* <img className='flur' src={flur} alt="flur" /> */}
+                            <img src={divider1} alt="ornate-divider" />
 
-                        </div>
+                            <p className={
+                                props.stateDark === 'dark'
+                                    ? 'light-p'
+                                    : mode === 'dark'
+                                        ? 'light-p'
+                                        : 'dark-p'}>
 
-                        <img src={divider1} alt="ornate-divider" />
-                        
-                        <p className={
-                            props.stateDark === 'dark'
-                            ? 'light-p'
-                            : mode === 'dark'
-                            ? 'light-p'
-                            : 'dark-p'}>
+                                Web Design for Artists, Creators, and Musicians.
+                            </p>
+                        </div>                        
 
-                            Web Design for Artists, Creators, and Musicians.
-                        </p>
+                        <img className='flur' src={pillar} alt="flur" />
+
                     </header>
 
                     <main className='main' id={
