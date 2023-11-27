@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import LightDarkToggle from '../../components/LightDark/LightDarkToggle'
 // import flur from '../../assets/Heraldry/flur.gif'
 import pillar from '../../assets/fire/pillarfire.gif'
+import pillar1 from '../../assets/fire/fire-4.gif'
 import divider1 from '../../assets/dividers/SilverGlitterBottem.gif'
 // import divider1 from '../../assets/dividers/jewel_break.gif'
 // import divider1 from '../../assets/dividers/bolt.gif'
@@ -36,14 +37,7 @@ export default function Homepage(props) {
 
                         <img className='flur' src={pillar} alt="flur" />
 
-                        {/* <img src={divider1} alt="ornate-divider" /> */}
-
-                        {/* <h1 className='light-h1'>krezket</h1> */}
-                        {/* <p className='light-p'>Web Design for Artists, Creators, and Musicians.</p> */}
-
                         <div className='h1-con'>
-
-                            {/* <img className='flur' src={flur} alt="flur" /> */}
 
                             <h1 className={
                                 props.stateDark === 'dark'
