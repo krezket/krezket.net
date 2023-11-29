@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import LightDarkToggle from '../../components/LightDark/LightDarkToggle'
 // import flur from '../../assets/Heraldry/flur.gif'
