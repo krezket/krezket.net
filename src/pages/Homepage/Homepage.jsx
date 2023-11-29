@@ -35,8 +35,6 @@ export default function Homepage(props) {
                             : 'light-header'
                         }>
 
-                        <img className='flur' src={pillar} alt="flur" />
-
                         <div className='h1-con'>
 
                             <h1 className={
@@ -62,8 +60,6 @@ export default function Homepage(props) {
                                 Web Design for Artists, Creators, and Musicians.
                             </p>
                         </div>                        
-
-                        <img className='flur' src={pillar} alt="flur" />
 
                     </header>
 
