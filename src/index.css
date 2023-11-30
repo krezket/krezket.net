@@ -7,6 +7,7 @@ body {
   /* background-image: url(./assets/images/skull.jpeg); */
   /* background-image: url(./assets/images/fan.jpeg); */
   /* background-image: url(./assets/images/krez.jpeg); */
+  background-color: black;
   margin: 0; 
   height: 100vh;
 }

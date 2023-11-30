@@ -9,6 +9,8 @@
     background-repeat: no-repeat;
     height: 100vh;
 }
+
+/* OLD WEB HEADER */
 .oldweb-div {
     display: flex;
     flex-direction: column;
@@ -20,68 +22,39 @@
     background-repeat: no-repeat;
     height: 100vh;
 }
-
-.header {
+.ow-header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
     width: 100%; 
     padding-top: 20px;
-}
-
-.h1-con {
-    display: flex;
-    flex-direction: column;
-}
-
-/* .flur {
-    width: 100px;
-    height: 100px;
-} */
-
-#light-header {
-    background-color: transparent;
-}
-#dark-header {
     background-color: black;
 }
-
-.light-h1 {
+.ow-h1 {
     margin: 0;
     color: whitesmoke;
 }
-.dark-h1 {
-    margin: 0;
-    color: black;
-}
-.light-p {
+.ow-p {
     color: white;
 }
-.dark-p {
-    color: black;
-}
-
-.main {
+.ow-main {
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: 50vh;
     width: 100%;
+    background-color: black;
 }
-/* SECTIONS */
-.light-section-mid {
+/* OLD WEB SECTIONS */
+.ow-section-left {
+    border: 1px solid white;
+}
+.ow-section-mid {
+    border: 1px solid white;
     color: white;
 }
-.dark-section-mid {
-    color: black;
-}
-
-
-#light-main {
-    background-color: transparent;
-}
-#dark-main {
-    background-color: black;
+.ow-section-right {
+    border: 1px solid white;
 }

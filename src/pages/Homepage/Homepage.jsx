@@ -29,30 +29,27 @@ export default function Homepage(props) {
 
                     <LightDarkToggle setStateOldWeb={props.setStateOldWeb} setStateModern={props.setStateModern} />
 
-                    <header className='header' id='dark-header'>
+                    <header className='ow-header'>
 
-                        <div className='h1-con'>
+                        <h1 className='ow-h1'>
+                            KREZKET
+                        </h1>
 
-                            <h1 className='light-h1'>
-                                KREZKET
-                            </h1>
+                        <img src={divider1} alt="ornate-divider" />
 
-                            <img src={divider1} alt="ornate-divider" />
-
-                            <p className='light-p'>
-                                Web Design for Artists, Creators, and Musicians.
-                            </p>
-                        </div>
+                        <p className='ow-p'>
+                            Web Design for Artists, Creators, and Musicians.
+                        </p>
 
                     </header>
 
-                    <main className='main' id='dark-main'>
+                    <main className='ow-main'>
 
-                        <section></section>
-                        <section className='light-section-mid'>
+                        <section className='ow-section-left'>hello</section>
+                        <section className='ow-section-mid'>
                             <p>Specify your offer, list your skills. Based on your skills, list down your services, and for each service write down a list of deliverables.</p>
                         </section>
-                        <section></section>
+                        <section className='ow-section-right'>hello</section>
 
                     </main>
 
