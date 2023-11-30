@@ -12,8 +12,7 @@ import './Homepage.css'
 export default function Homepage(props) {
     console.log(props)
     const navigate = useNavigate();
-    const mode = window.localStorage.getItem('mode')
-    const code = window.sessionStorage.getItem('code')
+    const style = window.localStorage.getItem('style')
 
     // if (code === "0") {
     //     window.location.pathname = '/'
@@ -21,79 +20,43 @@ export default function Homepage(props) {
 
     return (
         <>
-            {!code && !props.codeState || code === '' && props.codeState === ''?
+            {style === 'modern' && props.stateModern === 'modern' ?
                 <>
+                    <LightDarkToggle setStateOldWeb={props.setStateOldWeb} setStateModern={props.setStateModern} />
+
                     <div>Hello</div>
                 </>
                 :
                 <div className='container-div'>
-                    <header className='header' id={
-                        props.stateDark === 'dark'
-                            ? 'dark-header'
-                            : mode === 'dark'
-                            ? 'dark-header'
-                            : 'light-header'
-                        }>
+                    
+                    <LightDarkToggle setStateOldWeb={props.setStateOldWeb} setStateModern={props.setStateModern} />
+
+                    <header className='header' id='dark-header'>
 
                         <div className='h1-con'>
 
-                            <h1 className={
-                                props.stateDark === 'dark'
-                                    ? 'light-h1'
-                                    : mode === 'dark'
-                                        ? 'light-h1'
-                                        : 'dark-h1'
-                            }>
-
+                            <h1 className='light-h1'>
                                 KREZKET
                             </h1>
 
                             <img src={divider1} alt="ornate-divider" />
 
-                            <p className={
-                                props.stateDark === 'dark'
-                                    ? 'light-p'
-                                    : mode === 'dark'
-                                        ? 'light-p'
-                                        : 'dark-p'}>
-
+                            <p className='light-p'>
                                 Web Design for Artists, Creators, and Musicians.
                             </p>
                         </div>                        
 
                     </header>
 
-                    <main className='main' id={
-                        props.stateDark === 'dark'
-                        ? 'dark-main'
-                        : mode === 'dark'
-                        ? 'dark-main'
-                        : 'light-main'
-                        }>
+                    <main className='main' id='dark-main'>
                         
                         <section></section>
-                        <section className={
-                            props.stateDark === 'dark'
-                            ? 'light-section-mid'
-                            : mode === 'dark'
-                            ? 'light-section-mid'
-                            : 'dark-section-mid'
-                            }>
+                        <section className='light-section-mid'>
                             <p>Specify your offer, list your skills. Based on your skills, list down your services, and for each service write down a list of deliverables.</p>
                         </section>
                         <section></section>
 
-                        <p className={
-                            props.stateDark === 'dark'
-                            ? 'light-p'
-                            : mode === 'dark'
-                            ? 'light-p'
-                            : 'dark-p'
-                            }>
-                        </p>
                     </main>
-
-                    <LightDarkToggle setStateDark={props.setStateDark} setStateLight={props.setStateLight} />
 
                     <footer></footer>
                 </div>

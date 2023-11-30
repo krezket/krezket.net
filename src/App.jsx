@@ -5,27 +5,25 @@ import Homepage from './pages/Homepage/Homepage.jsx';
 import './App.css'
 
 function App() {
-  const [stateLight, setStateLight] = useState("")
-  const [stateDark, setStateDark] = useState("")
-  const [codeState, setCodeState] = useState("")
+  const [stateModern, setStateModern] = useState("")
+  const [stateOldWeb, setStateOldWeb] = useState("")
 
   return (
 
     <Router>
       <Routes>
-        <Route path='/' element={<Enter codeState={codeState} setCodeState={setCodeState} />}></Route>
+        <Route path='/' element={<Enter />}></Route>
 
         <Route 
           path='/home' 
           element={
             <Homepage 
-              stateDark={stateDark} 
-              setStateDark={setStateDark}
+              stateOldWeb={stateOldWeb} 
+              setStateOldWeb={setStateOldWeb}
 
-              stateLight={stateLight}
-              setStateLight={setStateLight}
+              stateModern={stateModern}
+              setStateModern={setStateModern}
 
-              codeState={codeState}
             />}>
         </Route>
 
