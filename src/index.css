@@ -7,12 +7,8 @@ body {
   /* background-image: url(./assets/images/skull.jpeg); */
   /* background-image: url(./assets/images/fan.jpeg); */
   /* background-image: url(./assets/images/krez.jpeg); */
-  background-image: url(./assets/images/black-wood.jpg);
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 0;
+  margin: 0; 
+  height: 100vh;
 }
 
 

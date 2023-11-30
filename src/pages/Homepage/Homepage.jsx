@@ -21,14 +21,14 @@ export default function Homepage(props) {
     return (
         <>
             {style === 'modern' && props.stateModern === 'modern' ?
-                <>
+                <div className='modern-div'>
                     <LightDarkToggle setStateOldWeb={props.setStateOldWeb} setStateModern={props.setStateModern} />
 
                     <div>Hello</div>
-                </>
+                </div>
                 :
-                <div className='container-div'>
-                    
+                <div className='oldweb-div'>
+
                     <LightDarkToggle setStateOldWeb={props.setStateOldWeb} setStateModern={props.setStateModern} />
 
                     <header className='header' id='dark-header'>
@@ -44,12 +44,12 @@ export default function Homepage(props) {
                             <p className='light-p'>
                                 Web Design for Artists, Creators, and Musicians.
                             </p>
-                        </div>                        
+                        </div>
 
                     </header>
 
                     <main className='main' id='dark-main'>
-                        
+
                         <section></section>
                         <section className='light-section-mid'>
                             <p>Specify your offer, list your skills. Based on your skills, list down your services, and for each service write down a list of deliverables.</p>
