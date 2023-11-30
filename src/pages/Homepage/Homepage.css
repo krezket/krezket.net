@@ -1,3 +1,4 @@
+/* MODERN HEADER */
 .modern-div {
     display: flex;
     flex-direction: column;
@@ -17,20 +18,29 @@
     align-items: center;
     padding: 0px 50px 0px 50px;
     background-image: url(../../assets/images/black-wood.jpg);
+    /* background-image: url(../../assets/backgrounds/blackrose.jpg); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    /* background-repeat: repeat-x; */
     height: 100vh;
 }
 .ow-header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
     width: 100%; 
     padding-top: 20px;
     background-color: black;
+}
+.heraldry {
+    width: 200px;
+}
+.ow-h1-con {
+    display: flex;
+    flex-direction: column;
 }
 .ow-h1 {
     margin: 0;
@@ -49,12 +59,11 @@
 }
 /* OLD WEB SECTIONS */
 .ow-section-left {
-    border: 1px solid white;
+    border-right: 1px solid white;
 }
 .ow-section-mid {
-    border: 1px solid white;
     color: white;
 }
 .ow-section-right {
-    border: 1px solid white;
+    border-left: 1px solid white;
 }

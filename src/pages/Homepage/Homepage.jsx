@@ -1,8 +1,9 @@
 // import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import LightDarkToggle from '../../components/LightDark/LightDarkToggle'
-// import flur from '../../assets/Heraldry/flur.gif'
+import heraldry from '../../assets/images/krez-1-b.jpg'
 import divider1 from '../../assets/dividers/SilverGlitterBottem.gif'
+// import rose from '../../assets/backgrounds/blackrose.jpg'
 // import divider1 from '../../assets/dividers/jewel_break.gif'
 // import divider1 from '../../assets/dividers/bolt.gif'
 import './Homepage.css'
@@ -18,7 +19,7 @@ export default function Homepage(props) {
 
     return (
         <>
-            {style === 'modern' && props.stateModern === 'modern' ?
+            {style === 'modern' || props.stateModern === 'modern' ?
                 <div className='modern-div'>
                     <LightDarkToggle setStateOldWeb={props.setStateOldWeb} setStateModern={props.setStateModern} />
 
@@ -31,15 +32,21 @@ export default function Homepage(props) {
 
                     <header className='ow-header'>
 
-                        <h1 className='ow-h1'>
-                            KREZKET
-                        </h1>
+                        <img className='heraldry' src={heraldry} alt="krezket" />
 
-                        <img src={divider1} alt="ornate-divider" />
+                        <div className='ow-h1-con'>
+                            <h1 className='ow-h1'>
+                                KREZKET
+                            </h1>
 
-                        <p className='ow-p'>
-                            Web Design for Artists, Creators, and Musicians.
-                        </p>
+                            <img src={divider1} alt="ornate-divider" />
+
+                            <p className='ow-p'>
+                                Web Design for Artists, Creators, and Musicians.
+                            </p>
+                        </div>
+
+                        <img className='heraldry' src={heraldry} alt="krezket" />
 
                     </header>
 
