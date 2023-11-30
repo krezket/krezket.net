@@ -1,8 +1,8 @@
 // import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import StyleToggle from '../../components/StyleToggle';
-// import heraldry from '../../assets/images/krez-1-b.jpg'
 import skull from '../../assets/images/skull.jpeg'
+// import heraldry from '../../assets/images/krez-1-b.jpg'
 import divider1 from '../../assets/dividers/SilverGlitterBottem.gif'
 // import rose from '../../assets/backgrounds/blackrose.jpg'
 // import divider1 from '../../assets/dividers/jewel_break.gif'
