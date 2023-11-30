@@ -1,7 +1,8 @@
 // import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import LightDarkToggle from '../../components/LightDark/LightDarkToggle'
-import heraldry from '../../assets/images/krez-1-b.jpg'
+import StyleToggle from '../../components/StyleToggle';
+// import heraldry from '../../assets/images/krez-1-b.jpg'
+import skull from '../../assets/images/skull.jpeg'
 import divider1 from '../../assets/dividers/SilverGlitterBottem.gif'
 // import rose from '../../assets/backgrounds/blackrose.jpg'
 // import divider1 from '../../assets/dividers/jewel_break.gif'
@@ -20,19 +21,17 @@ export default function Homepage(props) {
     return (
         <>
             {style === 'modern' || props.stateModern === 'modern' ?
-                <div className='modern-div'>
-                    <LightDarkToggle setStateOldWeb={props.setStateOldWeb} setStateModern={props.setStateModern} />
+                <div className='mod-div'>
+                    <StyleToggle setStateOldWeb={props.setStateOldWeb} setStateModern={props.setStateModern} />
 
-                    <div>Hello</div>
+                    <header className='mod-header'>Hello</header>
                 </div>
                 :
-                <div className='oldweb-div'>
-
-                    <LightDarkToggle setStateOldWeb={props.setStateOldWeb} setStateModern={props.setStateModern} />
+                <div className='ow-div'>
 
                     <header className='ow-header'>
 
-                        <img className='heraldry' src={heraldry} alt="krezket" />
+                        <img className='heraldry' id='left' src={skull} alt="krezket" />
 
                         <div className='ow-h1-con'>
                             <h1 className='ow-h1'>
@@ -46,17 +45,23 @@ export default function Homepage(props) {
                             </p>
                         </div>
 
-                        <img className='heraldry' src={heraldry} alt="krezket" />
+                        <img className='heraldry' id='right' src={skull} alt="krezket" />
 
                     </header>
 
                     <main className='ow-main'>
 
-                        <section className='ow-section-left'>hello</section>
+                        <section className='ow-section-left'>
+                            <p>View this website as:</p>
+                            <StyleToggle setStateOldWeb={props.setStateOldWeb} setStateModern={props.setStateModern} />
+
+                        </section>
                         <section className='ow-section-mid'>
                             <p>Specify your offer, list your skills. Based on your skills, list down your services, and for each service write down a list of deliverables.</p>
                         </section>
-                        <section className='ow-section-right'>hello</section>
+                        <section className='ow-section-right'>
+                            <p>Ayo my name is</p>
+                        </section>
 
                     </main>
 

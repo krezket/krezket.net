@@ -1,18 +1,22 @@
 /* MODERN HEADER */
-.modern-div {
+.mod-div {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px 50px 0px 50px;
-    background-image: url(../../assets/images/krez-w-1.jpeg);
+    /* background-image: url(../../assets/images/krez-w-2.jpeg); */
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
 }
 
+.mod-header {
+    color: white;
+}
+
 /* OLD WEB HEADER */
-.oldweb-div {
+.ow-div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,13 +42,20 @@
 .heraldry {
     width: 200px;
 }
+#left {
+    padding-left: 15px;
+}
+#right{
+    padding-right: 15px;
+}
 .ow-h1-con {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .ow-h1 {
     margin: 0;
-    color: whitesmoke;
+    color: darkred;
 }
 .ow-p {
     color: white;
@@ -59,11 +70,18 @@
 }
 /* OLD WEB SECTIONS */
 .ow-section-left {
+    color: white;
+    padding-right: 20px;
+    margin-right: 20px;
     border-right: 1px solid white;
 }
 .ow-section-mid {
+    width: 55%;
     color: white;
 }
 .ow-section-right {
+    color: white;
+    padding-left: 20px;
+    margin-left: 20px;
     border-left: 1px solid white;
 }

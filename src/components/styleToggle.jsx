@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export default function LightDarkToggle(props) {
+export default function StyleToggle(props) {
     console.log(props)
 
     const modernToggle = e => {
@@ -22,7 +22,7 @@ export default function LightDarkToggle(props) {
     }
     
     return (
-        <div>
+        <div className='style'>
             <button onClick={oldWebToggle}>Old Web</button>
             <button onClick={modernToggle}>Modern</button>
         </div>
