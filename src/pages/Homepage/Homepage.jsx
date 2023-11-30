@@ -1,9 +1,7 @@
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import LightDarkToggle from '../../components/LightDark/LightDarkToggle'
 // import flur from '../../assets/Heraldry/flur.gif'
-import pillar from '../../assets/fire/pillarfire.gif'
-import pillar1 from '../../assets/fire/fire-4.gif'
 import divider1 from '../../assets/dividers/SilverGlitterBottem.gif'
 // import divider1 from '../../assets/dividers/jewel_break.gif'
 // import divider1 from '../../assets/dividers/bolt.gif'

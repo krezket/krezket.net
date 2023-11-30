@@ -3,8 +3,8 @@
     flex-direction: column;
     align-items: center;
     padding: 0px 50px 0px 50px;
-    background-image: url(../../assets/images/krez.jpeg);
-    background-size: cover;
+    background-image: url(../../assets/images/krez-w-1.jpeg);
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
