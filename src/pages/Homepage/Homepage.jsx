@@ -2,8 +2,9 @@
 import { useNavigate } from 'react-router-dom';
 import StyleToggle from '../../components/styleToggle';
 import skull from '../../assets/images/skull.jpeg';
-// import heraldry from '../../assets/images/krez-1-b.jpg'
 import divider1 from '../../assets/dividers/SilverGlitterBottem.gif'
+import question from '../../assets/gifs/q.gif'
+// import heraldry from '../../assets/images/krez-1-b.jpg'
 // import rose from '../../assets/backgrounds/blackrose.jpg'
 // import divider1 from '../../assets/dividers/jewel_break.gif'
 // import divider1 from '../../assets/dividers/bolt.gif'
@@ -35,7 +36,7 @@ export default function Homepage(props) {
 
                         <div className='ow-h1-con'>
                             <h1 className='ow-h1'>
-                                KREZKET
+                                KREZKET.NET
                             </h1>
 
                             <img src={divider1} alt="ornate-divider" />
@@ -56,16 +57,27 @@ export default function Homepage(props) {
                             <StyleToggle setStateOldWeb={props.setStateOldWeb} setStateModern={props.setStateModern} />
 
                         </section>
+
                         <section className='ow-section-mid'>
-                            <p>Specify your offer, list your skills. Based on your skills, list down your services, and for each service write down a list of deliverables.</p>
+                            <h2 className="ow-section-mid-h2">
+                            <img className='huh' src={question} alt="?" />
+                                What is krezket.net
+                            <img className='huh' src={question} alt="?" />
+                            </h2>
+                            <p className='ow-section-mid-p'>
+                                My name is Anthony Guerrero. I am a full stack web developer
+                            </p>
                         </section>
+
                         <section className='ow-section-right'>
-                            <p>Ayo my name is</p>
+                            <p>Other Links:</p>
                         </section>
 
                     </main>
 
-                    <footer></footer>
+                    <footer>
+                    Specify your offer, list your skills. Based on your skills, list down your services, and for each service write down a list of deliverables.
+                    </footer>
                 </div>
             }
         </>

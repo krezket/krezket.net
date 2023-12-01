@@ -17,6 +17,10 @@ body {
   flex-direction: column;
 }
 
+.huh {
+  width: 30px;
+}
+
 h1 {
   /* font-family: fondamento; */
   /* font-family: faster one; */

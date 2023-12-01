@@ -10,7 +10,6 @@
     background-repeat: no-repeat;
     height: 100vh;
 }
-
 .mod-header {
     color: white;
 }
@@ -60,27 +59,44 @@
 .ow-p {
     color: white;
 }
+/* OLD WEB SECTIONS */
 .ow-main {
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: 50vh;
     width: 100%;
+    padding-top: 50px;
     background-color: black;
 }
-/* OLD WEB SECTIONS */
+/* LEFT */
 .ow-section-left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     color: white;
+    padding-left: 20px;
     padding-right: 20px;
     margin-right: 20px;
     border-right: 1px solid white;
 }
+/* MID */
 .ow-section-mid {
+    display: flex;
+    flex-direction: column;
     width: 55%;
     color: white;
 }
+.ow-section-mid-p {
+    margin-top: 0;
+}
+/* RIGHT */
 .ow-section-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
     color: white;
+    padding-right: 20px;
     padding-left: 20px;
     margin-left: 20px;
     border-left: 1px solid white;
