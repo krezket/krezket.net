@@ -132,7 +132,7 @@ and (max-width : 1248px) {
 and (min-width : 0px)
 and (max-width : 752px) {
     .ow-h1 {
-        font-size: 30px;
+        font-size: 47px;
     }
     .divider {
         width: 90px;
@@ -169,7 +169,17 @@ and (max-width : 752px) {
     width: 55%;
     color: white;
 }
-.ow-section-mid-p {
+@media only screen
+and (min-width : 0px)
+and (max-width : 752px) {
+    .ow-section-mid h2 {
+        font-size: 20px;
+    }
+    .ow-section-mid img {
+        width: 10px;
+    }
+}
+.ow-section-mid p {
     margin-top: 0;
 }
 /* RIGHT */

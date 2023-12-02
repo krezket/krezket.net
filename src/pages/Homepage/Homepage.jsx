@@ -112,12 +112,12 @@ export default function Homepage(props) {
                         </section>
 
                         <section className='ow-section-mid'>
-                            <h2 className="ow-section-mid-h2">
+                            <h2>
                                 <img className='huh' src={question} alt="?" />
                                 What is krezket.net
                                 <img className='huh' src={question} alt="?" />
                             </h2>
-                            <p className='ow-section-mid-p'>
+                            <p>
                                 My name is Anthony Guerrero. I am a full stack web developer
                             </p>
                         </section>
