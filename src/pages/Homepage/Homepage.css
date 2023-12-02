@@ -4,13 +4,13 @@
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    padding: 0 77px 0 0;
     height: 100vh;
 }
 .mod-aside {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: fixed;
     background-color: darkred;
     padding: 0 20px 0 20px;
     height: 100vh;
@@ -23,12 +23,20 @@
 .mod-h2:hover {
     text-decoration: line-through;
 }
+.mod-con{
+    display: flex;
+    flex-direction: column;
+}
 .mod-header {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding: 0 50px 0 0;
     height: 100vh;
-    color: white;
+    color: darkred;
+}
+.mod-main {
+    height: 100vh;
 }
 
 /* OLD WEB HEADER */

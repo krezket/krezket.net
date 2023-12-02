@@ -62,9 +62,15 @@ export default function Homepage(props) {
                         </div>
                     </aside>
 
-                    <header className='mod-header'>
-                        <h1>KREZKET</h1>
-                    </header>
+                    <div className='mod-con'>
+                        <header className='mod-header'>
+                            <h1>KREZKET.NET</h1>
+                        </header>
+                        <main className='mod-main'>
+
+                        </main>
+
+                    </div>
                 </div>
                 :
                 <div className='ow-div'>
