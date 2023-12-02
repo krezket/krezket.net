@@ -1,3 +1,31 @@
+.mod-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    background-color: darkred;
+    padding: 0 10px 0 10px;
+    height: 100vh;
+    /* border: 1px solid white; */
+}
+.mod-aside h1 {
+    margin: 0;
+    font-size: 30px;
+    transform: translateY(-50px) rotate(-90deg);
+}
+/* .mod-aside h2 {
+    width: 0%;
+} */
+.mod-aside a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+.mod-aside a:hover {
+    color: black;
+    text-decoration: line-through;
+}
 /* MODERN HEADER */
 .mod-div {
     display: flex;
@@ -6,33 +34,11 @@
     align-items: center;
     height: 100vh;
 }
-
-.mod-aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    background-color: darkred;
-    padding: 0 20px 0 20px;
-    height: 100vh;
-    /* border: 1px solid white; */
-}
-
-.mod-h2 {
-    color: white;
-    text-decoration: none;
-}
-
-.mod-h2:hover {
-    text-decoration: line-through;
-}
-
 .mod-con {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
 }
-
 .mod-header {
     display: flex;
     flex-direction: column;
@@ -41,7 +47,9 @@
     height: 100vh;
     color: darkred;
 }
-
+.mod-header h1 {
+    margin: 0;
+}
 .mod-main {
     height: 100vh;
 }
@@ -60,7 +68,6 @@
     /* background-repeat: repeat-x; */
     height: 100vh;
 }
-
 .ow-header {
     display: flex;
     flex-direction: row;
@@ -71,9 +78,22 @@
     padding-top: 20px;
     background-color: black;
 }
-
 .heraldry {
     width: 200px;
+}
+@media only screen
+and (min-width : 0px)
+and (max-width : 1248px) {
+    .heraldry {
+        width: 100px;
+    }
+}
+@media only screen
+and (min-width : 0px)
+and (max-width : 500px) {
+    .heraldry {
+        width: 50px;
+    }
 }
 
 #left {
@@ -94,11 +114,26 @@
     margin: 0;
     color: darkred;
 }
-
+@media only screen
+and (min-width : 0px)
+and (max-width : 1248px) {
+    .ow-h1 {
+        font-size: 50px;
+    }
+}
+@media only screen
+and (min-width : 0px)
+and (max-width : 752px) {
+    .ow-h1 {
+        font-size: 20px;
+    }
+    .divider {
+        width: 90px;
+    }
+}
 .ow-p {
     color: white;
 }
-
 /* OLD WEB SECTIONS */
 .ow-main {
     display: flex;
@@ -109,7 +144,6 @@
     padding-top: 50px;
     background-color: black;
 }
-
 /* LEFT */
 .ow-section-left {
     display: flex;
@@ -121,7 +155,6 @@
     margin-right: 20px;
     border-right: 1px solid white;
 }
-
 /* MID */
 .ow-section-mid {
     display: flex;
@@ -129,11 +162,9 @@
     width: 55%;
     color: white;
 }
-
 .ow-section-mid-p {
     margin-top: 0;
 }
-
 /* RIGHT */
 .ow-section-right {
     display: flex;

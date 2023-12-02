@@ -41,20 +41,23 @@ export default function Homepage(props) {
             {style === 'modern' || props.stateModern === 'modern' ?
                 <>
                     <aside className='mod-aside'>
+                        <h1>
+                            KREZKET
+                        </h1>
                         <h2>
-                            <a className='mod-h2' href="">Who We Are</a>
+                            <a href="">Who We Are</a>
                         </h2>
                         <h2>
-                            <a className='mod-h2' href="">Services</a>
+                            <a href="">Services</a>
                         </h2>
                         <h2>
-                            <a className='mod-h2' href="">Partners</a>
+                            <a href="">Partners</a>
                         </h2>
                         <h2>
-                            <a className='mod-h2' href="">Clients</a>
+                            <a href="">Clients</a>
                         </h2>
                         <h2>
-                            <a className='mod-h2' href="">Contact us</a>
+                            <a href="">Contact us</a>
                         </h2>
                         <div className='style'>
                             <button onClick={oldWebToggle}>Old Web</button>
@@ -86,7 +89,7 @@ export default function Homepage(props) {
                                 KREZKET.NET
                             </h1>
 
-                            <img src={divider1} alt="ornate-divider" />
+                            <img className='divider' src={divider1} alt="ornate-divider" />
 
                             <p className='ow-p'>
                                 Web Design for Artists, Creators, and Musicians.
