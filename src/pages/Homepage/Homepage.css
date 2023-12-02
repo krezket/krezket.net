@@ -68,6 +68,13 @@
     /* background-repeat: repeat-x; */
     height: 100vh;
 }
+@media only screen
+and (min-width : 0px)
+and (max-width : 500px) {
+    .ow-div {
+        padding: 0px 10px 0px 10px;
+    }
+}
 .ow-header {
     display: flex;
     flex-direction: row;
@@ -91,11 +98,13 @@ and (max-width : 1248px) {
 @media only screen
 and (min-width : 0px)
 and (max-width : 500px) {
+    .ow-header {
+        justify-content: center;
+    }
     .heraldry {
-        width: 50px;
+        display: none;
     }
 }
-
 #left {
     padding-left: 15px;
 }
@@ -103,13 +112,11 @@ and (max-width : 500px) {
 #right {
     padding-right: 15px;
 }
-
 .ow-h1-con {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .ow-h1 {
     margin: 0;
     color: darkred;
@@ -125,7 +132,7 @@ and (max-width : 1248px) {
 and (min-width : 0px)
 and (max-width : 752px) {
     .ow-h1 {
-        font-size: 20px;
+        font-size: 30px;
     }
     .divider {
         width: 90px;
