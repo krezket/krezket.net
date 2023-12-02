@@ -1,6 +1,5 @@
 // import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import StyleToggle from '../../components/styleToggle';
 import skull from '../../assets/images/skull.jpeg';
 import divider1 from '../../assets/dividers/SilverGlitterBottem.gif'
 import question from '../../assets/gifs/q.gif'
@@ -15,6 +14,24 @@ export default function Homepage(props) {
     const navigate = useNavigate();
     const style = window.localStorage.getItem('style')
 
+    const modernToggle = e => {
+        e.preventDefault()
+
+        window.localStorage.setItem('style', 'modern')
+
+        props.setStateOldWeb("")
+        props.setStateModern("modern")
+    }
+
+    const oldWebToggle = e => {
+        e.preventDefault()
+
+        window.localStorage.setItem('style', 'old-web')
+
+        props.setStateModern("")
+        props.setStateOldWeb("old-web")
+    }
+
     // if (code === "0") {
     //     window.location.pathname = '/'
     // }
@@ -23,8 +40,19 @@ export default function Homepage(props) {
         <>
             {style === 'modern' || props.stateModern === 'modern' ?
                 <div className='mod-div'>
-                    <StyleToggle setStateOldWeb={props.setStateOldWeb} setStateModern={props.setStateModern} />
+                    <div className='style'>
+                        <button onClick={oldWebToggle}>Old Web</button>
+                        <button onClick={modernToggle}>Modern</button>
+                    </div>
 
+                    <aside className='mod-aside'>
+                        <h2>Mission</h2>
+                        <h2>Services</h2>
+                        <h2>Partners</h2>
+                        <h2>Clients</h2>
+                        <h2>Collateral</h2>
+                        <h2>Contact us</h2>
+                    </aside>
                     <header className='mod-header'>Hello</header>
                 </div>
                 :
@@ -54,15 +82,18 @@ export default function Homepage(props) {
 
                         <section className='ow-section-left'>
                             <p>View this website as:</p>
-                            <StyleToggle setStateOldWeb={props.setStateOldWeb} setStateModern={props.setStateModern} />
 
+                            <div className='style'>
+                                <button onClick={oldWebToggle}>Old Web</button>
+                                <button onClick={modernToggle}>Modern</button>
+                            </div>
                         </section>
 
                         <section className='ow-section-mid'>
                             <h2 className="ow-section-mid-h2">
-                            <img className='huh' src={question} alt="?" />
+                                <img className='huh' src={question} alt="?" />
                                 What is krezket.net
-                            <img className='huh' src={question} alt="?" />
+                                <img className='huh' src={question} alt="?" />
                             </h2>
                             <p className='ow-section-mid-p'>
                                 My name is Anthony Guerrero. I am a full stack web developer
@@ -76,7 +107,7 @@ export default function Homepage(props) {
                     </main>
 
                     <footer>
-                    Specify your offer, list your skills. Based on your skills, list down your services, and for each service write down a list of deliverables.
+                        Specify your offer, list your skills. Based on your skills, list down your services, and for each service write down a list of deliverables.
                     </footer>
                 </div>
             }
