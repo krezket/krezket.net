@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import enter from '../../assets/enter/enter-6.gif'
 import './Gate.css'
 

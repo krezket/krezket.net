@@ -41,11 +41,21 @@ export default function Homepage(props) {
             {style === 'modern' || props.stateModern === 'modern' ?
                 <div className='mod-div'>
                     <aside className='mod-aside'>
-                        <h2>Who We Are</h2>
-                        <h2>Services</h2>
-                        <h2>Partners</h2>
-                        <h2>Clients</h2>
-                        <h2>Contact us</h2>
+                        <h2>
+                            <a className='mod-h2' href="">Who We Are</a>
+                        </h2>
+                        <h2>
+                            <a className='mod-h2' href="">Services</a>
+                        </h2>
+                        <h2>
+                            <a className='mod-h2' href="">Partners</a>
+                        </h2>
+                        <h2>
+                            <a className='mod-h2' href="">Clients</a>
+                        </h2>
+                        <h2>
+                            <a className='mod-h2' href="">Contact us</a>
+                        </h2>
                         <div className='style'>
                             <button onClick={oldWebToggle}>Old Web</button>
                             <button onClick={modernToggle}>Modern</button>

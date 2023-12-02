@@ -4,11 +4,24 @@
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    padding: 0 20px 0 20px;
+    padding: 0 77px 0 0;
     height: 100vh;
 }
 .mod-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: darkred;
+    padding: 0 20px 0 20px;
+    height: 100vh;
+    /* border: 1px solid white; */
+}
+.mod-h2 {
     color: white;
+    text-decoration: none;
+}
+.mod-h2:hover {
+    text-decoration: line-through;
 }
 .mod-header {
     display: flex;
