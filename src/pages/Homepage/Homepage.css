@@ -1,11 +1,12 @@
 /* MODERN HEADER */
 .mod-div {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-direction: row;
     align-items: center;
     height: 100vh;
 }
+
 .mod-aside {
     display: flex;
     flex-direction: column;
@@ -16,17 +17,22 @@
     height: 100vh;
     /* border: 1px solid white; */
 }
+
 .mod-h2 {
     color: white;
     text-decoration: none;
 }
+
 .mod-h2:hover {
     text-decoration: line-through;
 }
-.mod-con{
+
+.mod-con {
     display: flex;
+    justify-content: flex-end;
     flex-direction: column;
 }
+
 .mod-header {
     display: flex;
     flex-direction: column;
@@ -35,6 +41,7 @@
     height: 100vh;
     color: darkred;
 }
+
 .mod-main {
     height: 100vh;
 }
@@ -53,37 +60,45 @@
     /* background-repeat: repeat-x; */
     height: 100vh;
 }
+
 .ow-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    width: 100%; 
+    width: 100%;
     padding-top: 20px;
     background-color: black;
 }
+
 .heraldry {
     width: 200px;
 }
+
 #left {
     padding-left: 15px;
 }
-#right{
+
+#right {
     padding-right: 15px;
 }
+
 .ow-h1-con {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .ow-h1 {
     margin: 0;
     color: darkred;
 }
+
 .ow-p {
     color: white;
 }
+
 /* OLD WEB SECTIONS */
 .ow-main {
     display: flex;
@@ -94,6 +109,7 @@
     padding-top: 50px;
     background-color: black;
 }
+
 /* LEFT */
 .ow-section-left {
     display: flex;
@@ -105,6 +121,7 @@
     margin-right: 20px;
     border-right: 1px solid white;
 }
+
 /* MID */
 .ow-section-mid {
     display: flex;
@@ -112,14 +129,16 @@
     width: 55%;
     color: white;
 }
+
 .ow-section-mid-p {
     margin-top: 0;
 }
+
 /* RIGHT */
 .ow-section-right {
     display: flex;
     align-items: center;
-    flex-direction: column;    
+    flex-direction: column;
     color: white;
     padding-right: 20px;
     padding-left: 20px;

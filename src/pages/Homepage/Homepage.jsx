@@ -39,7 +39,7 @@ export default function Homepage(props) {
     return (
         <>
             {style === 'modern' || props.stateModern === 'modern' ?
-                <div className='mod-div'>
+                <>
                     <aside className='mod-aside'>
                         <h2>
                             <a className='mod-h2' href="">Who We Are</a>
@@ -61,17 +61,19 @@ export default function Homepage(props) {
                             <button onClick={modernToggle}>Modern</button>
                         </div>
                     </aside>
+                    <div className='mod-div'>
 
-                    <div className='mod-con'>
-                        <header className='mod-header'>
-                            <h1>KREZKET.NET</h1>
-                        </header>
-                        <main className='mod-main'>
+                        <div className='mod-con'>
+                            <header className='mod-header'>
+                                <h1>KREZKET.NET</h1>
+                            </header>
+                            <main className='mod-main'>
 
-                        </main>
+                            </main>
 
+                        </div>
                     </div>
-                </div>
+                </>
                 :
                 <div className='ow-div'>
 
