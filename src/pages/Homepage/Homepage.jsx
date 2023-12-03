@@ -59,16 +59,15 @@ export default function Homepage(props) {
                         <h2>
                             <a href="">Contact us</a>
                         </h2>
-                        <div className='style'>
-                            <button onClick={oldWebToggle}>Old Web</button>
-                            <button onClick={modernToggle}>Modern</button>
-                        </div>
                     </aside>
                     <div className='mod-div'>
-
                         <div className='mod-con'>
                             <header className='mod-header'>
                                 <h1>KREZKET.NET</h1>
+                                <div className='style'>
+                                    <button onClick={oldWebToggle}>Old Web</button>
+                                    <button onClick={modernToggle}>Modern</button>
+                                </div>
                             </header>
                             <main className='mod-main'>
 
