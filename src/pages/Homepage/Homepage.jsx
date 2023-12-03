@@ -93,6 +93,10 @@ export default function Homepage(props) {
                             <p className='ow-p'>
                                 Web Design for Artists, Creators, and Musicians.
                             </p>
+                            <div className='style-2'>
+                                <button onClick={oldWebToggle}>Old Web</button>
+                                <button onClick={modernToggle}>Modern</button>
+                            </div>
                         </div>
 
                         <img className='heraldry' id='right' src={skull} alt="krezket" />
