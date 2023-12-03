@@ -1,5 +1,6 @@
 // import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link, Element } from 'react-scroll';
 import skull from '../../assets/images/skull.jpeg';
 import divider1 from '../../assets/dividers/SilverGlitterBottem.gif'
 import question from '../../assets/gifs/q.gif'
@@ -45,16 +46,16 @@ export default function Homepage(props) {
                             KREZKET
                         </h1>
                         <h2>
-                            <a href="">Who We Are</a>
+                            <Link smooth={true} duration={500} to='section1' href="">Who We Are</Link>
                         </h2>
                         <h2>
-                            <a href="">Services</a>
+                            <Link smooth={true} duration={500} to='section2' href="">Services</Link>
                         </h2>
                         <h2>
-                            <a href="">Partners</a>
+                            <Link smooth={true} duration={500} to='section3' href="">Partners</Link>
                         </h2>
                         <h2>
-                            <a href="">Clients</a>
+                            <Link smooth={true} duration={500} to='section4' href="">Clients</Link>
                         </h2>
                         <h2>
                             <a href="">Contact us</a>
@@ -69,9 +70,9 @@ export default function Homepage(props) {
                                     <button onClick={modernToggle}>Modern</button>
                                 </div>
                             </header>
-                            <main className='mod-main'>
+                            <Element name='section1' className='mod-main'>
 
-                            </main>
+                            </Element>
 
                         </div>
                     </div>
