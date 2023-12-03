@@ -58,7 +58,7 @@ export default function Homepage(props) {
                             <Link smooth={true} duration={500} to='section4' href="">Clients</Link>
                         </h2>
                         <h2>
-                            <a href="">Contact us</a>
+                            <Link smooth={true} duration={500} to='section5' href="">Contact us</Link>
                         </h2>
                     </aside>
                     <div className='mod-div'>
@@ -74,6 +74,21 @@ export default function Homepage(props) {
 
                             </Element>
 
+                            <Element name='section2' className='mod-main'>
+
+                            </Element>
+
+                            <Element name='section3' className='mod-main'>
+
+                            </Element>
+
+                            <Element name='section4' className='mod-main'>
+
+                            </Element>
+
+                            <Element name='section5' className='mod-main'>
+
+                            </Element>
                         </div>
                     </div>
                 </>
