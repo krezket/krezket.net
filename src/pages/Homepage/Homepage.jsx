@@ -20,11 +20,22 @@ export default function Homepage(props) {
         }, 500);
     
         return () => clearTimeout(timeout);
-      }, []);
+    }, []);
+
+    const commonLogic = () => {
+        setAnimate(false);
+        const timeout = setTimeout(() => {
+            setAnimate(true);
+        }, 500);
+
+        return () => clearTimeout(timeout);
+    };
 
     const modernToggle = e => {
         e.preventDefault()
-
+        if (style === 'old-web') {
+            commonLogic();
+        }
         window.localStorage.setItem('style', 'modern')
 
         props.setStateOldWeb("")
