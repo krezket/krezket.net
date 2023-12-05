@@ -27,7 +27,7 @@ and (max-width : 650px) {
 }
 @media only screen
 and (min-height : 0px)
-and (max-height : 611px) {
+and (max-height : 777px) {
     .mod-aside h1 {
         font-size: 26px;
         top: 110px;
@@ -82,18 +82,25 @@ and (max-width : 650px) {
 }
 @media only screen
 and (min-width : 0px)
-and (max-width : 950px) {
-    .mod-header h1 {
-        font-size: 50px;
-    }
-}
-@media only screen
-and (min-height : 0px)
-and (max-height : 611px) {
+and (max-width : 1776px) {
     .mod-header h1 {
         font-size: 100px;
     }
 }
+@media only screen
+and (min-width : 0px)
+and (max-width : 1222px) {
+    .mod-header h1 {
+        font-size: 50px;
+    }
+}
+/* @media only screen
+and (min-height : 0px)
+and (max-height : 777px) {
+    .mod-header h1 {
+        font-size: 100px;
+    }
+} */
 .mod-main {
     height: 100vh;
 }
