@@ -18,8 +18,12 @@ and (max-width : 650px) {
 }
 .mod-aside h1 {
     margin: 0;
-    font-size: 30px;
+    font-size: 40px;
     transform: translateY(-50px) rotate(-90deg);
+    font-family: faster one;
+    position: absolute;
+    top: 150px;
+    left: -55px;
 }
 /* .mod-aside h2 {
     width: 0%;
@@ -62,6 +66,8 @@ and (max-width : 650px) {
     color: darkred;
 }
 .mod-header h1 {
+    font-size: 150px;
+    font-family: faster one;
     padding-bottom: 50px;
     margin: 0;
 }
