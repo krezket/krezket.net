@@ -92,6 +92,16 @@ and (max-width : 650px) {
     height: 100vh;
     color: darkred;
 }
+.animated-heading {
+    opacity: 0;
+    transform: translateX(-33px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .animate-up {
+    opacity: 1;
+    transform: translateX(0);
+  }
 .mod-header h1 {
     font-size: 150px;
     font-family: faster one;
@@ -157,8 +167,8 @@ and (max-width : 650px) {
 .ow-header {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
-    justify-content: center;
+    justify-content: space-between;
+    /* justify-content: center; */
     text-align: center;
     align-items: center;
     width: 100%;
