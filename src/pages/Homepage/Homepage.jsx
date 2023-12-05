@@ -169,9 +169,9 @@ export default function Homepage(props) {
                                 What is krezket.net
                                 <img className='huh' src={question} alt="?" />
                             </h2>
-                            <h1>
+                            <p>
                                 My name is Anthony Guerrero. I am a Certified Full Stack Web Developer with a passion for art, music, and design.
-                            </h1>
+                            </p>
                         </section>
 
                         <section className='ow-section-right'>
