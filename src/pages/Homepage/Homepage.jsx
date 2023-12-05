@@ -91,9 +91,9 @@ export default function Homepage(props) {
                                 What is krezket.net
                                 <img className='huh' src={question} alt="?" />
                             </h2>
-                            <p>
+                            <h1>
                                 My name is Anthony Guerrero. I am a Certified Full Stack Web Developer with a passion for art, music, and design.
-                            </p>
+                            </h1>
                         </Element>
 
                         <Element name='section2' className='mod-section-2'>
@@ -169,9 +169,9 @@ export default function Homepage(props) {
                                 What is krezket.net
                                 <img className='huh' src={question} alt="?" />
                             </h2>
-                            <p>
+                            <h1>
                                 My name is Anthony Guerrero. I am a Certified Full Stack Web Developer with a passion for art, music, and design.
-                            </p>
+                            </h1>
                         </section>
 
                         <section className='ow-section-right'>

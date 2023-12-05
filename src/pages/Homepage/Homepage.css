@@ -136,13 +136,22 @@ and (max-width : 420px) {
 .mod-section-4,
 .mod-section-5 {
     height: 100vh;
-}
+    padding-left: 130px;
+    color: white;
 
-.mod-section-1,
+}
+.mod-section-1 h1,
+.mod-section-2 h1, 
+.mod-section-3 h1,
+.mod-section-4 h1,
+.mod-section-5 h1 {
+    font-size: 40px;
+}
+.mod-section-1 p,
 .mod-section-2, 
 .mod-section-3,
 .mod-section-4,
-.mod-section-5 h2, p {
+.mod-section-5 p {
     color: white;
 }
 
