@@ -123,13 +123,6 @@ and (max-width : 1111px) {
         font-size: 50px;
     }
 }
-@media only screen
-and (min-width : 0px)
-and (max-width : 420px) {
-    .mod-header h1 {
-        font-size: 40px;
-    }
-}
 .mod-section-1,
 .mod-section-2,
 .mod-section-3,
@@ -153,6 +146,27 @@ and (max-width : 420px) {
 .mod-section-4,
 .mod-section-5 p {
     color: white;
+}
+@media only screen
+and (min-width : 0px)
+and (max-width : 650px) {
+    .mod-con {
+        justify-content: center;
+    }
+    .mod-header h1 {
+        font-size: 45px;
+    }
+    .mod-section-1,
+    .mod-section-2,
+    .mod-section-3,
+    .mod-section-4,
+    .mod-section-5 {
+        height: 100vh;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+
+    }
 }
 
 /* OLD WEB HEADER */
