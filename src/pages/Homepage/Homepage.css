@@ -52,9 +52,6 @@ and (max-height : 560px) {
         left: -3px;
     }
 }
-/* .mod-aside h2 {
-    width: 0%;
-} */
 .mod-aside a {
     color: white;
     font-size: 15px;
@@ -96,9 +93,9 @@ and (max-width : 650px) {
     opacity: 0;
     transform: translateX(-33px);
     transition: opacity 1s ease-out, transform 1s ease-out;
-  }
+ }
   
-  .animate-up {
+.animate-up {
     opacity: 1;
     transform: translateX(0);
 }
@@ -154,7 +151,7 @@ and (max-width : 650px) {
         justify-content: center;
     }
     .mod-header h1 {
-        font-size: 45px;
+        font-size: 50px;
     }
     .mod-section-1,
     .mod-section-2,
