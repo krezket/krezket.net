@@ -157,7 +157,8 @@ and (max-width : 650px) {
 .ow-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
     text-align: center;
     align-items: center;
     width: 100%;

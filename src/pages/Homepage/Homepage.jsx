@@ -97,7 +97,7 @@ export default function Homepage(props) {
 
                     <header className='ow-header'>
 
-                        <img className='heraldry' id='left' src={skull} alt="krezket" />
+                        {/* <img className='heraldry' id='left' src={skull} alt="krezket" /> */}
 
                         <div className='ow-h1-con'>
                             <h1 className='ow-h1'>
@@ -115,7 +115,7 @@ export default function Homepage(props) {
                             </div>
                         </div>
 
-                        <img className='heraldry' id='right' src={skull} alt="krezket" />
+                        {/* <img className='heraldry' id='right' src={skull} alt="krezket" /> */}
 
                     </header>
 
