@@ -67,8 +67,7 @@ and (max-height : 560px) {
 /* MODERN HEADER */
 .mod-div {
     display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 @media only screen
@@ -81,17 +80,18 @@ and (max-width : 650px) {
 .mod-con {
     display: flex;
     justify-content: flex-end;
-    flex-direction: column;
+    width: 100%;
 }
 .mod-header {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
     padding: 0 50px 0 0;
     height: 100vh;
     color: darkred;
 }
+
 .animated-heading {
     opacity: 0;
     transform: translateX(-33px);
@@ -101,7 +101,8 @@ and (max-width : 650px) {
   .animate-up {
     opacity: 1;
     transform: translateX(0);
-  }
+}
+
 .mod-header h1 {
     font-size: 150px;
     font-family: faster one;
@@ -117,7 +118,7 @@ and (max-width : 1776px) {
 }
 @media only screen
 and (min-width : 0px)
-and (max-width : 1222px) {
+and (max-width : 1111px) {
     .mod-header h1 {
         font-size: 50px;
     }
@@ -129,15 +130,35 @@ and (max-width : 420px) {
         font-size: 40px;
     }
 }
-/* @media only screen
-and (min-height : 0px)
-and (max-height : 777px) {
-    .mod-header h1 {
-        font-size: 100px;
-    }
-} */
-.mod-main {
+.mod-section-1 {
     height: 100vh;
+}
+.mod-section-1 h2, p {
+    color: white;
+}
+.mod-section-2 {
+    height: 100vh;
+}
+.mod-section-2 h2, p {
+    color: white;
+}
+.mod-section-3 {
+    height: 100vh;
+}
+.mod-section-3 h2, p {
+    color: white;
+}
+.mod-section-4 {
+    height: 100vh;
+}
+.mod-section-4 h2, p {
+    color: white;
+}
+.mod-section-5 {
+    height: 100vh;
+}
+.mod-section-5 h2, p {
+    color: white;
 }
 
 /* OLD WEB HEADER */

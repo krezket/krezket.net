@@ -16,9 +16,9 @@ export default function Homepage(props) {
 
     useEffect(() => {
         const timeout = setTimeout(() => {
-          setAnimate(true);
+            setAnimate(true);
         }, 500);
-    
+
         return () => clearTimeout(timeout);
     }, []);
 
@@ -78,32 +78,51 @@ export default function Homepage(props) {
                     <div className='mod-div'>
                         <div className='mod-con'>
                             <header className='mod-header'>
-                                <h1 className={`animated-heading ${animate ? 'animate-up' : ''}`}>KREZKET.NET</h1>
                                 <div className='style'>
                                     <button onClick={oldWebToggle}>Old Web</button>
                                     <button onClick={modernToggle}>Modern</button>
                                 </div>
+                                <h1 className={`animated-heading ${animate ? 'animate-up' : ''}`}>KREZKET.NET</h1>
                             </header>
-                            <Element name='section1' className='mod-main'>
-
-                            </Element>
-
-                            <Element name='section2' className='mod-main'>
-
-                            </Element>
-
-                            <Element name='section3' className='mod-main'>
-
-                            </Element>
-
-                            <Element name='section4' className='mod-main'>
-
-                            </Element>
-
-                            <Element name='section5' className='mod-main'>
-
-                            </Element>
                         </div>
+                        <Element name='section1' className='mod-section-1'>
+                            <h2>
+                                <img className='huh' src={question} alt="?" />
+                                What is krezket.net
+                                <img className='huh' src={question} alt="?" />
+                            </h2>
+                            <p>
+                                My name is Anthony Guerrero. I am a Certified Full Stack Web Developer with a passion for art, music, and design.
+                            </p>
+                        </Element>
+
+                        <Element name='section2' className='mod-section-2'>
+                            <h2>
+                                Quality and Performance
+                            </h2>
+
+                        </Element>
+
+                        <Element name='section3' className='mod-section-3'>
+                            <h2>
+                                What is krezket.net
+                            </h2>
+
+                        </Element>
+
+                        <Element name='section4' className='mod-section-4'>
+                            <h2>
+                                What is krezket.net
+                            </h2>
+
+                        </Element>
+
+                        <Element name='section5' className='mod-section-5'>
+                            <h2>
+                                What is krezket.net
+                            </h2>
+
+                        </Element>
                     </div>
                 </>
                 :
@@ -151,7 +170,7 @@ export default function Homepage(props) {
                                 <img className='huh' src={question} alt="?" />
                             </h2>
                             <p>
-                                My name is Anthony Guerrero. I am a full stack web developer
+                                My name is Anthony Guerrero. I am a Certified Full Stack Web Developer with a passion for art, music, and design.
                             </p>
                         </section>
 
