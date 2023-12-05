@@ -130,33 +130,18 @@ and (max-width : 420px) {
         font-size: 40px;
     }
 }
-.mod-section-1 {
-    height: 100vh;
-}
-.mod-section-1 h2, p {
-    color: white;
-}
-.mod-section-2 {
-    height: 100vh;
-}
-.mod-section-2 h2, p {
-    color: white;
-}
-.mod-section-3 {
-    height: 100vh;
-}
-.mod-section-3 h2, p {
-    color: white;
-}
-.mod-section-4 {
-    height: 100vh;
-}
-.mod-section-4 h2, p {
-    color: white;
-}
+.mod-section-1,
+.mod-section-2,
+.mod-section-3,
+.mod-section-4,
 .mod-section-5 {
     height: 100vh;
 }
+
+.mod-section-1,
+.mod-section-2, 
+.mod-section-3,
+.mod-section-4,
 .mod-section-5 h2, p {
     color: white;
 }
