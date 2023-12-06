@@ -1,3 +1,17 @@
+.style-modern {
+    display: flex;
+    /* position: absolute; */
+    justify-content: row;
+}
+.style-0 {
+    display: none;
+}
+.style-1 {
+    display: flex;
+    color: white;
+}
+
+/* MODERN HEADER */
 .mod-header {
     display: flex;
     flex-direction: column;
@@ -62,7 +76,7 @@ and (max-height : 560px) {
     color: black;
     text-decoration: line-through;
 }
-/* MODERN HEADER */
+/* MODERN TITLE */
 .mod-div {
     display: flex;
     flex-direction: column;
@@ -94,7 +108,7 @@ and (max-width : 650px) {
     opacity: 0;
     transform: translateX(-33px);
     transition: opacity 1s ease-out, transform 1s ease-out;
- }
+}
   
 .animate-up {
     opacity: 1;
@@ -264,7 +278,7 @@ and (max-width : 752px) {
 /* LEFT */
 .ow-section-left {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     color: white;
     padding-left: 20px;

@@ -12,11 +12,6 @@ body {
   height: 100vh;
 }
 
-.style {
-  display: flex;
-  flex-direction: column;
-}
-
 .huh {
   width: 30px;
 }

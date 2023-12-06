@@ -10,6 +10,7 @@ import './Homepage.css'
 export default function Homepage(props) {
     console.log(props)
     const [animate, setAnimate] = useState(false);
+    const [switchOn, setSwitchOn ] = useState(false);
     const style = window.localStorage.getItem('style')
 
     // ANIMATE ON ARRIVAL
@@ -22,7 +23,7 @@ export default function Homepage(props) {
     }, []);
 
     // ANIMATE ON CLICK
-    const commonLogic = () => {
+    const fadeIn = () => {
         setAnimate(false);
         const timeout = setTimeout(() => {
             setAnimate(true);
@@ -34,8 +35,9 @@ export default function Homepage(props) {
     // SWITCH TO MODERN STYLE
     const modernToggle = e => {
         e.preventDefault()
+        setSwitchOn(false)
         if (style === 'old-web') {
-            commonLogic();
+            fadeIn();
         }
         window.localStorage.setItem('style', 'modern')
 
@@ -51,6 +53,17 @@ export default function Homepage(props) {
 
         props.setStateModern("")
         props.setStateOldWeb("old-web")
+    }
+
+    const toggleSwitch = e => {
+        e.preventDefault()
+
+        if (switchOn === false) {
+            setSwitchOn(true)
+        }
+        else {
+            setSwitchOn(false)
+        }
     }
 
     return (
@@ -80,10 +93,12 @@ export default function Homepage(props) {
                     <div className='mod-div'>
                         <div className='mod-con'>
                             <header className='mod-title'>
-                                <div className='style'>
-                                    <button onClick={oldWebToggle}>Old Web</button>
-                                    <button onClick={modernToggle}>Modern</button>
+                            <div className={style === 'modern' ? 'style-modern' : ''}>
+                                <div className={ switchOn === false ? 'style-0' : 'style-1'}>
+                                    <a onClick={oldWebToggle}>Old Web</a>
                                 </div>
+                                <button onClick={toggleSwitch}>x</button>
+                            </div>
                                 <h1 className={`animated-heading ${animate ? 'animate-up' : ''}`}>KREZKET.NET</h1>
                             </header>
                         </div>
@@ -92,10 +107,10 @@ export default function Homepage(props) {
                                 Intro
                             </h2>
                             <h1>
-                            Krezket is a brand / platform for myself, Anthony Guerrero. I'm a Certified Full-Stack Web Developer with a passion for music, art, and design.
+                                Krezket is a brand / platform for myself, Anthony Guerrero. I'm a Certified Full-Stack Web Developer with a passion for music, art, and design.
                             </h1>
                             <h1>
-                            I strive to be a reliable freelance web designer for a wide-range of creative media outlets.
+                                I strive to be a reliable freelance web designer for a wide-range of creative media outlets.
                             </h1>
                         </Element>
 
@@ -104,7 +119,7 @@ export default function Homepage(props) {
                                 Services
                             </h2>
                             <h1>
-                            As a Certified Full-Stack Web Developer, I have the ability to build sites with server side functionality.
+                                As a Certified Full-Stack Web Developer, I have the ability to build sites with server side functionality.
                             </h1>
                         </Element>
 
@@ -160,10 +175,7 @@ export default function Homepage(props) {
                         <section className='ow-section-left'>
                             <p>View this website as:</p>
 
-                            <div className='style'>
-                                <button onClick={oldWebToggle}>Old Web</button>
-                                <button onClick={modernToggle}>Modern</button>
-                            </div>
+                            <a onClick={modernToggle}>Modern</a>
                         </section>
 
                         <section className='ow-section-mid'>
