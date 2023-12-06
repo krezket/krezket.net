@@ -5,7 +5,7 @@
     text-align: center;
     position: fixed;
     background-color: darkred;
-    padding: 0 10px 0 10px;
+    padding: 0 20px 0 20px;
     height: 100vh;
     /* border: 1px solid white; */
 }
@@ -56,6 +56,7 @@ and (max-height : 560px) {
     color: white;
     font-size: 15px;
     text-decoration: none;
+    font-family: sans-serif;
 }
 .mod-header a:hover {
     color: black;
@@ -127,6 +128,7 @@ and (max-width : 1111px) {
 .mod-section-5 {
     height: 100vh;
     padding-left: 130px;
+    padding-right: 100px;
     color: white;
 
 }
@@ -136,13 +138,14 @@ and (max-width : 1111px) {
 .mod-section-4 h1,
 .mod-section-5 h1 {
     font-size: 40px;
+    font-family: sans-serif;
 }
-.mod-section-1 p,
-.mod-section-2, 
-.mod-section-3,
-.mod-section-4,
-.mod-section-5 p {
-    color: white;
+.mod-section-1 h2,
+.mod-section-2 h2, 
+.mod-section-3 h2,
+.mod-section-4 h2,
+.mod-section-5 h2 {
+    font-family: sans-serif;
 }
 @media only screen
 and (min-width : 0px)

@@ -62,7 +62,7 @@ export default function Homepage(props) {
                             KREZKET
                         </h1>
                         <h2>
-                            <Link smooth={true} duration={500} to='section1' href="">Who We Are</Link>
+                            <Link smooth={true} duration={500} to='section1' href="">Intro</Link>
                         </h2>
                         <h2>
                             <Link smooth={true} duration={500} to='section2' href="">Services</Link>
@@ -74,7 +74,7 @@ export default function Homepage(props) {
                             <Link smooth={true} duration={500} to='section4' href="">Clients</Link>
                         </h2>
                         <h2>
-                            <Link smooth={true} duration={500} to='section5' href="">Contact us</Link>
+                            <Link smooth={true} duration={500} to='section5' href="">Contact</Link>
                         </h2>
                     </header>
                     <div className='mod-div'>
@@ -89,39 +89,37 @@ export default function Homepage(props) {
                         </div>
                         <Element name='section1' className='mod-section-1'>
                             <h2>
-                                <img className='huh' src={question} alt="?" />
-                                What is krezket.net
-                                <img className='huh' src={question} alt="?" />
+                                Intro
                             </h2>
                             <h1>
-                                My name is Anthony Guerrero. I am a Certified Full Stack Web Developer with a passion for art, music, and design.
+                            Krezket is a brand / platform for myself, Anthony Guerrero. I'm a Certified Full Stack Web Developer with a passion for music, art, and design. 
                             </h1>
                         </Element>
 
                         <Element name='section2' className='mod-section-2'>
                             <h2>
-                                Quality and Performance
+                                Services
                             </h2>
 
                         </Element>
 
                         <Element name='section3' className='mod-section-3'>
                             <h2>
-                                What is krezket.net
+                                Partners
                             </h2>
 
                         </Element>
 
                         <Element name='section4' className='mod-section-4'>
                             <h2>
-                                What is krezket.net
+                                Clients
                             </h2>
 
                         </Element>
 
                         <Element name='section5' className='mod-section-5'>
                             <h2>
-                                What is krezket.net
+                                Contact
                             </h2>
 
                         </Element>
@@ -168,7 +166,7 @@ export default function Homepage(props) {
                                 <img className='huh' src={question} alt="?" />
                             </h2>
                             <p>
-                                My name is Anthony Guerrero. I am a Certified Full Stack Web Developer with a passion for art, music, and design.
+                            Krezket is a brand / platform for myself, Anthony Guerrero. I'm a Certified Full Stack Web Developer with a passion for music, art, and design.                            
                             </p>
                         </section>
 
