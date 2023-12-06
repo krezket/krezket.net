@@ -92,7 +92,7 @@ export default function Homepage(props) {
                                 Intro
                             </h2>
                             <h1>
-                            Krezket is a brand / platform for myself, Anthony Guerrero. I'm a Certified Full Stack Web Developer with a passion for music, art, and design.
+                            Krezket is a brand / platform for myself, Anthony Guerrero. I'm a Certified Full-Stack Web Developer with a passion for music, art, and design.
                             </h1>
                             <h1>
                             I strive to be a reliable freelance web designer for a wide-range of creative media outlets.
@@ -104,7 +104,7 @@ export default function Homepage(props) {
                                 Services
                             </h2>
                             <h1>
-                                As a Certified Full Stack Web Developer, I can build  
+                                As a Certified Full-Stack Web Developer, I have the ability to build sites with behind the scenes, server side functionality.
                             </h1>
                         </Element>
 
@@ -165,14 +165,27 @@ export default function Homepage(props) {
                         </section>
 
                         <section className='ow-section-mid'>
-                            <h2>
-                                <img className='huh' src={question} alt="?" />
-                                What is krezket.net
-                                <img className='huh' src={question} alt="?" />
-                            </h2>
-                            <p>
-                            Krezket is a brand / platform for myself, Anthony Guerrero. I'm a Certified Full Stack Web Developer with a passion for music, art, and design.                            
-                            </p>
+                            <div className='ow-section-mid-con-1'>
+                                <h2>
+                                    <img className='huh' src={question} alt="?" />
+                                    What is Krezket
+                                    <img className='huh' src={question} alt="?" />
+                                </h2>
+                                <p>
+                                    Krezket is a brand / platform for myself, Anthony Guerrero. I'm a Certified Full Stack Web Developer with a passion for music, art, and design.
+                                </p>
+                                <p>
+                                    I strive to be a reliable freelance web designer for a wide-range of creative media outlets.
+                                </p>
+                            </div>
+                            <div>
+                                <h2>
+                                    Services
+                                </h2>
+                                <p>
+                                    As a Certified Full-Stack Web Developer, I have the ability to build sites with behind the scenes, server side functionality.
+                                </p>
+                            </div>
                         </section>
 
                         <section className='ow-section-right'>
