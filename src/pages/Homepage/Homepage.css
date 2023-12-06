@@ -259,6 +259,7 @@ and (max-width : 752px) {
 }
 .ow-p {
     color: white;
+    margin-bottom: 50px;
 }
 /* OLD WEB SECTIONS */
 .ow-main {
@@ -267,7 +268,7 @@ and (max-width : 752px) {
     justify-content: center;
     height: 50vh;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 10px;
     background-color: black;
 }
 /* LEFT */

@@ -3,7 +3,7 @@ import { Link, Element } from 'react-scroll';
 import wiz from '../../assets/wizbiz/wizard.gif'
 import divider1 from '../../assets/dividers/SilverGlitterBottem.gif'
 import question from '../../assets/gifs/q.gif'
-// import divider1 from '../../assets/dividers/jewel_break.gif'
+import divider2 from '../../assets/dividers/jewel_break.gif'
 // import divider1 from '../../assets/dividers/bolt.gif'
 import './Homepage.css'
 
@@ -147,6 +147,8 @@ export default function Homepage(props) {
                             <p className='ow-p'>
                                 Web Design for Artists, Creators, and Musicians.
                             </p>
+                            <img className='divider' src={divider2} alt="ornate-divider" />
+
                         </div>
 
                         <img className='heraldry' id='right' src={wiz} alt="krezket" />
