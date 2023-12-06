@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { Link, Element } from 'react-scroll';
 import wiz from '../../assets/wizbiz/wizard.gif'
 import divider1 from '../../assets/dividers/SilverGlitterBottem.gif'
@@ -10,10 +9,10 @@ import './Homepage.css'
 
 export default function Homepage(props) {
     console.log(props)
-    const navigate = useNavigate();
     const [animate, setAnimate] = useState(false);
     const style = window.localStorage.getItem('style')
 
+    // ANIMATE ON ARRIVAL
     useEffect(() => {
         const timeout = setTimeout(() => {
             setAnimate(true);
@@ -22,6 +21,7 @@ export default function Homepage(props) {
         return () => clearTimeout(timeout);
     }, []);
 
+    // ANIMATE ON CLICK
     const commonLogic = () => {
         setAnimate(false);
         const timeout = setTimeout(() => {
@@ -31,6 +31,7 @@ export default function Homepage(props) {
         return () => clearTimeout(timeout);
     };
 
+    // SWITCH TO MODERN STYLE
     const modernToggle = e => {
         e.preventDefault()
         if (style === 'old-web') {
@@ -42,6 +43,7 @@ export default function Homepage(props) {
         props.setStateModern("modern")
     }
 
+    // SWITCH TO OLD WEB STYLE
     const oldWebToggle = e => {
         e.preventDefault()
 
@@ -55,7 +57,7 @@ export default function Homepage(props) {
         <>
             {style === 'modern' || props.stateModern === 'modern' ?
                 <>
-                    <aside className='mod-aside'>
+                    <header className='mod-header'>
                         <h1>
                             KREZKET
                         </h1>
@@ -74,10 +76,10 @@ export default function Homepage(props) {
                         <h2>
                             <Link smooth={true} duration={500} to='section5' href="">Contact us</Link>
                         </h2>
-                    </aside>
+                    </header>
                     <div className='mod-div'>
                         <div className='mod-con'>
-                            <header className='mod-header'>
+                            <header className='mod-title'>
                                 <div className='style'>
                                     <button onClick={oldWebToggle}>Old Web</button>
                                     <button onClick={modernToggle}>Modern</button>
@@ -142,10 +144,6 @@ export default function Homepage(props) {
                             <p className='ow-p'>
                                 Web Design for Artists, Creators, and Musicians.
                             </p>
-                            <div className='style-2'>
-                                <button onClick={oldWebToggle}>Old Web</button>
-                                <button onClick={modernToggle}>Modern</button>
-                            </div>
                         </div>
 
                         <img className='heraldry' id='right' src={wiz} alt="krezket" />
