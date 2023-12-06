@@ -211,17 +211,7 @@ and (max-width : 650px) {
 and (min-width : 0px)
 and (max-width : 1248px) {
     .heraldry {
-        width: 100px;
-    }
-}
-@media only screen
-and (min-width : 0px)
-and (max-width : 610px) {
-    .ow-header {
-        justify-content: center;
-    }
-    .heraldry {
-        display: none;
+        width: 130px;
     }
 }
 #left {
@@ -246,15 +236,15 @@ and (max-width : 1248px) {
     .ow-h1 {
         font-size: 50px;
     }
+    .divider {
+        width: 50%;
+    }
 }
 @media only screen
 and (min-width : 0px)
 and (max-width : 752px) {
     .ow-h1 {
         font-size: 47px;
-    }
-    .divider {
-        width: 90px;
     }
 }
 .ow-p {
@@ -287,6 +277,12 @@ and (min-width : 0px)
 and (max-width : 855px) {
     .ow-section-left {
         display: none;
+    }
+    .heraldry {
+        display: none;
+    }
+    .ow-header {
+        justify-content: center;
     }
 }
 /* MID */

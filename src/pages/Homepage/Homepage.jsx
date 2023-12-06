@@ -104,7 +104,7 @@ export default function Homepage(props) {
                                 Services
                             </h2>
                             <h1>
-                                As a Certified Full-Stack Web Developer, I have the ability to build sites with behind the scenes, server side functionality.
+                            As a Certified Full-Stack Web Developer, I have the ability to build sites with server side functionality.
                             </h1>
                         </Element>
 
@@ -185,7 +185,7 @@ export default function Homepage(props) {
                                     Services
                                 </h2>
                                 <p>
-                                    As a Certified Full-Stack Web Developer, I have the ability to build sites with behind the scenes, server side functionality.
+                                    As a Certified Full-Stack Web Developer, I have the ability to build sites with server side functionality.
                                 </p>
                             </div>
                         </section>
