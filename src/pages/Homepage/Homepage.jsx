@@ -84,18 +84,21 @@ export default function Homepage(props) {
                             <Link smooth={true} duration={500} to='section5' href="">Contact</Link>
                         </h2>
                     </header>
+
                     <div className='mod-div'>
                         <div className='mod-con'>
-                            <header className='mod-title'>
                                 <div className='style-modern'>
                                     <div className={ switchOn === false ? 'style-0' : 'style-1'}>
                                         <a onClick={oldWebToggle}>Old Web</a>
                                     </div>
                                     <button onClick={toggleSwitch}>x</button>
                                 </div>
+                            <header className='mod-title'>
+
                                 <h1 className={`animated-heading ${animate ? 'animate-up' : ''}`}>KREZKET.NET</h1>
                             </header>
                         </div>
+
                         <Element name='section1' className='mod-section-1'>
                             <h2>
                                 Intro

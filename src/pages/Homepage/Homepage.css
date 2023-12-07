@@ -1,16 +1,20 @@
 .style-modern {
     display: flex;
-    /* position: absolute; */
+    position: absolute;
     justify-content: row;
+    right: 30px;
+    bottom: 570px;
 }
 .style-0 {
     display: none;
 }
 .style-1 {
-    display: flex;
+    margin: 0 10px 0 10px;
     color: white;
 }
 
+/* MODERN HEADER */
+/* MODERN HEADER */
 /* MODERN HEADER */
 .mod-header {
     display: flex;
@@ -76,6 +80,9 @@ and (max-height : 560px) {
     color: black;
     text-decoration: line-through;
 }
+
+/* MODERN TITLE */
+/* MODERN TITLE */
 /* MODERN TITLE */
 .mod-div {
     display: flex;
@@ -91,16 +98,19 @@ and (max-width : 650px) {
 }
 .mod-con {
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/backgrounds/back-1.jpeg');
 }
 .mod-title {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0 50px 0 0;
-    height: 100vh;
+    /* padding: 0 50px 0 0; */
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8), black);
     color: darkred;
 }
 
@@ -109,7 +119,7 @@ and (max-width : 650px) {
     transform: translateX(-33px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
-  
+
 .animate-up {
     opacity: 1;
     transform: translateX(0);
@@ -118,7 +128,7 @@ and (max-width : 650px) {
 .mod-title h1 {
     font-size: 150px;
     font-family: faster one;
-    padding-bottom: 77px;
+    padding: 77px 50px 77px 0;
     margin: 0;
 }
 @media only screen
@@ -183,6 +193,8 @@ and (max-width : 650px) {
     }
 }
 
+/* OLD WEB HEADER */
+/* OLD WEB HEADER */
 /* OLD WEB HEADER */
 .ow-div {
     display: flex;
@@ -266,6 +278,8 @@ and (max-width : 752px) {
     margin-bottom: 50px;
 }
 /* OLD WEB SECTIONS */
+/* OLD WEB SECTIONS */
+/* OLD WEB SECTIONS */
 .ow-main {
     display: flex;
     flex-direction: row;
@@ -275,6 +289,7 @@ and (max-width : 752px) {
     padding-top: 10px;
     background-color: black;
 }
+/* LEFT */
 /* LEFT */
 .ow-section-left {
     display: flex;
@@ -300,6 +315,7 @@ and (max-width : 855px) {
     }
 }
 /* MID */
+/* MID */
 .ow-section-mid {
     display: flex;
     flex-direction: column;
@@ -320,6 +336,7 @@ and (max-width : 752px) {
 .ow-section-mid p {
     margin-top: 0;
 }
+/* RIGHT */
 /* RIGHT */
 .ow-section-right {
     display: flex;
