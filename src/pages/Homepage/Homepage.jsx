@@ -4,7 +4,6 @@ import wiz from '../../assets/wizbiz/wizard.gif'
 import divider1 from '../../assets/dividers/SilverGlitterBottem.gif'
 import question from '../../assets/gifs/q.gif'
 import divider2 from '../../assets/dividers/jewel_break.gif'
-// import divider1 from '../../assets/dividers/bolt.gif'
 import './Homepage.css'
 
 export default function Homepage(props) {
@@ -55,15 +54,10 @@ export default function Homepage(props) {
         props.setStateOldWeb("old-web")
     }
 
+    // TOGGLE SWITCH
     const toggleSwitch = e => {
         e.preventDefault()
-
-        if (switchOn === false) {
-            setSwitchOn(true)
-        }
-        else {
-            setSwitchOn(false)
-        }
+        switchOn === false ? setSwitchOn(true) : setSwitchOn(false)
     }
 
     return (
@@ -93,12 +87,12 @@ export default function Homepage(props) {
                     <div className='mod-div'>
                         <div className='mod-con'>
                             <header className='mod-title'>
-                            <div className={style === 'modern' ? 'style-modern' : ''}>
-                                <div className={ switchOn === false ? 'style-0' : 'style-1'}>
-                                    <a onClick={oldWebToggle}>Old Web</a>
+                                <div className='style-modern'>
+                                    <div className={ switchOn === false ? 'style-0' : 'style-1'}>
+                                        <a onClick={oldWebToggle}>Old Web</a>
+                                    </div>
+                                    <button onClick={toggleSwitch}>x</button>
                                 </div>
-                                <button onClick={toggleSwitch}>x</button>
-                            </div>
                                 <h1 className={`animated-heading ${animate ? 'animate-up' : ''}`}>KREZKET.NET</h1>
                             </header>
                         </div>
