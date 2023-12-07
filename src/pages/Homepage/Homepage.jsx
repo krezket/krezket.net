@@ -4,13 +4,33 @@ import wiz from '../../assets/wizbiz/wizard.gif'
 import divider1 from '../../assets/dividers/SilverGlitterBottem.gif'
 import question from '../../assets/gifs/q.gif'
 import divider2 from '../../assets/dividers/jewel_break.gif'
-import './Homepage.css'
+import './Homepage.css';
+
+import bg1 from '../../assets/backgrounds/back-1.jpeg'
+import bg2 from '../../assets/backgrounds/back-2.jpeg'
 
 export default function Homepage(props) {
     console.log(props)
     const [animate, setAnimate] = useState(false);
     const [switchOn, setSwitchOn ] = useState(false);
     const style = window.localStorage.getItem('style')
+
+    const slides = [
+        {url: `${bg1}`, title: "one"},
+        {url: `${bg2}`, title: "two"},
+    ]
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const slideStyles = {
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "flex-end",
+        width: "100%",
+        height: "100vh",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundImage: `url("${slides[currentIndex].url}")`
+    }
 
     // ANIMATE ON ARRIVAL
     useEffect(() => {
@@ -86,15 +106,14 @@ export default function Homepage(props) {
                     </header>
 
                     <div className='mod-div'>
-                        <div className='mod-con'>
-                                <div className='style-modern'>
-                                    <div className={ switchOn === false ? 'style-0' : 'style-1'}>
-                                        <a onClick={oldWebToggle}>Old Web</a>
-                                    </div>
-                                    <button onClick={toggleSwitch}>x</button>
+                        <div style={slideStyles}>
+                            <div className='style-modern'>
+                                <div className={ switchOn === false ? 'style-0' : 'style-1'}>
+                                    <a onClick={oldWebToggle}>Old Web</a>
                                 </div>
+                                <button onClick={toggleSwitch}>x</button>
+                            </div>
                             <header className='mod-title'>
-
                                 <h1 className={`animated-heading ${animate ? 'animate-up' : ''}`}>KREZKET.NET</h1>
                             </header>
                         </div>
