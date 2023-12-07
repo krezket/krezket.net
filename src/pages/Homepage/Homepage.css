@@ -41,7 +41,7 @@ and (max-width : 650px) {
     font-family: faster one;
     position: absolute;
     top: 150px;
-    left: -55px;
+    left: -50px;
 }
 @media only screen
 and (min-height : 0px)
@@ -49,7 +49,7 @@ and (max-height : 777px) {
     .mod-header h1 {
         font-size: 26px;
         top: 110px;
-        left: -20px;
+        left:-15px;
     }
 }
 @media only screen
