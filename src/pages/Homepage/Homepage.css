@@ -111,7 +111,7 @@ and (max-width : 650px) {
     align-items: flex-end;
     /* padding: 0 50px 0 0; */
     background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8), black);
-    color: darkred;
+    color: red;
 }
 
 .animated-heading {
