@@ -61,15 +61,6 @@ and (max-height : 620px) {
         left: -5px;
     }
 }
-@media only screen
-and (min-height : 0px)
-and (max-height : 560px) {
-    .mod-header h1 {
-        font-size: 20px;
-        transform: translateY(-90px) rotate(0deg);
-        left: -3px;
-    }
-}
 .mod-header a {
     color: white;
     font-size: 15px;
@@ -191,6 +182,22 @@ and (max-width : 650px) {
         padding-left: 10px;
         padding-right: 10px;
         color: white;
+
+    }
+}
+@media only screen and (min-height : 0px) and (max-height : 560px) {
+    .mod-header h1 {
+        font-size: 20px;
+        transform: translateY(-90px) rotate(0deg);
+        left: 7px;
+    }
+
+    .mod-section-1,
+    .mod-section-2,
+    .mod-section-3,
+    .mod-section-4,
+    .mod-section-5 {
+        margin-bottom: 270px;
 
     }
 }
