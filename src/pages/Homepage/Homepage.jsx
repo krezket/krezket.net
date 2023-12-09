@@ -29,7 +29,8 @@ export default function Homepage(props) {
         height: "100vh",
         backgroundPosition: "center",
         backgroundSize: "cover",
-        backgroundImage: `url("${slides[currentIndex].url}")`
+        backgroundImage: `url("${slides[currentIndex].url}")`,
+        marginBottom: "150px"
     }
 
     // ANIMATE ON ARRIVAL

@@ -23,7 +23,7 @@
     text-align: center;
     position: fixed;
     background-color: darkred;
-    padding: 0 20px 0 20px;
+    padding: 0 30px 0 30px;
     height: 100vh;
     /* border: 1px solid white; */
 }
@@ -111,7 +111,7 @@ and (max-width : 650px) {
     align-items: flex-end;
     /* padding: 0 50px 0 0; */
     background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8), black);
-    color: red;
+    color: rgb(197, 9, 9);
 }
 
 .animated-heading {
@@ -150,9 +150,13 @@ and (max-width : 1111px) {
 .mod-section-3,
 .mod-section-4,
 .mod-section-5 {
+    display: flex;
+    flex-direction: column;
+    
+    width: 50%;
     height: 100vh;
-    padding-left: 130px;
-    padding-right: 100px;
+    /* padding-left: 160px; */
+    /* padding-right: 70px; */
     color: white;
 
 }
@@ -161,7 +165,7 @@ and (max-width : 1111px) {
 .mod-section-3 h1,
 .mod-section-4 h1,
 .mod-section-5 h1 {
-    font-size: 40px;
+    font-size: 45px;
     font-family: sans-serif;
 }
 .mod-section-1 h2,
