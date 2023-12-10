@@ -37,7 +37,7 @@ and (max-width : 650px) {
 .mod-header h1 {
     margin: 0;
     font-size: 40px;
-    transform: translateY(-50px) rotate(-90deg);
+    transform: translateX(10px) translateY(-50px) rotate(-90deg);
     font-family: faster one;
     position: absolute;
     top: 150px;
@@ -128,10 +128,7 @@ and (max-width : 1111px) {
     
     width: 50%;
     height: 100vh;
-    /* padding-left: 160px; */
-    /* padding-right: 70px; */
     color: white;
-
 }
 .mod-section-1 h1,
 .mod-section-2 h1, 

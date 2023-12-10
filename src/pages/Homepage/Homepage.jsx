@@ -20,6 +20,18 @@ export default function Homepage(props) {
         {url: `${bg2}`, title: "two"},
     ]
     const [currentIndex, setCurrentIndex] = useState(0);
+    useEffect(() => {
+        // Function to update the currentIndex
+        const nextSlide = () => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+        };
+
+        // Set up an interval to switch slides every 3 seconds
+        const intervalId = setInterval(nextSlide, 3000);
+
+        // Clear the interval when the component unmounts
+        return () => clearInterval(intervalId);
+    }, []); // Empty dependency array to run the effect only once
 
     const slideStyles = {
         display: "flex",
