@@ -140,6 +140,7 @@ and (max-width : 1111px) {
 .mod-section-5 h1 {
     font-size: 45px;
     font-family: sans-serif;
+    margin-bottom: 0;
 }
 .mod-section-1 h2,
 .mod-section-2 h2, 
@@ -147,6 +148,7 @@ and (max-width : 1111px) {
 .mod-section-4 h2,
 .mod-section-5 h2 {
     font-family: sans-serif;
+    margin-bottom: 0;
 }
 @media only screen
 and (min-width : 0px)
