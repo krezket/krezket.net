@@ -37,7 +37,7 @@ and (max-width : 650px) {
 .mod-header h1 {
     margin: 0;
     font-size: 40px;
-    transform: translateX(10px) translateY(-50px) rotate(-90deg);
+    transform: translateY(-50px) rotate(-90deg);
     font-family: faster one;
     position: absolute;
     top: 150px;
