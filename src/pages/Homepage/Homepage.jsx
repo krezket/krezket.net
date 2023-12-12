@@ -10,29 +10,16 @@ import bg1 from '../../assets/backgrounds/back-1.jpeg'
 import bg2 from '../../assets/backgrounds/back-2.jpeg'
 
 export default function Homepage(props) {
-    console.log(props)
+    // console.log(props)
+    const style = window.localStorage.getItem('style')
     const [animate, setAnimate] = useState(false);
     const [switchOn, setSwitchOn ] = useState(false);
-    const style = window.localStorage.getItem('style')
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     const slides = [
         {url: `${bg1}`, title: "one"},
         {url: `${bg2}`, title: "two"},
     ]
-    const [currentIndex, setCurrentIndex] = useState(0);
-    useEffect(() => {
-        // Function to update the currentIndex
-        const nextSlide = () => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-        };
-
-        // Set up an interval to switch slides every 3 seconds
-        const intervalId = setInterval(nextSlide, 3000);
-
-        // Clear the interval when the component unmounts
-        return () => clearInterval(intervalId);
-    }, []); // Empty dependency array to run the effect only once
-
     const slideStyles = {
         display: "flex",
         flexDirection: "column",
@@ -44,6 +31,15 @@ export default function Homepage(props) {
         backgroundImage: `url("${slides[currentIndex].url}")`,
         marginBottom: "150px"
     }
+
+    // MODERN CAROUSEL
+    useEffect(() => {
+        const nextSlide = () => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+        };
+        const intervalId = setInterval(nextSlide, 3000);
+        return () => clearInterval(intervalId);
+    }, []);
 
     // ANIMATE ON ARRIVAL
     useEffect(() => {
