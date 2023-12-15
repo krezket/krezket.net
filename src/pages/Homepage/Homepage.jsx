@@ -117,7 +117,8 @@ export default function Homepage(props) {
                     </header>
 
                     <div className='mod-div'>
-                        <div style={slideStyles}>
+                        
+                        <div className='mod-section-0' style={slideStyles}>
                             <div className='style-modern'>
                                 <div className={switchOn === false ? 'style-0' : 'style-1'}>
                                     <a onClick={oldWebToggle}>Old Web</a>
