@@ -13,12 +13,12 @@ export default function Homepage(props) {
     // console.log(props)
     const style = window.localStorage.getItem('style')
     const [animate, setAnimate] = useState(false);
-    const [switchOn, setSwitchOn ] = useState(false);
+    const [switchOn, setSwitchOn] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const slides = [
-        {url: `${bg1}`, title: "one"},
-        {url: `${bg2}`, title: "two"},
+        { url: `${bg1}`, title: "one" },
+        { url: `${bg2}`, title: "two" },
     ]
     const slideStyles = {
         display: "flex",
@@ -94,9 +94,11 @@ export default function Homepage(props) {
             {style === 'modern' || props.stateModern === 'modern' ?
                 <>
                     <header className='mod-header'>
-                        <h1>
-                            KREZKET
-                        </h1>
+                        <div className="mod-h1">
+                            <h1>
+                                KREZKET
+                            </h1>
+                        </div>
                         <h2>
                             <Link smooth={true} duration={500} to='section1' href="">Intro</Link>
                         </h2>
@@ -117,7 +119,7 @@ export default function Homepage(props) {
                     <div className='mod-div'>
                         <div style={slideStyles}>
                             <div className='style-modern'>
-                                <div className={ switchOn === false ? 'style-0' : 'style-1'}>
+                                <div className={switchOn === false ? 'style-0' : 'style-1'}>
                                     <a onClick={oldWebToggle}>Old Web</a>
                                 </div>
                                 <button onClick={toggleSwitch}>x</button>

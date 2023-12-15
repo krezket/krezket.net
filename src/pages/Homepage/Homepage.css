@@ -18,12 +18,12 @@
 /* MODERN HEADER */
 .mod-header {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     position: fixed;
     background-color: darkred;
-    padding: 0 30px 0 30px;
     height: 100vh;
     /* border: 1px solid white; */
 }
@@ -34,14 +34,15 @@ and (max-width : 650px) {
         display: none;
     }
 }
+.mod-h1 {
+    margin-bottom: 30px;
+}
 .mod-header h1 {
     margin: 0;
     font-size: 40px;
     transform: translateY(-50px) rotate(-90deg);
     font-family: faster one;
-    position: absolute;
-    top: 150px;
-    left: -50px;
+    width: 140px;
 }
 .mod-header a {
     color: white;
@@ -169,11 +170,6 @@ and (max-width : 650px) {
 @media only screen
 and (min-height : 0px)
 and (max-height : 777px) {
-    .mod-header h1 {
-        font-size: 26px;
-        top: 110px;
-        left: -20px;
-    }
     .mod-section-1,
     .mod-section-2,
     .mod-section-3,
@@ -183,22 +179,7 @@ and (max-height : 777px) {
 
     }
 }
-@media only screen
-and (min-height : 0px)
-and (max-height : 620px) {
-    .mod-header h1 {
-        font-size: 20px;
-        top: 110px;
-        left: -5px;
-    }
-}
-@media only screen and (min-height : 0px) and (max-height : 600px) {
-    .mod-header h1 {
-        font-size: 20px;
-        transform: translateY(-90px) rotate(0deg);
-        left: 7px;
-    }
-}
+
 
 /* OLD WEB HEADER */
 /* OLD WEB HEADER */
