@@ -123,7 +123,7 @@ export default function Homepage(props) {
                                 <div className={switchOn === false ? 'style-0' : 'style-1'}>
                                     <a onClick={oldWebToggle}>Old Web</a>
                                 </div>
-                                <button onClick={toggleSwitch}>x</button>
+                                <button onClick={toggleSwitch}>X</button>
                             </div>
                             <header className='mod-title'>
                                 <h1 className={`animated-heading ${animate ? 'animate-up' : ''}`}>KREZKET.NET</h1>
@@ -138,7 +138,7 @@ export default function Homepage(props) {
                                 Krezket is a brand / platform for myself, Anthony Guerrero. I'm a Certified Full-Stack Web Developer with a passion for music, art, and design.
                             </h1>
                             <h1>
-                                I strive to be a reliable freelance web designer for a wide-range of creative media outlets.
+                                I strive to be a reliable freelance web designer across a wide-range of creative media outlets.
                             </h1>
                         </Element>
 

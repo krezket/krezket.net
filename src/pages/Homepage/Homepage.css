@@ -5,6 +5,10 @@
     right: 30px;
     bottom: 570px;
 }
+.style-modern button {
+    background-color: azure;
+    color: red;
+}
 .style-0 {
     display: none;
 }
@@ -34,7 +38,7 @@
     margin: 0;
     font-size: 40px;
     transform: translateY(-50px) rotate(-90deg);
-    font-family: faster one;
+    font-family: russo one;
     width: 140px;
 }
 .mod-header a {
@@ -92,7 +96,7 @@ and (max-width : 650px) {
 
 .mod-title h1 {
     font-size: 150px;
-    font-family: faster one;
+    font-family: russo one;
     padding: 77px 50px 77px 0;
     margin: 0;
 }
