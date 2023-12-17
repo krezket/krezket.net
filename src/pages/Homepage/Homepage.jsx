@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Link, Element } from 'react-scroll';
 import wiz from '../../assets/wizbiz/wizard.gif'
-import divider1 from '../../assets/dividers/SilverGlitterBottem.gif'
-import question from '../../assets/gifs/q.gif'
-import divider2 from '../../assets/dividers/jewel_break.gif'
+import divider1 from '../../assets/dividers/SilverGlitterBottem.gif';
+import question from '../../assets/gifs/q.gif';
+import divider2 from '../../assets/dividers/jewel_break.gif';
+import hammer from '../../assets/gifs/hammer02.gif';
 import './Homepage.css';
 
 import bg1 from '../../assets/backgrounds/back-1.jpeg'
@@ -210,7 +211,6 @@ export default function Homepage(props) {
                         <section className='ow-section-mid'>
                             <div className='ow-section-mid-con-1'>
                                 <h2>
-                                    <img className='huh' src={question} alt="?" />
                                     What is Krezket
                                     <img className='huh' src={question} alt="?" />
                                 </h2>
@@ -224,6 +224,7 @@ export default function Homepage(props) {
                             <div>
                                 <h2>
                                     Services
+                                    <img className='huh' src={hammer} alt="?" />
                                 </h2>
                                 <p>
                                     As a Certified Full-Stack Web Developer, I have the ability to build sites with server side functionality.
