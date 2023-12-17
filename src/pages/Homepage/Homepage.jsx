@@ -169,7 +169,8 @@ export default function Homepage(props) {
                             <h2>
                                 Contact
                             </h2>
-
+                            <a href="https://instagram.com/krezket" target="_blank" rel="noreferrer">Instagram</a>
+                            <a href="https://github.com/krezket" target="_blank" rel="noreferrer">GitHub</a>
                         </Element>
                     </div>
                 </>
@@ -217,7 +218,7 @@ export default function Homepage(props) {
                                     Krezket is a brand / platform for myself, Anthony Guerrero. I'm a Certified Full Stack Web Developer with a passion for music, art, and design.
                                 </p>
                                 <p>
-                                    I strive to be a reliable freelance web designer for a wide-range of creative media outlets.
+                                    I strive to be a reliable freelance web designer across a wide-range of creative media outlets.
                                 </p>
                             </div>
                             <div>
@@ -232,6 +233,8 @@ export default function Homepage(props) {
 
                         <section className='ow-section-right'>
                             <p>Other Links:</p>
+                            <a href="https://instagram.com/krezket" target="_blank" rel="noreferrer">Instagram</a>
+                            <a href="https://github.com/krezket" target="_blank" rel="noreferrer">GitHub</a>
                         </section>
 
                     </main>
