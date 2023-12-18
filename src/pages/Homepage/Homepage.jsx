@@ -10,6 +10,7 @@ import './Homepage.css';
 
 import bg1 from '../../assets/backgrounds/back-1.jpeg'
 import bg2 from '../../assets/backgrounds/back-2.jpeg'
+import bg4 from '../../assets/backgrounds/fan.jpeg'
 
 export default function Homepage(props) {
     // console.log(props)
@@ -21,6 +22,7 @@ export default function Homepage(props) {
     const slides = [
         { url: `${bg1}`, title: "one" },
         { url: `${bg2}`, title: "two" },
+        { url: `${bg4}`, title: "four" },
     ]
     const slideStyles = {
         display: "flex",
