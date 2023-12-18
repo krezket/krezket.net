@@ -29,7 +29,6 @@
     height: 100vh;
     /* border: 1px solid white; */
 }
-
 .mod-h1 {
     margin-bottom: 30px;
 }
@@ -60,21 +59,6 @@
     flex-direction: column;
     align-items: center;
 }
-@media only screen
-and (min-width : 0px)
-and (max-width : 650px) {
-    .mod-div {
-        justify-content: center;
-    }
-}
-/* .mod-con {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    width: 100%;
-    height: 100vh;
-    background-image: url('../../assets/backgrounds/back-1.jpeg');
-} */
 .mod-title {
     display: flex;
     flex-direction: column;
@@ -99,33 +83,6 @@ and (max-width : 650px) {
     font-family: russo one;
     padding: 77px 50px 77px 0;
     margin: 0;
-}
-@media only screen
-and (min-width : 0px)
-and (max-width : 1070px) {
-    .mod-header {
-        display: none;
-    }
-    .mod-section-0 {
-        align-items: center;
-    }
-    .mod-title {
-        width: 100%;
-    }
-}
-@media only screen
-and (min-width : 0px)
-and (max-width : 1776px) {
-    .mod-title h1 {
-        font-size: 100px;
-    }
-}
-@media only screen
-and (min-width : 0px)
-and (max-width : 1111px) {
-    .mod-title h1 {
-        font-size: 50px;
-    }
 }
 .mod-section-1,
 .mod-section-2,
@@ -156,6 +113,143 @@ and (max-width : 1111px) {
     font-family: sans-serif;
     margin-bottom: 0;
 }
+
+/* OLD WEB HEADER */
+/* OLD WEB HEADER */
+/* OLD WEB HEADER */
+.ow-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 50px 0px 50px;
+    background-image: url(../../assets/images/black-wood.jpg);
+    /* background-image: url(../../assets/backgrounds/blackrose.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x; */
+    height: auto;
+}
+
+.ow-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* justify-content: center; */
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    background-color: black;
+}
+.heraldry {
+    width: 200px;
+}
+#left {
+    padding-left: 15px;
+}
+
+#right {
+    padding-right: 15px;
+}
+.ow-h1-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ow-h1 {
+    margin: 0;
+    color: darkred;
+}
+.ow-p {
+    color: white;
+    margin-bottom: 50px;
+}
+/* OLD WEB SECTIONS */
+/* OLD WEB SECTIONS */
+/* OLD WEB SECTIONS */
+.ow-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding-top: 10px;
+    background-color: black;
+}
+/* LEFT */
+/* LEFT */
+.ow-section-left {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+    border-right: 1px solid white;
+}
+/* MID */
+/* MID */
+.ow-section-mid {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    color: white;
+}
+.ow-section-mid p {
+    margin-top: 0;
+}
+/* RIGHT */
+/* RIGHT */
+.ow-section-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 1px solid white;
+}
+
+/* MEDIA */
+@media only screen
+and (min-width : 0px)
+and (max-width : 650px) {
+    .mod-div {
+        justify-content: center;
+    }
+}
+
+@media only screen
+and (min-width : 0px)
+and (max-width : 1070px) {
+    .mod-header {
+        display: none;
+    }
+    .mod-section-0 {
+        align-items: center;
+    }
+    .mod-title {
+        width: 100%;
+    }
+}
+@media only screen
+and (min-width : 0px)
+and (max-width : 1776px) {
+    .mod-title h1 {
+        font-size: 100px;
+    }
+}
+@media only screen
+and (min-width : 0px)
+and (max-width : 1111px) {
+    .mod-title h1 {
+        font-size: 50px;
+    }
+}
+
 @media only screen
 and (min-width : 0px)
 and (max-width : 650px) {
@@ -204,23 +298,6 @@ and (max-height : 1000px) {
     }
 }
 
-
-/* OLD WEB HEADER */
-/* OLD WEB HEADER */
-/* OLD WEB HEADER */
-.ow-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px 50px 0px 50px;
-    background-image: url(../../assets/images/black-wood.jpg);
-    /* background-image: url(../../assets/backgrounds/blackrose.jpg); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* background-repeat: repeat-x; */
-    height: auto;
-}
 @media only screen
 and (min-width : 0px)
 and (max-width : 650px) {
@@ -231,20 +308,7 @@ and (max-width : 650px) {
         padding: 0;
     }
 }
-.ow-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* justify-content: center; */
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    padding-top: 20px;
-    background-color: black;
-}
-.heraldry {
-    width: 200px;
-}
+
 @media only screen
 and (min-width : 0px)
 and (max-width : 1248px) {
@@ -252,22 +316,7 @@ and (max-width : 1248px) {
         width: 130px;
     }
 }
-#left {
-    padding-left: 15px;
-}
 
-#right {
-    padding-right: 15px;
-}
-.ow-h1-con {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.ow-h1 {
-    margin: 0;
-    color: darkred;
-}
 @media only screen
 and (min-width : 0px)
 and (max-width : 1248px) {
@@ -285,34 +334,6 @@ and (max-width : 752px) {
         font-size: 47px;
     }
 }
-.ow-p {
-    color: white;
-    margin-bottom: 50px;
-}
-/* OLD WEB SECTIONS */
-/* OLD WEB SECTIONS */
-/* OLD WEB SECTIONS */
-.ow-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-    padding-top: 10px;
-    background-color: black;
-}
-/* LEFT */
-/* LEFT */
-.ow-section-left {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-right: 20px;
-    border-right: 1px solid white;
-}
 @media only screen
 and (min-width : 0px)
 and (max-width : 855px) {
@@ -326,14 +347,6 @@ and (max-width : 855px) {
         justify-content: center;
     }
 }
-/* MID */
-/* MID */
-.ow-section-mid {
-    display: flex;
-    flex-direction: column;
-    width: 55%;
-    color: white;
-}
 @media only screen
 and (min-width : 0px)
 and (max-width : 752px) {
@@ -345,21 +358,7 @@ and (max-width : 752px) {
         padding: 0 10px 0 10px;
     }
 }
-.ow-section-mid p {
-    margin-top: 0;
-}
-/* RIGHT */
-/* RIGHT */
-.ow-section-right {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-left: 20px;
-    border-left: 1px solid white;
-}
+
 @media only screen
 and (min-width : 0px)
 and (max-width : 855px) {
