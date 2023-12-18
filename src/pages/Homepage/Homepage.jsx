@@ -33,7 +33,8 @@ export default function Homepage(props) {
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundImage: `url("${slides[currentIndex].url}")`,
-        marginBottom: "150px"
+        marginBottom: "150px",
+        transition: "background-image 1s ease"
     }
 
     // MODERN CAROUSEL
