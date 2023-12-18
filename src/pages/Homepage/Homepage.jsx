@@ -2,9 +2,10 @@ import { useEffect, useState } from 'react';
 import { Link, Element } from 'react-scroll';
 import wiz from '../../assets/wizbiz/wizard.gif'
 import divider1 from '../../assets/dividers/SilverGlitterBottem.gif';
-import question from '../../assets/gifs/q.gif';
 import divider2 from '../../assets/dividers/jewel_break.gif';
+import question from '../../assets/gifs/q.gif';
 import hammer from '../../assets/gifs/hammer02.gif';
+import mail from '../../assets/gifs/mail.gif';
 import './Homepage.css';
 
 import bg1 from '../../assets/backgrounds/back-1.jpeg'
@@ -230,6 +231,15 @@ export default function Homepage(props) {
                                     As a Certified Full-Stack Web Developer, I have the ability to build sites with server side functionality.
                                 </p>
                             </div>
+                            <div>
+                                <h2>
+                                    Contact
+                                    <img className='huh' src={mail} alt="?" />
+                                </h2>
+                                <p>
+                                    As a Certified Full-Stack Web Developer, I have the ability to build sites with server side functionality.
+                                </p>
+                            </div>
                         </section>
 
                         <section className='ow-section-right'>
@@ -239,10 +249,6 @@ export default function Homepage(props) {
                         </section>
 
                     </main>
-
-                    <footer>
-                        Specify your offer, list your skills. Based on your skills, list down your services, and for each service write down a list of deliverables.
-                    </footer>
                 </div>
             }
         </>
