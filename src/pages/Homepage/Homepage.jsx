@@ -97,9 +97,7 @@ export default function Homepage(props) {
                 <>
                     <header className='mod-header'>
                         <div className="mod-h1">
-                            <h1>
-                                KREZKET
-                            </h1>
+                            <Link smooth={true} duration={500} to='section0' href=""><h1>KREZKET</h1></Link>
                         </div>
                         <h2>
                             <Link smooth={true} duration={500} to='section1' href="">Intro</Link>
@@ -120,7 +118,7 @@ export default function Homepage(props) {
 
                     <div className='mod-div'>
                         
-                        <div className='mod-section-0' style={slideStyles}>
+                        <Element name='section0' className='mod-section-0' style={slideStyles}>
                             <div className='style-modern'>
                                 <div className={switchOn === false ? 'style-0' : 'style-1'}>
                                     <a onClick={oldWebToggle}>Old Web</a>
@@ -130,7 +128,7 @@ export default function Homepage(props) {
                             <header className='mod-title'>
                                 <h1 className={`animated-heading ${animate ? 'animate-up' : ''}`}>KREZKET.NET</h1>
                             </header>
-                        </div>
+                        </Element>
 
                         <Element name='section1' className='mod-section-1'>
                             <h2>

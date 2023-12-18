@@ -39,6 +39,7 @@
     transform: translateY(-50px) rotate(-90deg);
     font-family: russo one;
     width: 140px;
+    color: black;
 }
 .mod-header a {
     color: white;
