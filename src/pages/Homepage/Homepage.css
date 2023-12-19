@@ -243,9 +243,6 @@ and (max-width : 1111px) {
 @media only screen
 and (min-width : 0px)
 and (max-width : 1070px) {
-    .mod-header {
-        display: none;
-    }
     .mod-section-0 {
         align-items: center;
     }
@@ -323,6 +320,10 @@ and (max-width : 650px) {
     }
     .mod-title {
         padding: 0;
+        align-items: center;
+    }
+    .mod-header {
+        display: none;
     }
     .mod-title {
         height: 150px;
