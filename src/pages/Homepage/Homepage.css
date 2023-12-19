@@ -143,12 +143,11 @@
     background-color: black;
 }
 .heraldry {
-    width: 200px;
+    width: 300px;
 }
 #left {
     padding-left: 15px;
 }
-
 #right {
     padding-right: 15px;
 }
@@ -231,7 +230,7 @@ and (max-width : 1248px) {
         width: 50%;
     }
     .heraldry {
-        width: 130px;
+        width: 200px;
     }
 }
 @media only screen
@@ -277,7 +276,7 @@ and (max-height : 1000px) {
 }
 @media only screen
 and (min-width : 0px)
-and (max-width : 855px) {
+and (max-width : 890px) {
     .ow-section-right {
         display: none;
     }
@@ -285,24 +284,29 @@ and (max-width : 855px) {
         display: none;
     }
     .heraldry {
-        display: none;
+        width: 50px;
+        margin-bottom: 111px;
+    }
+    #right,
+    #left {
+        padding: 0px;
     }
     .ow-header {
         justify-content: center;
+    }
+    .ow-section-mid {
+        width: 100%;
+        padding: 0 10px 0 10px;
+    }
+    .ow-p {
+        margin-bottom: 20px;
     }
 }
 @media only screen
 and (min-width : 0px)
 and (max-width : 752px) {
-    .ow-h1 {
-        font-size: 47px;
-    }
     .ow-section-mid h2 {
         font-size: 20px;
-    }
-    .ow-section-mid {
-        width: 100%;
-        padding: 0 10px 0 10px;
     }
 }
 @media only screen
@@ -313,6 +317,9 @@ and (max-width : 650px) {
     }
     .ow-div {
         padding: 0px 10px 0px 10px;
+    }
+    .ow-h1 {
+        font-size: 30px;
     }
     .mod-title {
         padding: 0;
