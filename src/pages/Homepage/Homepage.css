@@ -216,12 +216,31 @@
 /* MEDIA */
 @media only screen
 and (min-width : 0px)
-and (max-width : 650px) {
-    .mod-div {
-        justify-content: center;
+and (max-width : 1776px) {
+    .mod-title h1 {
+        font-size: 100px;
     }
 }
-
+@media only screen
+and (min-width : 0px)
+and (max-width : 1248px) {
+    .ow-h1 {
+        font-size: 50px;
+    }
+    .divider {
+        width: 50%;
+    }
+    .heraldry {
+        width: 130px;
+    }
+}
+@media only screen
+and (min-width : 0px)
+and (max-width : 1111px) {
+    .mod-title h1 {
+        font-size: 50px;
+    }
+}
 @media only screen
 and (min-width : 0px)
 and (max-width : 1070px) {
@@ -234,47 +253,6 @@ and (max-width : 1070px) {
     .mod-title {
         width: 100%;
     }
-}
-@media only screen
-and (min-width : 0px)
-and (max-width : 1776px) {
-    .mod-title h1 {
-        font-size: 100px;
-    }
-}
-@media only screen
-and (min-width : 0px)
-and (max-width : 1111px) {
-    .mod-title h1 {
-        font-size: 50px;
-    }
-}
-
-@media only screen
-and (min-width : 0px)
-and (max-width : 650px) {
-    .mod-title {
-        height: 150px;
-    }
-    .mod-title h1 {
-        font-size: 50px;
-        padding: 0 30px 30px 30px;
-    }
-    .mod-section-1,
-    .mod-section-2,
-    .mod-section-3,
-    .mod-section-4,
-    .mod-section-5 {
-        height: 100vh;
-        padding-left: 10px;
-        padding-right: 10px;
-        color: white;
-
-    }
-}
-@media only screen
-and (min-width : 0px)
-and (max-width : 1070px) {
     .mod-section-1,
     .mod-section-2,
     .mod-section-3,
@@ -297,46 +275,12 @@ and (max-height : 1000px) {
 
     }
 }
-
-@media only screen
-and (min-width : 0px)
-and (max-width : 650px) {
-    .ow-div {
-        padding: 0px 10px 0px 10px;
-    }
-    .mod-title {
-        padding: 0;
-    }
-}
-
-@media only screen
-and (min-width : 0px)
-and (max-width : 1248px) {
-    .heraldry {
-        width: 130px;
-    }
-}
-
-@media only screen
-and (min-width : 0px)
-and (max-width : 1248px) {
-    .ow-h1 {
-        font-size: 50px;
-    }
-    .divider {
-        width: 50%;
-    }
-}
-@media only screen
-and (min-width : 0px)
-and (max-width : 752px) {
-    .ow-h1 {
-        font-size: 47px;
-    }
-}
 @media only screen
 and (min-width : 0px)
 and (max-width : 855px) {
+    .ow-section-right {
+        display: none;
+    }
     .ow-section-left {
         display: none;
     }
@@ -350,6 +294,9 @@ and (max-width : 855px) {
 @media only screen
 and (min-width : 0px)
 and (max-width : 752px) {
+    .ow-h1 {
+        font-size: 47px;
+    }
     .ow-section-mid h2 {
         font-size: 20px;
     }
@@ -358,11 +305,34 @@ and (max-width : 752px) {
         padding: 0 10px 0 10px;
     }
 }
-
 @media only screen
 and (min-width : 0px)
-and (max-width : 855px) {
-    .ow-section-right {
-        display: none;
+and (max-width : 650px) {
+    .mod-div {
+        justify-content: center;
+    }
+    .ow-div {
+        padding: 0px 10px 0px 10px;
+    }
+    .mod-title {
+        padding: 0;
+    }
+    .mod-title {
+        height: 150px;
+    }
+    .mod-title h1 {
+        font-size: 50px;
+        padding: 0 30px 30px 30px;
+    }
+    .mod-section-1,
+    .mod-section-2,
+    .mod-section-3,
+    .mod-section-4,
+    .mod-section-5 {
+        height: 100vh;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+
     }
 }
