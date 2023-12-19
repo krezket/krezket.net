@@ -10,7 +10,13 @@ import './Homepage.css';
 
 import bg1 from '../../assets/backgrounds/back-1.jpeg'
 import bg2 from '../../assets/backgrounds/back-2.jpeg'
-import bg4 from '../../assets/backgrounds/fan.jpeg'
+import bg3 from '../../assets/backgrounds/fan.jpeg'
+// import bg4 from '../../assets/backgrounds/kat.jpg'
+import bg5 from '../../assets/backgrounds/bli.jpg'
+import bg6 from '../../assets/backgrounds/man.jpg'
+import bg7 from '../../assets/backgrounds/dra.jpg'
+import bg8 from '../../assets/backgrounds/ato.jpeg'
+import bg9 from '../../assets/backgrounds/jac.jpg'
 
 export default function Homepage(props) {
     // console.log(props)
@@ -20,9 +26,15 @@ export default function Homepage(props) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const slides = [
+        { url: `${bg3}`, title: "three" },
         { url: `${bg1}`, title: "one" },
+        // { url: `${bg5}`, title: "five" },
+        // { url: `${bg4}`, title: "four" },
+        { url: `${bg8}`, title: "eight" },
+        // { url: `${bg6}`, title: "six" },
+        // { url: `${bg7}`, title: "seven" },
+        { url: `${bg9}`, title: "nine" },
         { url: `${bg2}`, title: "two" },
-        { url: `${bg4}`, title: "four" },
     ]
     const slideStyles = {
         display: "flex",
@@ -34,7 +46,7 @@ export default function Homepage(props) {
         backgroundSize: "cover",
         backgroundImage: `url("${slides[currentIndex].url}")`,
         marginBottom: "150px",
-        transition: "background-image 1s ease"
+        transition: "background-image 0.2s ease"
     }
 
     // MODERN CAROUSEL
@@ -42,7 +54,7 @@ export default function Homepage(props) {
         const nextSlide = () => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
         };
-        const intervalId = setInterval(nextSlide, 3000);
+        const intervalId = setInterval(nextSlide, 500);
         return () => clearInterval(intervalId);
     }, []);
 

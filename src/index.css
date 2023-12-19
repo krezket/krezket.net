@@ -19,6 +19,9 @@ body {
 h1 {
   font-size: 90px;
 }
+a {
+  cursor: pointer;
+}
 
 /* h1, h2, p {
   font-family: sans-serif;
