@@ -22,21 +22,17 @@
 .mod-header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     position: fixed;
     background-color: darkred;
     height: 100vh;
     /* border: 1px solid white; */
 }
-.mod-h1 {
-    margin-bottom: 30px;
-}
 .mod-header h1 {
     margin: 0;
-    font-size: 40px;
-    transform: translateY(-50px) rotate(-90deg);
-    font-family: russo one;
+    font-size: 50px;
+    transform: translateY(110px) rotate(-90deg);
     width: 140px;
     color: black;
 }
@@ -80,8 +76,7 @@
 
 .mod-title h1 {
     font-size: 150px;
-    font-family: russo one;
-    padding: 77px 50px 77px 0;
+    padding: 77px 77px 0 0;
     margin: 0;
 }
 .mod-section-1,
@@ -95,6 +90,9 @@
     width: 50%;
     height: 100vh;
     color: white;
+}
+#sep {
+    margin-top: 150px;
 }
 .mod-section-1 h1,
 .mod-section-2 h1, 
@@ -309,14 +307,14 @@ and (max-width : 752px) {
 @media only screen
 and (min-width : 0px)
 and (max-width : 650px) {
-    .mod-div {
-        justify-content: center;
-    }
     .ow-div {
         padding: 0px 10px 0px 10px;
     }
     .ow-h1 {
         font-size: 30px;
+    }
+    .mod-div {
+        justify-content: center;
     }
     .mod-title {
         padding: 0;

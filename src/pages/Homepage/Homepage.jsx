@@ -45,7 +45,6 @@ export default function Homepage(props) {
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundImage: `url("${slides[currentIndex].url}")`,
-        marginBottom: "150px",
         transition: "background-image 0.2s ease"
     }
 
@@ -116,11 +115,12 @@ export default function Homepage(props) {
                         <img className='heraldry' id='left' src={wiz} alt="krezket" />
 
                         <div className='ow-h1-con'>
-                            <h1 className='ow-h1'>
-                                KREZKET.NET
-                            </h1>
-
                             <img className='divider' src={divider1} alt="ornate-divider" />
+                            <h1 className='ow-h1'>
+                                KREZKET
+                            </h1>
+                            <img className='divider' src={divider1} alt="ornate-divider" />
+
 
                             <p className='ow-p'>
                                 Web Design for Artists, Creators, and Musicians.
@@ -189,38 +189,40 @@ export default function Homepage(props) {
                         <div className="mod-h1">
                             <Link smooth={true} duration={500} to='section0' href=""><h1>KREZKET</h1></Link>
                         </div>
-                        <h2>
-                            <Link smooth={true} duration={500} to='section1' href="">Intro</Link>
-                        </h2>
-                        <h2>
-                            <Link smooth={true} duration={500} to='section2' href="">Services</Link>
-                        </h2>
-                        <h2>
-                            <Link smooth={true} duration={500} to='section3' href="">Partners</Link>
-                        </h2>
-                        <h2>
-                            <Link smooth={true} duration={500} to='section4' href="">Clients</Link>
-                        </h2>
-                        <h2>
-                            <Link smooth={true} duration={500} to='section5' href="">Contact</Link>
-                        </h2>
+                        <div className="mod-h2-con">
+                            <h2>
+                                <Link smooth={true} duration={500} to='section1' href="">Intro</Link>
+                            </h2>
+                            <h2>
+                                <Link smooth={true} duration={500} to='section2' href="">Services</Link>
+                            </h2>
+                            <h2>
+                                <Link smooth={true} duration={500} to='section3' href="">Partners</Link>
+                            </h2>
+                            <h2>
+                                <Link smooth={true} duration={500} to='section4' href="">Clients</Link>
+                            </h2>
+                            <h2>
+                                <Link smooth={true} duration={500} to='section5' href="">Contact</Link>
+                            </h2>
+                        </div>
+                        <div className='style-modern'>
+                            <div className={switchOn === false ? 'style-0' : 'style-1'}>
+                                <a onClick={oldWebToggle}>Old Web</a>
+                            </div>
+                            <button onClick={toggleSwitch}>X</button>
+                        </div>
                     </header>
-
+ 
                     <div className='mod-div'>
 
                         <Element name='section0' className='mod-section-0' style={slideStyles}>
-                            <div className='style-modern'>
-                                <div className={switchOn === false ? 'style-0' : 'style-1'}>
-                                    <a onClick={oldWebToggle}>Old Web</a>
-                                </div>
-                                <button onClick={toggleSwitch}>X</button>
-                            </div>
                             <header className='mod-title'>
-                                <h1 className={`animated-heading ${animate ? 'animate-up' : ''}`}>KREZKET.NET</h1>
+                                <h1 className={`animated-heading ${animate ? 'animate-up' : ''}`}>KREZKET</h1>
                             </header>
                         </Element>
 
-                        <Element name='section1' className='mod-section-1'>
+                        <Element name='section1' className='mod-section-1' id='sep'>
                             <h2>
                                 Intro
                             </h2>
