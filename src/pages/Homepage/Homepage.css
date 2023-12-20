@@ -85,6 +85,7 @@
 }
 .mod-title p {
     /* margin: 0; */
+    font-family: sans-serif;
     font-size: 20px;
     margin: 0 0 20px 0;
     padding-right: 77px;
@@ -171,6 +172,9 @@
 .ow-p {
     color: white;
     margin-bottom: 50px;
+}
+#owp1 {
+    margin: 10px 0 0 0;
 }
 /* OLD WEB SECTIONS */
 /* OLD WEB SECTIONS */
@@ -314,7 +318,10 @@ and (max-width : 752px) {
 }
 @media only screen
 and (min-width : 0px)
-and (max-width : 650px) {
+and (max-width : 777px) {
+    .mod-header {
+        display: none;
+    }
     .mod-section-1,
     .mod-section-2,
     .mod-section-3,
@@ -341,9 +348,6 @@ and (max-width : 650px) {
     }
     .mod-div {
         justify-content: center;
-    }
-    .mod-header {
-        display: none;
     }
     #phone {
         display:block;

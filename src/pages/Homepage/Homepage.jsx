@@ -3,6 +3,8 @@ import { Link, Element } from 'react-scroll';
 import wiz from '../../assets/wizbiz/wizard.gif'
 import divider1 from '../../assets/dividers/SilverGlitterBottem.gif';
 import divider2 from '../../assets/dividers/jewel_break.gif';
+import divider3 from '../../assets/dividers/bolt.gif';
+// import divider3 from '../../assets/dividers/aniaanderas.gif';
 import question from '../../assets/gifs/q.gif';
 import hammer from '../../assets/gifs/hammer02.gif';
 import mail from '../../assets/gifs/mail.gif';
@@ -121,12 +123,9 @@ export default function Homepage(props) {
                             </h1>
                             <img className='divider' src={divider1} alt="ornate-divider" />
 
-
-                            <p className='ow-p'>
-                                Web Design for Artists, Creators, and Musicians.
-                            </p>
+                            <p className='ow-p' id='owp1'>Certified Full-Stack Web Development</p>
+                            <p className='ow-p'>inquiries@krezket.net</p>
                             <img className='divider' src={divider2} alt="ornate-divider" />
-
                         </div>
 
                         <img className='heraldry' id='right' src={wiz} alt="krezket" />
@@ -234,6 +233,8 @@ export default function Homepage(props) {
                                 </div>
                             </header>
                         </Element>
+
+                        {/* <img className='divider' src={divider3} alt="ornate-divider" /> */}
 
                         <Element name='section1' className='mod-section-1' id='sep'>
                             <h2>
