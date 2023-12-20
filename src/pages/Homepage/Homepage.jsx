@@ -189,6 +189,7 @@ export default function Homepage(props) {
                         <div className="mod-h1">
                             <Link smooth={true} duration={500} to='section0' href=""><h1>KREZKET</h1></Link>
                         </div>
+
                         <div className="mod-h2-con">
                             <h2>
                                 <Link smooth={true} duration={500} to='section1' href="">Intro</Link>
@@ -206,6 +207,7 @@ export default function Homepage(props) {
                                 <Link smooth={true} duration={500} to='section5' href="">Contact</Link>
                             </h2>
                         </div>
+
                         <div className='style-modern'>
                             <div className={switchOn === false ? 'style-0' : 'style-1'}>
                                 <a onClick={oldWebToggle}>Old Web</a>
@@ -223,8 +225,13 @@ export default function Homepage(props) {
                                 </div>
                                 <button onClick={toggleSwitch}>X</button>
                             </div>
+
                             <header className='mod-title'>
-                                <h1 className={`animated-heading ${animate ? 'animate-up' : ''}`}>KREZKET</h1>
+                                <div className={`animated-heading ${animate ? 'animate-up' : ''}`}>
+                                    <h1>KREZKET</h1>
+                                    <p>Certified Full-Stack Web Development</p>
+                                    <p>inquiries@krezket.net</p>
+                                </div>
                             </header>
                         </Element>
 
