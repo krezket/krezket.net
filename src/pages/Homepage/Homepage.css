@@ -213,7 +213,7 @@
 /* MEDIA */
 @media only screen
 and (min-width : 0px)
-and (max-width : 1776px) {
+and (max-width : 1280px) {
     .mod-title h1 {
         font-size: 100px;
     }
@@ -233,28 +233,12 @@ and (max-width : 1248px) {
 }
 @media only screen
 and (min-width : 0px)
-and (max-width : 1111px) {
-    .mod-title h1 {
-        font-size: 50px;
-    }
-}
-@media only screen
-and (min-width : 0px)
 and (max-width : 1070px) {
     .mod-section-0 {
         align-items: center;
     }
     .mod-title {
         width: 100%;
-    }
-    .mod-section-1,
-    .mod-section-2,
-    .mod-section-3,
-    .mod-section-4,
-    .mod-section-5 {
-        padding-left: 5px;
-        padding-right: 5px;
-        width: 90%;
     }
 }
 @media only screen
@@ -265,8 +249,15 @@ and (max-height : 1000px) {
     .mod-section-3,
     .mod-section-4,
     .mod-section-5 {
-        margin-bottom: 270px;
+        padding-bottom: 350px;
 
+    }
+}
+@media only screen
+and (min-width : 0px)
+and (max-width : 969px) {
+    .mod-title h1 {
+        font-size: 70px;
     }
 }
 @media only screen
@@ -307,6 +298,22 @@ and (max-width : 752px) {
 @media only screen
 and (min-width : 0px)
 and (max-width : 650px) {
+    .mod-section-1,
+    .mod-section-2,
+    .mod-section-3,
+    .mod-section-4,
+    .mod-section-5 {
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 90%;
+    }
+    .mod-section-1 h1,
+    .mod-section-2 h1, 
+    .mod-section-3 h1,
+    .mod-section-4 h1,
+    .mod-section-5 h1 {
+        font-size: 25px;
+    }
     .ow-div {
         padding: 0px 10px 0px 10px;
     }
@@ -327,8 +334,8 @@ and (max-width : 650px) {
         height: 222px;
     }
     .mod-title h1 {
-        font-size: 50px;
-        padding: 0 30px 30px 30px;
+        font-size: 60px;
+        padding: 0;
     }
     .mod-section-1,
     .mod-section-2,
