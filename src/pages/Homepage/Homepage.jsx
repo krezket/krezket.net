@@ -14,13 +14,13 @@ import bg3 from '../../assets/backgrounds/fan.jpeg'
 // import bg4 from '../../assets/backgrounds/h1.jpg'
 import bg5 from '../../assets/backgrounds/wee.jpeg'
 import bg6 from '../../assets/backgrounds/bet.jpeg'
-import bg7 from '../../assets/backgrounds/h2.jpeg'
+import bg7 from '../../assets/backgrounds/h2.jpg'
 import bg8 from '../../assets/backgrounds/ato.jpeg'
 import bg9 from '../../assets/backgrounds/jac.jpg'
 
 export default function Homepage(props) {
     // console.log(props)
-    const style = window.localStorage.getItem('style')
+    const style = window.sessionStorage.getItem('style')
     const [animate, setAnimate] = useState(false);
     const [switchOn, setSwitchOn] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -83,7 +83,7 @@ export default function Homepage(props) {
         if (style === 'old-web') {
             fadeIn();
         }
-        window.localStorage.setItem('style', 'modern')
+        window.sessionStorage.setItem('style', 'modern')
 
         props.setStateOldWeb("")
         props.setStateModern("modern")
@@ -93,7 +93,7 @@ export default function Homepage(props) {
     const oldWebToggle = e => {
         e.preventDefault()
 
-        window.localStorage.setItem('style', 'old-web')
+        window.sessionStorage.setItem('style', 'old-web')
 
         props.setStateModern("")
         props.setStateOldWeb("old-web")
