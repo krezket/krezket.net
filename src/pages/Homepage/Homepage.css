@@ -27,7 +27,7 @@
     position: fixed;
     background-color: darkred;
     height: 100vh;
-    /* border: 1px solid white; */
+    border: 1px solid black;
 }
 .mod-header h1 {
     margin: 0;
