@@ -8,7 +8,8 @@ import divider3 from '../../assets/dividers/bolt.gif';
 import question from '../../assets/gifs/q.gif';
 import hammer from '../../assets/gifs/hammer02.gif';
 import mail from '../../assets/gifs/mail.gif';
-import './Homepage.css';
+import './Modern.css';
+import './OldWeb.css';
 
 import bg1 from '../../assets/backgrounds/back-1.jpeg'
 import bg2 from '../../assets/backgrounds/back-2.jpeg'
