@@ -214,7 +214,7 @@ export default function Homepage(props) {
                         </div>
                     </header>
  
-                    <div className='mod-div'>
+                    <main className='mod-div'>
 
                         <Element name='section0' className='mod-section-0' style={slideStyles}>
                             <header className='mod-title'>
@@ -264,7 +264,7 @@ export default function Homepage(props) {
                             <a href="https://instagram.com/krezket" target="_blank" rel="noreferrer">Instagram</a>
                             <a href="https://github.com/krezket" target="_blank" rel="noreferrer">GitHub</a>
                         </Element>
-                    </div>
+                    </main>
                 </>
 
             }
