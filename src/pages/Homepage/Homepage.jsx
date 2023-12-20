@@ -11,10 +11,10 @@ import './Homepage.css';
 import bg1 from '../../assets/backgrounds/back-1.jpeg'
 import bg2 from '../../assets/backgrounds/back-2.jpeg'
 import bg3 from '../../assets/backgrounds/fan.jpeg'
-// import bg4 from '../../assets/backgrounds/kat.jpg'
-import bg5 from '../../assets/backgrounds/bli.jpg'
-import bg6 from '../../assets/backgrounds/man.jpg'
-import bg7 from '../../assets/backgrounds/dra.jpg'
+// import bg4 from '../../assets/backgrounds/h1.jpg'
+import bg5 from '../../assets/backgrounds/wee.jpeg'
+import bg6 from '../../assets/backgrounds/bet.jpeg'
+import bg7 from '../../assets/backgrounds/h2.jpeg'
 import bg8 from '../../assets/backgrounds/ato.jpeg'
 import bg9 from '../../assets/backgrounds/jac.jpg'
 
@@ -28,11 +28,11 @@ export default function Homepage(props) {
     const slides = [
         { url: `${bg3}`, title: "three" },
         { url: `${bg1}`, title: "one" },
-        // { url: `${bg5}`, title: "five" },
+        { url: `${bg5}`, title: "five" },
         // { url: `${bg4}`, title: "four" },
         { url: `${bg8}`, title: "eight" },
-        // { url: `${bg6}`, title: "six" },
-        // { url: `${bg7}`, title: "seven" },
+        { url: `${bg6}`, title: "six" },
+        { url: `${bg7}`, title: "seven" },
         { url: `${bg9}`, title: "nine" },
         { url: `${bg2}`, title: "two" },
     ]
