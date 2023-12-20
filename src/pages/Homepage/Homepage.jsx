@@ -26,13 +26,13 @@ export default function Homepage(props) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const slides = [
+        { url: `${bg7}`, title: "seven" },
         { url: `${bg3}`, title: "three" },
         { url: `${bg1}`, title: "one" },
         { url: `${bg5}`, title: "five" },
         // { url: `${bg4}`, title: "four" },
         { url: `${bg8}`, title: "eight" },
         { url: `${bg6}`, title: "six" },
-        { url: `${bg7}`, title: "seven" },
         { url: `${bg9}`, title: "nine" },
         { url: `${bg2}`, title: "two" },
     ]
@@ -217,6 +217,12 @@ export default function Homepage(props) {
                     <main className='mod-div'>
 
                         <Element name='section0' className='mod-section-0' style={slideStyles}>
+                            <div className='style-modern' id='phone'>
+                                <div className={switchOn === false ? 'style-0' : 'style-1'}>
+                                    <a onClick={oldWebToggle}>Old Web</a>
+                                </div>
+                                <button onClick={toggleSwitch}>X</button>
+                            </div>
                             <header className='mod-title'>
                                 <h1 className={`animated-heading ${animate ? 'animate-up' : ''}`}>KREZKET</h1>
                             </header>

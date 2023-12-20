@@ -55,6 +55,9 @@
     flex-direction: column;
     align-items: center;
 }
+#phone {
+    display: none;
+}
 .mod-title {
     display: flex;
     flex-direction: column;
@@ -335,8 +338,11 @@ and (max-width : 650px) {
     .mod-header {
         display: none;
     }
+    #phone {
+        display:block;
+    }
     .mod-title {
-        height: 222px;
+        height: 320px;
         padding: 0;
         align-items: center;
     }
