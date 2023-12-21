@@ -71,12 +71,12 @@
     flex-direction: column;
     text-align: end;
     opacity: 0;
-    transform: translateX(-33px);
+    transform: translateY(33px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 .animate-up {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
 }
 .mod-title h1 {
     font-size: 140px;
