@@ -156,7 +156,7 @@ and (max-width : 969px) {
 }
 @media only screen
 and (min-width : 0px)
-and (max-width : 777px) {
+and (max-width : 877px) {
     .mod-header {
         display: none;
     }
