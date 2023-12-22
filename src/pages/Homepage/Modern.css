@@ -71,7 +71,8 @@
     flex-direction: column;
     text-align: end;
     opacity: 0;
-    transform: translateY(33px);
+    transform: translateY(
+        33px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 .animate-up {
