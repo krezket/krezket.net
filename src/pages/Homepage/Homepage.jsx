@@ -209,10 +209,10 @@ export default function Homepage(props) {
                         </div>
 
                         <div className='style-modern'>
-                            <div className={switchOn === false ? 'style-0' : 'style-1'}>
+                            {/* <div className={switchOn === false ? 'style-0' : 'style-1'}>
                                 <a onClick={oldWebToggle}>Old Web</a>
                             </div>
-                            <button onClick={toggleSwitch}>X</button>
+                            <button onClick={toggleSwitch}>X</button> */}
                         </div>
                     </header>
  
@@ -220,16 +220,16 @@ export default function Homepage(props) {
 
                         <Element name='section0' className='mod-section-0' style={slideStyles}>
                             <div className='style-modern' id='phone'>
-                                <div className={switchOn === false ? 'style-0' : 'style-1'}>
+                                {/* <div className={switchOn === false ? 'style-0' : 'style-1'}>
                                     <a onClick={oldWebToggle}>Old Web</a>
                                 </div>
-                                <button onClick={toggleSwitch}>X</button>
+                                <button onClick={toggleSwitch}>X</button> */}
                             </div>
 
                             <header className='mod-title'>
                                 <div className={`animated-heading ${animate ? 'animate-up' : ''}`}>
                                     <h1>KREZKET</h1>
-                                    <p>Certified Full-Stack Web Development</p>
+                                    <p>Full-Stack Web Development</p>
                                     <p>inquiries@krezket.net</p>
                                 </div>
                             </header>
@@ -237,7 +237,7 @@ export default function Homepage(props) {
 
                         {/* <img className='divider' src={divider3} alt="ornate-divider" /> */}
 
-                        <Element name='section1' className='mod-section-1' id='sep'>
+                        <Element name='section1' className='mod-section-1 animated slideInUp' id='sec-1'>
                             <h2>
                                 Intro
                             </h2>
@@ -272,7 +272,7 @@ export default function Homepage(props) {
 
                         </Element>
 
-                        <Element name='section5' className='mod-section-5'>
+                        <Element name='section5' className='mod-section-5' id='sec-5'>
                             <h2>
                                 Contact
                             </h2>

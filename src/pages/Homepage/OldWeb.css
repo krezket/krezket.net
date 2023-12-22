@@ -18,7 +18,7 @@
 .ow-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     /* justify-content: center; */
     text-align: center;
     align-items: center;
@@ -135,15 +135,11 @@ and (max-width : 890px) {
         display: none;
     }
     .heraldry {
-        width: 50px;
-        margin-bottom: 111px;
+        width: 100px;
     }
     #right,
     #left {
         padding: 0px;
-    }
-    .ow-header {
-        justify-content: center;
     }
     .ow-section-mid {
         width: 100%;
