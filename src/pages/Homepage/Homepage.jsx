@@ -237,7 +237,7 @@ export default function Homepage(props) {
 
                         {/* <img className='divider' src={divider3} alt="ornate-divider" /> */}
 
-                        <Element name='section1' className='mod-section-1 animated slideInUp' id='sec-1'>
+                        <Element name='section1' className='mod-section animated slideInUp' id='sec-1'>
                             <h2>
                                 Intro
                             </h2>
@@ -249,7 +249,7 @@ export default function Homepage(props) {
                             </h1>
                         </Element>
 
-                        <Element name='section2' className='mod-section-2'>
+                        <Element name='section2' className='mod-section'>
                             <h2>
                                 Services
                             </h2>
@@ -258,21 +258,21 @@ export default function Homepage(props) {
                             </h1>
                         </Element>
 
-                        <Element name='section3' className='mod-section-3'>
+                        <Element name='section3' className='mod-section'>
                             <h2>
                                 Partners
                             </h2>
 
                         </Element>
 
-                        <Element name='section4' className='mod-section-4'>
+                        <Element name='section4' className='mod-section'>
                             <h2>
                                 Clients
                             </h2>
 
                         </Element>
 
-                        <Element name='section5' className='mod-section-5' id='sec-5'>
+                        <Element name='section5' className='mod-section' id='sec-5'>
                             <h2>
                                 Contact
                             </h2>

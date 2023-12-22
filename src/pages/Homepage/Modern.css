@@ -92,11 +92,7 @@
     margin: 0 0 20px 0;
     padding-right: 77px;
 }
-.mod-section-1,
-.mod-section-2,
-.mod-section-3,
-.mod-section-4,
-.mod-section-5 {
+.mod-section {
     display: flex;
     flex-direction: column;
     
@@ -111,20 +107,12 @@
 #sec-1 {
     margin-top: 150px;
 }
-.mod-section-1 h1,
-.mod-section-2 h1, 
-.mod-section-3 h1,
-.mod-section-4 h1,
-.mod-section-5 h1 {
+.mod-section h1 {
     font-size: 45px;
     font-family: sans-serif;
     margin-bottom: 0;
 }
-.mod-section-1 h2,
-.mod-section-2 h2, 
-.mod-section-3 h2,
-.mod-section-4 h2,
-.mod-section-5 h2 {
+.mod-section h2 {
     font-family: sans-serif;
     margin-bottom: 0;
 }
@@ -144,7 +132,13 @@
         transform: translate3d(0,0,0);
     }
 }
-
+@media only screen
+and (min-width : 0px)
+and (max-width : 1380px) {
+    .mod-section h1 {
+        font-size: 30px;
+    }
+}
 @media only screen
 and (min-width : 0px)
 and (max-width : 1280px) {
@@ -182,22 +176,18 @@ and (max-width : 877px) {
     .mod-header {
         display: none;
     }
-    .mod-section-1,
-    .mod-section-2,
-    .mod-section-3,
-    .mod-section-4,
-    .mod-section-5 {
+    .mod-title h1 {
+        font-size: 60px;
+        padding: 0;
+    }
+    .mod-section {
         height: 100vh;
         padding-left: 5px;
         padding-right: 5px;
         width: 90%;
         color: white;
     }
-    .mod-section-1 h1,
-    .mod-section-2 h1, 
-    .mod-section-3 h1,
-    .mod-section-4 h1,
-    .mod-section-5 h1 {
+    .mod-section h1 {
         font-size: 25px;
     }
     .mod-div {
@@ -213,10 +203,6 @@ and (max-width : 877px) {
     }
     .animated-heading {
         text-align: center;
-    }
-    .mod-title h1 {
-        font-size: 60px;
-        padding: 0;
     }
     .mod-title p {
         /* margin: 0; */
