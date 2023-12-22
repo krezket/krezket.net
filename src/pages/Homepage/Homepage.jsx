@@ -237,7 +237,7 @@ export default function Homepage(props) {
 
                         {/* <img className='divider' src={divider3} alt="ornate-divider" /> */}
 
-                        <Element name='section1' className='mod-section-1' id='sec-1'>
+                        <Element name='section1' className='mod-section-1 animated slideInUp' id='sec-1'>
                             <h2>
                                 Intro
                             </h2>
