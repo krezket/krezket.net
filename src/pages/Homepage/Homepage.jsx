@@ -229,7 +229,7 @@ export default function Homepage(props) {
                             <header className='mod-title'>
                                 <div className={`animated-heading ${animate ? 'animate-up' : ''}`}>
                                     <h1>KREZKET</h1>
-                                    <p>Certified Full-Stack Web Development</p>
+                                    <p>Full-Stack Web Development</p>
                                     <p>inquiries@krezket.net</p>
                                 </div>
                             </header>
