@@ -1,6 +1,7 @@
 .style-modern {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: center;
     right: 30px;
     bottom: 570px;
 }

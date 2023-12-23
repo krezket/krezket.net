@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Enter from './pages/Enter/Gate.jsx'
-import Homepage from './pages/Homepage/Homepage.jsx';
+import Modern from './pages/Modern/Modern.jsx';
+import OldWeb from './pages/OldWeb/OldWeb.jsx';
 import './App.css'
 
 function App() {
@@ -13,19 +14,8 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<Enter />}></Route>
-
-        <Route 
-          path='/home' 
-          element={
-            <Homepage 
-              stateOldWeb={stateOldWeb} 
-              setStateOldWeb={setStateOldWeb}
-
-              stateModern={stateModern}
-              setStateModern={setStateModern}
-
-            />}>
-        </Route>
+        <Route path='/modern' element={<Modern />}></Route>
+        <Route path='/oldweb' element={<OldWeb />}></Route>
 
       </Routes>
     </Router>

@@ -9,7 +9,7 @@ export default function Gate(props) {
     const submitHandler = e => {
         e.preventDefault()
         
-        navigate('/home')
+        navigate('/modern')
     }
 
     return (
