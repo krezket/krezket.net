@@ -39,7 +39,7 @@ export default function OldWeb() {
                 <section className='ow-section-left'>
                     <p>View this website as:</p>
 
-                    <a onClick={modernToggle}>Modern</a>
+                    {/* <a onClick={modernToggle}>Modern</a> */}
                 </section>
 
                 <section className='ow-section-mid'>

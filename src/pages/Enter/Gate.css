@@ -1,8 +1,11 @@
-.enter, form {
-    display: flex;
-    flex-direction: column;
+main {
+    display: grid;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    text-align: center;
 }
-
+h3 {
+    color: white;
+}
+.enter {
+    border: 1px solid white;
+}
