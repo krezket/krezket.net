@@ -11,7 +11,7 @@ main {
 header {
     grid-area: topbar;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
 }
 
@@ -21,6 +21,7 @@ header div {
 
 .ow-h1 {
     margin: 0;
+    color: darkred;
 }
 
 aside {
@@ -30,6 +31,11 @@ aside {
 
 article {
     grid-area: content;
+}
+.ow-sec-1,
+.ow-sec-2,
+.ow-sec-3 {
+    height: 100vh;
 }
 
 nav {

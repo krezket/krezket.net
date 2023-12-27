@@ -43,7 +43,7 @@ export default function OldWeb() {
                 </aside>
 
                 <article>
-                    <section className='ow-section-mid-con-1'>
+                    <section className='ow-sec-1'>
                         <h2>
                             What is Krezket
                             <img className='huh' src={question} alt="?" />
@@ -55,7 +55,7 @@ export default function OldWeb() {
                             I strive to be a reliable freelance web designer across a wide-range of creative media outlets.
                         </p>
                     </section>
-                    <section>
+                    <section className='ow-sec-2'>
                         <h2>
                             Services
                             <img className='huh' src={hammer} alt="?" />
@@ -64,7 +64,7 @@ export default function OldWeb() {
                             As a Certified Full-Stack Web Developer, I have the ability to build sites with server side functionality.
                         </p>
                     </section>
-                    <section>
+                    <section className='ow-sec-3'>
                         <h2>
                             Contact
                             <img className='huh' src={mail} alt="?" />
