@@ -18,7 +18,7 @@ export default function Gate(props) {
     }
 
     return (
-        <main>
+        <div className='homepage'>
             <div className='enter' id='enter-mod'>
                 <h3>Modern</h3>
                 <img src={enter} alt="enter" onClick={submitHandler} />
@@ -27,6 +27,6 @@ export default function Gate(props) {
                 <h3>Old Web</h3>
                 <img src={enter2} alt="enter" onClick={submitHandler2} />
             </div>
-        </main>
+        </div>
     )
 }
