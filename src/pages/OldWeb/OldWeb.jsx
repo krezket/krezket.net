@@ -19,19 +19,21 @@ export default function OldWeb() {
 
                 <header>
                     <img className='heraldry' id='left' src={wiz} alt="krezket" />
-                    <div>
-                        <img className='divider' src={divider1} alt="ornate-divider" />
-                        <h1 className='ow-h1'>
-                            KREZKET
-                        </h1>
-                        <img className='divider' src={divider1} alt="ornate-divider" />
-                        <p className='ow-p' id='owp1'>
-                            Certified Full-Stack Web Development
-                        </p>
-                        <p className='ow-p'>
-                            inquiries@krezket.net
-                        </p>
-                        <img className='divider' src={divider2} alt="ornate-divider" />
+                    <div className='h-con'>
+                        <div>
+                            <img className='divider' src={divider1} alt="ornate-divider" />
+                            <h1 className='ow-h1'>
+                                KREZKET
+                            </h1>
+                            <img className='divider' src={divider1} alt="ornate-divider" />
+                            <p className='ow-p' id='owp1'>
+                                Certified Full-Stack Web Development
+                            </p>
+                            <p className='ow-p'>
+                                inquiries@krezket.net
+                            </p>
+                        </div>
+                        <img className='divider' src={divider2} alt="gem-divider" />
                     </div>
                     <img className='heraldry' id='right' src={wiz} alt="krezket" />
                 </header>
