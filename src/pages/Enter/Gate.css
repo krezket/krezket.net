@@ -12,21 +12,40 @@
     gap: 20px;
 }
 h3 {
+    display: none;
     font-size: 50px;
     color: white;
     margin: 0;
 }
 .card {
     border: 1px solid white;
-    width: 15%;
     transition: ease 0.5s;
 }
 .card:hover {
+    h3 {
+        display: block;
+    }
+}
+#closed {
+    width: 10%;
+}
+#open-mod {
+    h3 {
+        display: block;
+    }    width: 30%;
+}
+#open-ow {
+    h3 {
+        display: block;
+    }
     width: 30%;
 }
+
 .enter-header {
     color: white;
+    padding: 0 10px 0 10px;
 }
 footer {
     color: white;
+    padding: 0 10px 0 10px;
 }   
