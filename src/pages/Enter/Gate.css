@@ -1,11 +1,24 @@
 .homepage {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+.e-main {
+    display: flex;
     justify-content: center;
     text-align: center;
+    height: 50%;
+    gap: 20px;
 }
 h3 {
+    font-size: 50px;
     color: white;
 }
 .enter {
     border: 1px solid white;
+    width: 25%;
 }
+footer {
+    color: white;
+}   

@@ -1,4 +1,4 @@
-main {
+.ow-main {
     display: grid;
     grid-template-areas: 
         "topbar topbar topbar"

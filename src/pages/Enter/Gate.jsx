@@ -19,14 +19,22 @@ export default function Gate(props) {
 
     return (
         <div className='homepage'>
-            <div className='enter' id='enter-mod'>
-                <h3>Modern</h3>
-                <img src={enter} alt="enter" onClick={submitHandler} />
-            </div>
-            <div className='enter' id='enter-ow'>
-                <h3>Old Web</h3>
-                <img src={enter2} alt="enter" onClick={submitHandler2} />
-            </div>
+            <header>
+                <p>krezket.net</p>
+            </header>
+            <main className='e-main'>
+                <div className='enter' id='enter-mod'>
+                    <h3>Modern</h3>
+                    <img src={enter} alt="enter" onClick={submitHandler} />
+                </div>
+                <div className='enter' id='enter-ow'>
+                    <h3>Old Web</h3>
+                    <img src={enter2} alt="enter" onClick={submitHandler2} />
+                </div>
+            </main>
+            <footer>
+                <p>krezket.net</p>
+            </footer>
         </div>
     )
 }
