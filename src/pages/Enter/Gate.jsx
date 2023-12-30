@@ -19,7 +19,7 @@ export default function Gate(props) {
 
     return (
         <div className='homepage'>
-            <header>
+            <header className='enter-header'>
                 <p>krezket.net</p>
             </header>
             <main className='e-main'>
@@ -33,7 +33,7 @@ export default function Gate(props) {
                 </div>
             </main>
             <footer>
-                <p>krezket.net</p>
+                <p>Certified Full Stack Web Development</p>
             </footer>
         </div>
     )

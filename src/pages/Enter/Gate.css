@@ -19,6 +19,9 @@ h3 {
     border: 1px solid white;
     width: 25%;
 }
+.enter-header {
+    color: white;
+}
 footer {
     color: white;
 }   

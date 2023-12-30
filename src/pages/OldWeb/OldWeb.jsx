@@ -17,7 +17,7 @@ export default function OldWeb() {
 
             <main className='ow-main'>
 
-                <header>
+                <header className='ow-header'>
                     <img className='heraldry' id='left' src={wiz} alt="krezket" />
                     <div className='h-con'>
                         <div>
