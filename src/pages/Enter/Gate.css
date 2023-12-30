@@ -14,10 +14,15 @@
 h3 {
     font-size: 50px;
     color: white;
+    margin: 0;
 }
-.enter {
+.card {
     border: 1px solid white;
-    width: 25%;
+    width: 15%;
+    transition: ease 0.5s;
+}
+.card:hover {
+    width: 30%;
 }
 .enter-header {
     color: white;

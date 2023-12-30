@@ -23,13 +23,11 @@ export default function Gate(props) {
                 <p>krezket.net</p>
             </header>
             <main className='e-main'>
-                <div className='enter' id='enter-mod'>
+                <div className='card' id='enter-mod' onClick={submitHandler}>
                     <h3>Modern</h3>
-                    <img src={enter} alt="enter" onClick={submitHandler} />
                 </div>
-                <div className='enter' id='enter-ow'>
+                <div className='card' id='enter-ow' onClick={submitHandler2}>
                     <h3>Old Web</h3>
-                    <img src={enter2} alt="enter" onClick={submitHandler2} />
                 </div>
             </main>
             <footer>
