@@ -40,12 +40,16 @@ export default function Gate(props) {
             <main className='e-main' >
                 <div className='card' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} onClick={submitHandler}>
                     <h3>Modern</h3>
-                    <Link src={enter} className='gif1' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} to={'/modern'}></Link>
+                    <Link className='gif1' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} to={'/modern'}>
+                        <img src={enter} alt="enter-modern" />
+                    </Link>
                 </div>
 
                 <div className='card' id={isOpen2 === '' ? 'closed' : isOpen2 === 'open-ow' ? isOpen2 : ''} onClick={submitHandler2}>
                     <h3>Old Web</h3>
-                    <Link src={enter2} className='gif2' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} to={'/oldweb'}></Link>
+                    <Link className='gif2' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} to={'/oldweb'}>
+                        <img src={enter2} alt="enter-modern" />
+                    </Link>
                 </div>
             </main>
 
