@@ -29,9 +29,9 @@
     height: 100%;
 }
 #back1 {
-    background-image: url('../../assets/backgrounds/fan.jpeg');
+    background-image: url('../../assets/backgrounds/deer.png');
     background-size: 777px;
-    background-position: center;
+    background-position: right;
     opacity: 0.2;
 }
 #back2 {
