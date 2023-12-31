@@ -5,7 +5,7 @@ import './Modern.css';
 
 import bg1 from '../../assets/backgrounds/back-1.jpeg'
 import bg2 from '../../assets/backgrounds/back-2.jpeg'
-import bg3 from '../../assets/backgrounds/fan.jpeg'
+import bg3 from '../../assets/backgrounds/deer2.png'
 // import bg4 from '../../assets/backgrounds/h1.jpg'
 import bg5 from '../../assets/backgrounds/wee.jpeg'
 import bg6 from '../../assets/backgrounds/bet.jpeg'
