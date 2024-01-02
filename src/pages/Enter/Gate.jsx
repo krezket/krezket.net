@@ -36,6 +36,7 @@ export default function Gate(props) {
                 <p>Certified Full-Stack Web Development</p>
                 <h1>KREZKET</h1>
             </div>
+
             <div className='homepage'>
 
                 <header className='enter-header'>
@@ -43,22 +44,22 @@ export default function Gate(props) {
                 </header>
 
                 <main className='e-main'>
-                    <section className='card' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} onClick={submitHandler}>
+                    <section className='door' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} onClick={submitHandler}>
                         <div className='back' id='back1'>
-                            <h3>Modern</h3>
                             <Link className='gif1' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} to={'/modern'}>
-                                <img src={enter} alt="enter-modern" />
-                            </Link>
-                        </div>
-                    </section>
-
-                    <section className='card' id={isOpen2 === '' ? 'closed' : isOpen2 === 'open-ow' ? isOpen2 : ''} onClick={submitHandler2}>
-                        <div className='back' id='back2'>
-                            <h3>Old Web</h3>
-                            <Link className='gif2' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} to={'/oldweb'}>
                                 <img src={enter2} alt="enter-modern" />
                             </Link>
                         </div>
+                            <h3>Modern</h3>
+                    </section>
+
+                    <section className='door' id={isOpen2 === '' ? 'closed' : isOpen2 === 'open-ow' ? isOpen2 : ''} onClick={submitHandler2}>
+                        <div className='back' id='back2'>
+                            <Link className='gif2' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} to={'/oldweb'}>
+                                <img src={enter} alt="enter-modern" />
+                            </Link>
+                        </div>
+                            <h3>Old Web</h3>
                     </section>
                 </main>
 
