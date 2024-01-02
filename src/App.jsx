@@ -16,7 +16,6 @@ function App() {
         <Route path='/' element={<Enter />}></Route>
         <Route path='/modern' element={<Modern />}></Route>
         <Route path='/oldweb' element={<OldWeb />}></Route>
-
       </Routes>
     </Router>
 

@@ -1,3 +1,7 @@
+:root {
+  --bg-color: #191919
+}
+
 body {
   /* background-color: black; */
   /* background-image: url(./assets/backgrounds/back-1.jpeg); */
@@ -7,7 +11,7 @@ body {
   /* background-image: url(./assets/images/skull.jpeg); */
   /* background-image: url(./assets/images/fan.jpeg); */
   /* background-image: url(./assets/images/krez.jpeg); */
-  background-color: black;
+  background-color: var(--bg-color);
   margin: 0; 
   height: 100vh;
 }

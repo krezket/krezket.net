@@ -102,7 +102,7 @@ export default function Modern(props) {
 
     return (
 
-                <>
+                <div className='body'>
                     <header className='mod-header'>
                         <div className="mod-h1">
                             <Link smooth={true} duration={500} to='section0' href=""><h1>KREZKET</h1></Link>
@@ -200,7 +200,7 @@ export default function Modern(props) {
                             <a href="https://github.com/krezket" target="_blank" rel="noreferrer">GitHub</a>
                         </Element>
                     </main>
-                </>
+                </div>
 
 
     )
