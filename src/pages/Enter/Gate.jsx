@@ -10,18 +10,11 @@ export default function Gate(props) {
     const [isOpen1, setIsOpen1] = useState('');
     const [isOpen2, setIsOpen2] = useState('');
 
-    const submitHandlerPage = e => {
-        e.preventDefault()
-
-        setIsOpen1('')
-        setIsOpen2('')
-    }
     const submitHandler = e => {
         e.preventDefault()
 
         setIsOpen2('')
         isOpen1 != '' ? setIsOpen1('') : setIsOpen1('open-mod')
-        // navigate('/modern')
     }
     const submitHandler2 = e => {
         e.preventDefault()
@@ -38,11 +31,6 @@ export default function Gate(props) {
             </div>
 
             <div className='homepage'>
-
-                <header className='enter-header'>
-                    <p>krezket.net</p>
-                </header>
-
                 <main className='e-main'>
                     <section className='door' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} onClick={submitHandler}>
                         <div className='back' id='back1'>
@@ -64,7 +52,7 @@ export default function Gate(props) {
                 </main>
 
                 <footer>
-                    <p>Certified Full Stack Web Development</p>
+                    <p>inquiries@krezket.net</p>
                 </footer>
             </div>
         </>
