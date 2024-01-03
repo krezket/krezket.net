@@ -16,7 +16,7 @@
 .homepage {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     height: 100vh;
 }
 .e-main {
@@ -48,10 +48,12 @@
     background-size: 777px;
     background-position: right;
     opacity: 0.2;
+    transition: ease 0.2s;
 }
 #back2 {
     background-image: url('../../assets/backgrounds/blackrose.jpg');
     opacity: 0.2;
+    transition: ease 0.2s;
 }
 .door:hover {
     #back1,
@@ -64,7 +66,7 @@
 }
 h3 {
     opacity: 0;
-    transition: ease 0.5s;
+    transition: ease 0.2s;
     font-size: 50px;
     color: white;
     margin: 0;

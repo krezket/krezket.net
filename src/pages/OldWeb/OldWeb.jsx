@@ -1,10 +1,8 @@
-import React from 'react'
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import wiz from '../../assets/wizbiz/wizard.gif'
 import divider1 from '../../assets/dividers/SilverGlitterBottem.gif';
 import divider2 from '../../assets/dividers/jewel_break.gif';
-// import divider3 from '../../assets/dividers/bolt.gif';
-// import divider3 from '../../assets/dividers/aniaanderas.gif';
 import question from '../../assets/gifs/q.gif';
 import hammer from '../../assets/gifs/hammer02.gif';
 import mail from '../../assets/gifs/mail.gif';
@@ -12,6 +10,11 @@ import './OldWeb.css';
 
 
 export default function OldWeb() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
 

@@ -9,7 +9,7 @@ export default function Gate(props) {
 
     const [isOpen1, setIsOpen1] = useState('');
     const [isOpen2, setIsOpen2] = useState('');
-
+    
     const submitHandler = e => {
         e.preventDefault()
 

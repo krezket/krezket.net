@@ -20,6 +20,10 @@ export default function Modern(props) {
     const [animate, setAnimate] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const slides = [
         { url: `${bg7}`, title: "seven" },
         { url: `${bg3}`, title: "three" },
