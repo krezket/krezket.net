@@ -75,35 +75,6 @@ export default function Modern(props) {
         return () => clearTimeout(timeout);
     };
 
-    // SWITCH TO MODERN STYLE
-    // const modernToggle = e => {
-    //     e.preventDefault()
-    //     setSwitchOn(false)
-    //     if (style === 'old-web') {
-    //         fadeIn();
-    //     }
-    //     window.sessionStorage.setItem('style', 'modern')
-
-    //     props.setStateOldWeb("")
-    //     props.setStateModern("modern")
-    // }
-
-    // SWITCH TO OLD WEB STYLE
-    // const oldWebToggle = e => {
-    //     e.preventDefault()
-
-    //     window.sessionStorage.setItem('style', 'old-web')
-
-    //     props.setStateModern("")
-    //     props.setStateOldWeb("old-web")
-    // }
-
-    // TOGGLE SWITCH
-    // const toggleSwitch = e => {
-    //     e.preventDefault()
-    //     switchOn === false ? setSwitchOn(true) : setSwitchOn(false)
-    // }
-
     return (
 
                 <div className='body'>
