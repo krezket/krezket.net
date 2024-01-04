@@ -5,6 +5,8 @@
 :root {
   --bg-color: #191919;
   --title-color: rgb(197, 9, 9);
+  --text-white: white;
+  --text-red: red;
 }
 
 body {
