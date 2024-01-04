@@ -7,6 +7,9 @@
     flex-direction: row;
     text-align: center;
 }
+.empty-nav {
+  padding-top: 130px;
+}
 
 @media only screen
 and (min-width : 0px)
