@@ -59,7 +59,7 @@ export default function Header(props) {
                     <header className='header'>
                         <div className='header-div'>
                             <Link className='home-link' to='/home'>
-                                <h1 className='title'>𝐾𝑅𝐸𝑍𝐾𝐸𝑇</h1>
+                                <h1 className='blog-title'>𝐾𝑅𝐸𝑍𝐾𝐸𝑇</h1>
                             </Link>
                             <>
                                 {ID ?
