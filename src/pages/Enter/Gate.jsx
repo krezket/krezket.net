@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import enter from '../../assets/enter/enter-6.gif'
 import enter2 from '../../assets/enter/enter-2.gif'
+import enter3 from '../../assets/enter/enter-7.gif'
 import './Gate.css'
 
 export default function Gate(props) {
@@ -9,18 +10,28 @@ export default function Gate(props) {
 
     const [isOpen1, setIsOpen1] = useState('');
     const [isOpen2, setIsOpen2] = useState('');
+    const [isOpen3, setIsOpen3] = useState('');
     
     const submitHandler = e => {
         e.preventDefault()
 
         setIsOpen2('')
+        setIsOpen3('')
         isOpen1 != '' ? setIsOpen1('') : setIsOpen1('open-mod')
     }
     const submitHandler2 = e => {
         e.preventDefault()
 
         setIsOpen1('')
+        setIsOpen3('')
         isOpen2 != '' ? setIsOpen2('') : setIsOpen2('open-ow')
+    }
+    const submitHandler3 = e => {
+        e.preventDefault()
+
+        setIsOpen1('')
+        setIsOpen2('')
+        isOpen3 != '' ? setIsOpen3('') : setIsOpen3('open-bl')
     }
 
     return (
@@ -42,21 +53,30 @@ export default function Gate(props) {
             <div className='homepage'>
                 <main className='e-main'>
                     <section className='door' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} onClick={submitHandler}>
+                        <h3>Modern</h3>
                         <div className='back' id='back1'>
                             <Link className='gif1' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} to={'/modern'}>
                                 <img src={enter2} alt="enter-modern" />
                             </Link>
                         </div>
-                            <h3>Modern</h3>
                     </section>
 
                     <section className='door' id={isOpen2 === '' ? 'closed' : isOpen2 === 'open-ow' ? isOpen2 : ''} onClick={submitHandler2}>
+                        <h3>Old Web</h3>
                         <div className='back' id='back2'>
                             <Link className='gif2' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} to={'/oldweb'}>
                                 <img src={enter} alt="enter-modern" />
                             </Link>
                         </div>
-                            <h3>Old Web</h3>
+                    </section>
+
+                    <section className='door' id={isOpen3 === '' ? 'closed' : isOpen3 === 'open-bl' ? isOpen3 : ''} onClick={submitHandler3}>
+                        <h3>Blog</h3>
+                        <div className='back' id='back3'>
+                            <Link className='gif3' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} to={'/blog'}>
+                                <img src={enter3} alt="enter-modern" />
+                            </Link>
+                        </div>
                     </section>
                 </main>
 

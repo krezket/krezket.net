@@ -25,7 +25,7 @@ export default function Header(props) {
         window.sessionStorage.removeItem("token");
         window.sessionStorage.removeItem("userId");
         window.sessionStorage.removeItem("UserData");
-        navigate("/home");
+        navigate("/blog");
         window.location.reload(false);
     };
 
