@@ -6,11 +6,12 @@
     height: 100vh;
 }
 .title * {
- color: white;
- font-family: fondamento, sans-serif;
+    color: white;
+    font-family: fondamento, sans-serif;
 }
 .title h1 {
     margin: 0;
+    color: var(--title-color);
     font-family: 'Rock Salt', cursive;
 }
 
