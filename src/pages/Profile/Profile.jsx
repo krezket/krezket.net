@@ -71,7 +71,7 @@ function Profile(props) {
         console.log("oh noes");
         console.log(err);
       });
-    }
+  }
 
   return (
     <>
@@ -95,13 +95,14 @@ function Profile(props) {
               <div className='usr-fri'>
 
                 <h1 className='profile-username'>{user.username}</h1>
+                <Link id='edit-link' to={"/edit"}>Edit Profile</Link>
 
                 {!props.friends ?
                   <h3 className='profile-pages'>Friends: 0</h3>
                   :
                   <h3 className='profile-pages'>Friends: {props.friends.length}</h3>
                 }
-                {!user ?
+                {!user.pages ?
                   <h3 className='profile-pages'>No Pages Yet</h3>
                   :
                   <h3 className='profile-pages'>Total Pages: {user.pages.length}</h3>
@@ -115,7 +116,6 @@ function Profile(props) {
                   :
                   <p>{user.bio}</p>
                 }
-                <Link id='edit-link' to={"/edit"}>Edit Profile</Link>
               </article>
 
               {!user ?
@@ -197,4 +197,4 @@ function Profile(props) {
   );
 };
 
-export default Profile
+export default Profile;

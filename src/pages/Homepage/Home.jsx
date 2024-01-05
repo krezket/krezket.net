@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import Header from "../../components/Header";
 import Search from "../../components/Search/Search"
 import FrontPage from '../../components/FrontPage/FrontPage';
@@ -8,6 +8,9 @@ import './style.css';
 export default function Home(props) {
     // CONSOLE LOG //
     // console.log("home props:", props)
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <>
