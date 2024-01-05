@@ -13,7 +13,7 @@ export default function Gate(props) {
     const [isOpen2, setIsOpen2] = useState('');
     const [isOpen3, setIsOpen3] = useState('');
     const [isOpen4, setIsOpen4] = useState('');
-    
+
     const submitHandler = e => {
         e.preventDefault()
 
@@ -53,18 +53,14 @@ export default function Gate(props) {
                 <p>Certified Full-Stack Web Development</p>
                 <h1>KREZKET</h1>
             </div>
-            
+
             <div className='title'>
-                <p>
-                    Krezket is a brand / platform for myself, Anthony Guerrero. I'm a Certified Full-Stack Web Developer with a passion for music, art, and design.
-                </p>
-                <p>
-                    I strive to be a reliable freelance web designer across a wide-range of creative media outlets.
-                </p>
+                <p>Krezket is a brand / platform for myself, Anthony Guerrero. I'm a Certified Full-Stack Web Developer with a passion for music, art, and design.</p>
+                <p>I strive to be a reliable freelance web designer across a wide-range of creative media outlets.</p>
             </div>
 
             <div className='homepage'>
-                <main className='e-main'>
+                <main className='fe-main'>
                     <section className='door' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} onClick={submitHandler}>
                         <h3>Modern</h3>
                         <div className='back' id='back1'>
@@ -83,6 +79,11 @@ export default function Gate(props) {
                         </div>
                     </section>
 
+                </main>
+            </div>
+
+            <div className='homepage'>
+                <main className='be-main'>
                     <section className='door' id={isOpen3 === '' ? 'closed' : isOpen3 === 'open-bl' ? isOpen3 : ''} onClick={submitHandler3}>
                         <h3>Blog</h3>
                         <div className='back' id='back3'>
@@ -101,11 +102,11 @@ export default function Gate(props) {
                         </div>
                     </section>
                 </main>
-
-                <footer>
-                    <p>inquiries@krezket.net</p>
-                </footer>
             </div>
+
+            <footer>
+                <p>inquiries@krezket.net</p>
+            </footer>
         </>
     )
 }
