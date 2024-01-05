@@ -11,19 +11,19 @@ export default function Header() {
 
       <div className='footerbar'>
         <p className='footer-p'>
-          <a className='footer-ig' id='link-footer' href='https://www.instagram.com/krezket/' target="_blank" rel="noreferrer">Instagram</a>
+          <a className='link-footer' id='footer-ig' href='https://www.instagram.com/krezket/' target="_blank" rel="noreferrer">Instagram</a>
         </p>
 
         <p className='footer-p'>
-          <a className='footer-sc' id='link-footer' href='https://soundcloud.com/krezket' target="_blank" rel="noreferrer">SoundCloud</a>
+          <a className='link-footer' id='footer-sc' href='https://soundcloud.com/krezket' target="_blank" rel="noreferrer">SoundCloud</a>
         </p>
 
         <p className='footer-p'>
-          <a className='footer-yt' id='link-footer' href='https://youtube.com/@krezket' target="_blank" rel="noreferrer">YouTube</a>
+          <a className='link-footer' id='footer-yt' href='https://youtube.com/@krezket' target="_blank" rel="noreferrer">YouTube</a>
         </p>
 
-        <p>
-          <Link className='footer=p' to={'/about'}>About</Link>
+        <p className='footer-p'>
+          <Link className='link-footer' to={'/about'}>About</Link>
         </p>
       </div>
     </footer>

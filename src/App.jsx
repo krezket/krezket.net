@@ -108,6 +108,8 @@ function App() {
         <Route path='/' element={<Enter />}></Route>
         <Route path='/modern' element={<Modern />}></Route>
         <Route path='/oldweb' element={<OldWeb />}></Route>
+        <Route path='/weather' element={<CcWeather />}></Route>
+        <Route path='/weather-search' element={<CcWeatherSearch />}></Route>
 
         {/* HOME HOME HOME HOME */}
         <Route path="/blog" element={
