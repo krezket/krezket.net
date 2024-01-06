@@ -64,7 +64,7 @@ export default function Gate(props) {
                     <section className='door' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} onClick={submitHandler}>
                         <h3>Modern</h3>
                         <div className='back' id='back1'>
-                            <Link className='gif1' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} to={'/modern'}>
+                            <Link className='gif' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} to={'/modern'}>
                                 <img src={enter} alt="enter-modern" />
                             </Link>
                         </div>
@@ -73,7 +73,7 @@ export default function Gate(props) {
                     <section className='door' id={isOpen2 === '' ? 'closed' : isOpen2 === 'open-ow' ? isOpen2 : ''} onClick={submitHandler2}>
                         <h3>Old Web</h3>
                         <div className='back' id='back2'>
-                            <Link className='gif2' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} to={'/oldweb'}>
+                            <Link className='gif' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} to={'/oldweb'}>
                                 <img src={enter4} alt="enter-modern" />
                             </Link>
                         </div>
@@ -87,7 +87,7 @@ export default function Gate(props) {
                     <section className='door' id={isOpen3 === '' ? 'closed' : isOpen3 === 'open-bl' ? isOpen3 : ''} onClick={submitHandler3}>
                         <h3>Blog</h3>
                         <div className='back' id='back3'>
-                            <Link className='gif3' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} to={'/blog'}>
+                            <Link className='gif' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} to={'/blog'}>
                                 <img src={enter2} alt="enter-modern" />
                             </Link>
                         </div>
@@ -96,7 +96,7 @@ export default function Gate(props) {
                     <section className='door' id={isOpen4 === '' ? 'closed' : isOpen4 === 'open-we' ? isOpen4 : ''} onClick={submitHandler4}>
                         <h3>Weather</h3>
                         <div className='back' id='back4'>
-                            <Link className='gif4' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} to={'/weather'}>
+                            <Link className='gif' id={isOpen1 === '' ? 'closed' : isOpen1 === 'open-mod' ? isOpen1 : ''} to={'/weather'}>
                                 <img src={enter3} alt="enter-modern" />
                             </Link>
                         </div>

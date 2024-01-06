@@ -51,54 +51,23 @@
         opacity: 1;
     }
 }
+.gif {
+    display: none;
+}
 #closed {
     width: 10%;
 }
-#open-mod {
-    h3 {
-        opacity: 1;
-    }
-    .gif1 {
-        display: block;
-    }
-    #back1 {
-        opacity: 1;
-    }
-}
-#open-ow {
-    h3 {
-        opacity: 1;
-    }
-    .gif2 {
-        display: block;
-    }
-    #back2 {
-        opacity: 1;
-    }
-}
-#open-bl {
-    h3 {
-        opacity: 1;
-    }
-    .gif3 {
-        display: block;
-    }
-    #back3 {
-        opacity: 1;
-    }
-    width: 30%;
-}
+#open-mod,
+#open-ow,
+#open-bl,
 #open-we {
+    width: 30%;
     h3 {
         opacity: 1;
     }
-    .gif4 {
+    .gif {
         display: block;
     }
-    #back4 {
-        opacity: 1;
-    }
-    width: 30%;
 }
 .back {
     display: flex;
