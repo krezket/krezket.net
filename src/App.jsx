@@ -105,8 +105,8 @@ function App() {
 
     <Router>
       <Routes>
-        <Route path='/' element={<Enter />}></Route>
-        <Route path='/modern' element={<Modern />}></Route>
+        <Route path='/' element={<Modern />}></Route>
+        <Route path='/modern' element={<Enter />}></Route>
         <Route path='/oldweb' element={<OldWeb />}></Route>
         <Route path='/weather' element={<CcWeather />}></Route>
         <Route path='/weather-search' element={<CcWeatherSearch />}></Route>

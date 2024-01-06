@@ -30,7 +30,7 @@
     justify-content: space-between;
     text-align: center;
     position: fixed;
-    background-color: darkred;
+    background-color: var(--title-color);
     height: 100vh;
     border: 1px solid black;
 }

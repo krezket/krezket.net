@@ -49,10 +49,6 @@ export default function Gate(props) {
 
     return (
         <>
-            <div className='title'>
-                <p>Certified Full-Stack Web Development</p>
-                <h1>KREZKET</h1>
-            </div>
 
             <div className='title'>
                 <p>Krezket is a brand / platform for myself, Anthony Guerrero. I'm a Certified Full-Stack Web Developer with a passion for music, art, and design.</p>
@@ -104,9 +100,10 @@ export default function Gate(props) {
                 </main>
             </div>
 
-            <footer>
+            <div className='title'>
+                <h1>KREZKET</h1>
                 <p>inquiries@krezket.net</p>
-            </footer>
+            </div>
         </>
     )
 }

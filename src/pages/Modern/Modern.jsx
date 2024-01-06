@@ -44,7 +44,7 @@ export default function Modern(props) {
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundImage: `url("${slides[currentIndex].url}")`,
-        transition: "background-image 0.2s ease"
+        transition: "background-image 0.3s ease"
     }
 
     // MODERN CAROUSEL
@@ -52,7 +52,7 @@ export default function Modern(props) {
         const nextSlide = () => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
         };
-        const intervalId = setInterval(nextSlide, 500);
+        const intervalId = setInterval(nextSlide, 444);
         return () => clearInterval(intervalId);
     }, []);
 
