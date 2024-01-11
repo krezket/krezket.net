@@ -185,10 +185,6 @@ and (max-width : 877px) {
     .mod-header {
         display: none;
     }
-    .mod-title h1 {
-        font-size: 60px;
-        padding: 0;
-    }
     .mod-section {
         height: 100vh;
         padding-left: 5px;
@@ -206,7 +202,6 @@ and (max-width : 877px) {
         display: flex;
     }
     .mod-title {
-        height: 350px;
         padding: 0;
         align-items: center;
     }
@@ -218,5 +213,12 @@ and (max-width : 877px) {
         font-size: 20px;
         margin: 0 0 20px 0;
         padding: 0;
+    }
+}
+@media only screen
+and (min-width : 0px)
+and (max-width : 420px) {
+    .mod-title h1 {
+        font-size: 20%;
     }
 }
