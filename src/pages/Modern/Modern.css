@@ -219,6 +219,6 @@ and (max-width : 877px) {
 and (min-width : 0px)
 and (max-width : 420px) {
     .mod-title h1 {
-        font-size: 20%;
+        font-size: 50px;
     }
 }
