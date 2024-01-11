@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, Element } from 'react-scroll';
 
+import NavBar from '../../components/NavBar/NavBar';
 import './Modern.css';
 
 import bg1 from '../../assets/backgrounds/back-1.jpeg'
@@ -38,13 +39,13 @@ export default function Modern(props) {
     const slideStyles = {
         display: "flex",
         flexDirection: "column",
-        justifyContent: "flex-end",
+        justifyContent: "center",
         width: "100%",
         height: "100vh",
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundImage: `url("${slides[currentIndex].url}")`,
-        transition: "background-image 0.3s ease"
+        transition: "background-image 0.3s ease",
     }
 
     // MODERN CAROUSEL
@@ -78,50 +79,18 @@ export default function Modern(props) {
     return (
 
                 <div className='body'>
-                    <header className='mod-header'>
-                        <div className="mod-h1">
-                            <Link smooth={true} duration={500} to='section0' href=""><h1>KREZKET</h1></Link>
-                        </div>
+                    {/* <header className='mod-header'>
 
-                        <div className="mod-h2-con">
-                            <h2>
-                                <Link smooth={true} duration={500} to='section1' href="">Intro</Link>
-                            </h2>
-
-                            <h2>
-                                <Link smooth={true} duration={500} to='section2' href="">Services</Link>
-                            </h2>
-                            
-                            {/* <h2>
-                                <Link smooth={true} duration={500} to='section4' href="">Clients</Link>
-                            </h2> */}
-
-                            <h2>
-                                <Link smooth={true} duration={500} to='section5' href="">Contact</Link>
-                            </h2>
-
-                            <h2>
-                                <a href='/'>Home</a>
-                            </h2>
-                        </div>
+                        <NavBar></NavBar>
 
                         <div className='style-modern'>
-                            {/* <div className={switchOn === false ? 'style-0' : 'style-1'}>
-                                <a onClick={oldWebToggle}>Old Web</a>
-                            </div>
-                            <button onClick={toggleSwitch}>View This Site As</button> */}
+  
                         </div>
-                    </header>
+                    </header> */}
  
                     <main className='mod-div'>
 
                         <Element name='section0' className='mod-section-0' style={slideStyles}>
-                            <div className='style-modern' id='phone'>
-                                {/* <div className={switchOn === false ? 'style-0' : 'style-1'}>
-                                    <a onClick={oldWebToggle}>Old Web</a>
-                                </div>
-                                <button onClick={toggleSwitch}>X</button> */}
-                            </div>
 
                             <header className='mod-title'>
                                 <div className={`animated-heading ${animate ? 'animate-up' : ''}`}>
