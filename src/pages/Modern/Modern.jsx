@@ -6,7 +6,7 @@ import './Modern.css';
 
 import bg1 from '../../assets/backgrounds/back-1.jpeg'
 import bg2 from '../../assets/backgrounds/back-2.jpeg'
-import bg3 from '../../assets/backgrounds/deer2.png'
+// import bg3 from '../../assets/backgrounds/deer2.png'
 // import bg4 from '../../assets/backgrounds/h1.jpg'
 import bg5 from '../../assets/backgrounds/wee.jpeg'
 import bg6 from '../../assets/backgrounds/bet.jpeg'
@@ -27,7 +27,7 @@ export default function Modern(props) {
 
     const slides = [
         { url: `${bg7}`, title: "seven" },
-        { url: `${bg3}`, title: "three" },
+        // { url: `${bg3}`, title: "three" },
         { url: `${bg1}`, title: "one" },
         { url: `${bg5}`, title: "five" },
         // { url: `${bg4}`, title: "four" },
@@ -79,19 +79,12 @@ export default function Modern(props) {
     return (
 
                 <div className='body'>
-                    {/* <header className='mod-header'>
 
-                        <NavBar></NavBar>
-
-                        <div className='style-modern'>
-  
-                        </div>
-                    </header> */}
+                    <NavBar></NavBar>
  
                     <main className='mod-div'>
 
                         <Element name='section0' className='mod-section-0' style={slideStyles}>
-
                             <header className='mod-title'>
                                 <div className={`animated-heading ${animate ? 'animate-up' : ''}`}>
                                     <h1>KREZKET</h1>
