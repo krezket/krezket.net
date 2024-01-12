@@ -8,7 +8,7 @@
     position: fixed;
     background-color: var(--title-color);
     width: 100vw;
-    border: 1px dashed rgb(0, 0, 0);
+    /* border: 1px dashed rgb(0, 0, 0); */
     z-index: 10;
 }
 .mod-header h1 {

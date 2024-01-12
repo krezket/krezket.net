@@ -80,7 +80,7 @@ export default function Modern(props) {
 
                 <div className='body'>
 
-                    <NavBar></NavBar>
+                    {/* <NavBar></NavBar> */}
  
                     <main className='mod-div'>
 
