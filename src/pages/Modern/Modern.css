@@ -142,14 +142,14 @@ and (max-width : 877px) {
     .mod-section h1 {
         font-size: 25px;
     }
-    .mod-div {
-        justify-content: center;
-    }
+    /* .mod-div {
+        margin-top: 200px;
+    } */
     #phone {
         display: flex;
     }
     .mod-title {
-        padding: 0;
+        margin-top: 200px;
         align-items: center;
     }
     .animated-heading {
