@@ -53,7 +53,7 @@ export default function Modern(props) {
         const nextSlide = () => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
         };
-        const intervalId = setInterval(nextSlide, 444);
+        const intervalId = setInterval(nextSlide, 999);
         return () => clearInterval(intervalId);
     }, []);
 
@@ -101,7 +101,7 @@ export default function Modern(props) {
                                 Intro
                             </h2>
                             <h1>
-                                Krezket is a brand / platform for myself, Anthony Guerrero. I'm a Certified Full-Stack Web Developer with a passion for music, art, and design.
+                                "Krezket" is a brand / platform for myself, Anthony Guerrero. I'm a Certified Full-Stack Web Developer with a passion for music, art, and design.
                             </h1>
                             <h1>
                                 I strive to be a reliable freelance web designer across a wide-range of creative media outlets.
