@@ -50,6 +50,7 @@
     /* border-image: linear-gradient(to right, darkred, red); */
     /* border-image-slice: 1; */
     /* border-style: solid; */
+    background-image: url('../../assets/backgrounds/ato.jpeg');
     width: 70%;
     height: 90vh;
     padding: 30px;
