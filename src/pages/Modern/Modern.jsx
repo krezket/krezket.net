@@ -95,43 +95,35 @@ export default function Modern(props) {
                 </Element>
 
                 {/* <img className='divider' src={divider3} alt="ornate-divider" /> */}
-                <section>
+                <Element name='section1' className='mod-section animated slideInUp' id='sec-1'>
+                    <h2>
+                        Intro
+                    </h2>
+                    <h1>
+                        "Krezket" is a brand / platform for myself, Anthony Guerrero. I'm a Certified Full-Stack Web Developer with a passion for music, art, and design.
+                    </h1>
+                    <h1>
+                        I strive to be a reliable freelance web designer across a wide-range of creative media outlets.
+                    </h1>
+                </Element>
 
-                    <Element name='section1' className='mod-section animated slideInUp' id='sec-1'>
-                        <h2>
-                            Intro
-                        </h2>
-                        <h1>
-                            "Krezket" is a brand / platform for myself, Anthony Guerrero. I'm a Certified Full-Stack Web Developer with a passion for music, art, and design.
-                        </h1>
-                        <h1>
-                            I strive to be a reliable freelance web designer across a wide-range of creative media outlets.
-                        </h1>
-                    </Element>
+                <Element name='section2' className='mod-section'>
+                    <h2>
+                        Services
+                    </h2>
+                    <h1>
+                        As a Certified Full-Stack Web Developer, I have the ability to build sites with server side functionality.
+                    </h1>
+                </Element>
 
-                </section>
-                <section>
+                <Element name='section5' className='mod-section' id='sec-5'>
+                    <h2>
+                        Contact
+                    </h2>
+                    <a href="https://instagram.com/krezket" target="_blank" rel="noreferrer">Instagram</a>
+                    <a href="https://github.com/krezket" target="_blank" rel="noreferrer">GitHub</a>
+                </Element>
 
-                    <Element name='section2' className='mod-section'>
-                        <h2>
-                            Services
-                        </h2>
-                        <h1>
-                            As a Certified Full-Stack Web Developer, I have the ability to build sites with server side functionality.
-                        </h1>
-                    </Element>
-
-                </section>
-                <section>
-                    <Element name='section5' className='mod-section' id='sec-5'>
-                        <h2>
-                            Contact
-                        </h2>
-                        <a href="https://instagram.com/krezket" target="_blank" rel="noreferrer">Instagram</a>
-                        <a href="https://github.com/krezket" target="_blank" rel="noreferrer">GitHub</a>
-                    </Element>
-
-                </section>
                 {/* <Element name='section3' className='mod-section'>
                             <h2>
                                 Partners
