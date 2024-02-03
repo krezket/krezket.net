@@ -48,10 +48,9 @@
 .mod-section {
     display: flex;
     flex-direction: column;
-    position: relative;
-    z-index: 1;
     background-size: cover;
     background-image: url('../../assets/backgrounds/bet.jpeg');
+    box-shadow: 0 0 8px 8px black inset;
     width: 70%;
     height: 90vh;
     padding: 30px;
