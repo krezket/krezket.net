@@ -107,7 +107,7 @@ export default function Modern(props) {
                     </h1>
                 </Element>
 
-                <Element name='section2' className='mod-section'>
+                <Element name='section2' className='mod-section' id='sec-2'>
                     <h2>
                         Services
                     </h2>
