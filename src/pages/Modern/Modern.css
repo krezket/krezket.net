@@ -3,7 +3,23 @@
     background-color: black;
 }
 
-.scroll-watcher {
+.entry-screen {
+    position: absolute;
+    background-color: darkred;
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
+    animation: fade-out forwards;
+    animation: fade-out 2s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes fade-out {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+/* .scroll-watcher {
     height: 10px;
     position: fixed;
     top: 0;
@@ -18,7 +34,7 @@
 
 @keyframes scroll-watcher {
     to {scale: 1 1;}
-}
+} */    
 
 
 /* MODERN TITLE */
@@ -39,18 +55,6 @@
     background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8), black);
     color: var(--title-color);
 }
-.animated-heading {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(33px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
-.animate-up {
-    opacity: 1;
-    transform: translateY(0);
-}
 .mod-title h1 {
     font-size: 140px;
     margin: 0;
@@ -68,6 +72,7 @@
     flex-direction: column;
     background-size: cover;
     box-shadow: 0 0 8px 8px black inset;
+    border-radius: 50px;
     width: 70%;
     height: 70vh;
     padding: 30px;
@@ -79,6 +84,8 @@
 #sec-1 {
     margin-top: 100px;
     background-image: url('../../assets/backgrounds/back-1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
     scale: .8; opacity: 0;
     animation: fade-in linear forwards;
     animation-timeline: view();
@@ -108,27 +115,26 @@
     margin-bottom: 0;
 }
 
-#sec-1 {
-    /* background-image: url('../../assets/backgrounds/back-2.jpeg'); */
-    background-repeat: no-repeat;
-    background-position: center;
+.animated-heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    animation: slideInUp 2s ease-out forwards;
+    animation-delay: 2.7s;
 }
 
-.slideInUp {
-    animation-name: slideInUp;
-}
-.animated {
-    animation-duration: 1.25;
-}
 @keyframes slideInUp {
     0% {
-        transform: translate3d(0, 100%, 0);
-        visibility: visible;
+        transform: translate3d(0, 24%, 0);
+        opacity: 0;
     }
     100% {
         transform: translate3d(0,0,0);
+        opacity: 1;
     }
 }
+
 @media only screen
 and (min-width : 0px)
 and (max-width : 1380px) {

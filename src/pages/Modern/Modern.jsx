@@ -16,9 +16,6 @@ import bg9 from '../../assets/backgrounds/jac.jpg'
 
 export default function Modern(props) {
     // console.log(props)
-    // const style = window.sessionStorage.getItem('style')
-    // const [switchOn, setSwitchOn] = useState(false);
-    const [animate, setAnimate] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
@@ -45,7 +42,7 @@ export default function Modern(props) {
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundImage: `url("${slides[currentIndex].url}")`,
-        transition: "background-image 0.3s ease",
+        transition: "background-image 3s ease",
     }
 
     // MODERN CAROUSEL
@@ -53,28 +50,9 @@ export default function Modern(props) {
         const nextSlide = () => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
         };
-        const intervalId = setInterval(nextSlide, 999);
+        const intervalId = setInterval(nextSlide, 2000);
         return () => clearInterval(intervalId);
-    }, []);
-
-    // ANIMATE ON ARRIVAL
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-            setAnimate(true);
-        }, 500);
-
-        return () => clearTimeout(timeout);
-    }, []);
-
-    // ANIMATE ON CLICK
-    const fadeIn = () => {
-        setAnimate(false);
-        const timeout = setTimeout(() => {
-            setAnimate(true);
-        }, 500);
-
-        return () => clearTimeout(timeout);
-    };
+    }, [slides.length]);
 
     return (
 
@@ -83,11 +61,13 @@ export default function Modern(props) {
             {/* <NavBar></NavBar> */}
             <div className='scroll-watcher'></div>
 
+            <div className="entry-screen"></div>
+
             <main className='mod-div'>
 
                 <Element name='section0' className='mod-section-0' style={slideStyles}>
                     <header className='mod-title'>
-                        <div className={`animated-heading ${animate ? 'animate-up' : ''}`}>
+                        <div className={'animated-heading'}>
                             <h1>KREZKET</h1>
                             <p>Full-Stack Web Development</p>
                             <p>inquiries@krezket.net</p>
@@ -96,7 +76,7 @@ export default function Modern(props) {
                 </Element>
 
                 {/* <img className='divider' src={divider3} alt="ornate-divider" /> */}
-                <Element name='section1' className='mod-section animated slideInUp' id='sec-1'>
+                <Element name='section1' className='mod-section' id='sec-1'>
                     <h2>
                         Intro
                     </h2>
