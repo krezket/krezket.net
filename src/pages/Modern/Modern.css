@@ -1,23 +1,38 @@
 
 .body {
     background-color: black;
+    overflow: hidden;
 }
 
-.entry-screen {
-    position: absolute;
-    background-color: darkred;
+.curtain-left,
+.curtain-right {
+    position: fixed;
+    top: 0;
     height: 100vh;
-    width: 100%;
+    width: 50%;
+    background-color: black;
     z-index: 1000;
-    animation: fade-out forwards;
-    animation: fade-out 2s forwards;
+    animation: open-curtain 2s forwards;
     animation-delay: 2s;
+    /* animation: fade-out 2s forwards; */
+}
+.curtain-left {
+    left: 0;
 }
 
+.curtain-right {
+    right: 0;
+}
+
+@keyframes open-curtain {
+    from { width: 50%; }
+    to { width: 0; }
+}
+/* 
 @keyframes fade-out {
     from {opacity: 1;}
     to {opacity: 0;}
-}
+} */
 
 /* .scroll-watcher {
     height: 10px;
@@ -67,6 +82,25 @@
     margin: 0 0 20px 0;
 }
 
+.animated-heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    animation: slideInUp 2s ease-out forwards;
+    animation-delay: 2.7s;
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translate3d(0, 24%, 0);
+        opacity: 0;
+    }
+    100% {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
 .mod-section {
     display: flex;
     flex-direction: column;
@@ -115,25 +149,6 @@
     margin-bottom: 0;
 }
 
-.animated-heading {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    opacity: 0;
-    animation: slideInUp 2s ease-out forwards;
-    animation-delay: 2.7s;
-}
-
-@keyframes slideInUp {
-    0% {
-        transform: translate3d(0, 24%, 0);
-        opacity: 0;
-    }
-    100% {
-        transform: translate3d(0,0,0);
-        opacity: 1;
-    }
-}
 
 @media only screen
 and (min-width : 0px)

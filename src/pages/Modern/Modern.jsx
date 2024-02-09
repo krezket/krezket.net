@@ -42,7 +42,8 @@ export default function Modern(props) {
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundImage: `url("${slides[currentIndex].url}")`,
-        transition: "background-image 3s ease",
+        transition: "background-image 0.5s ease",
+        transitionDelay: "2s",
     }
 
     // MODERN CAROUSEL
@@ -50,7 +51,7 @@ export default function Modern(props) {
         const nextSlide = () => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
         };
-        const intervalId = setInterval(nextSlide, 2000);
+        const intervalId = setInterval(nextSlide, 3000);
         return () => clearInterval(intervalId);
     }, [slides.length]);
 
@@ -61,7 +62,8 @@ export default function Modern(props) {
             {/* <NavBar></NavBar> */}
             <div className='scroll-watcher'></div>
 
-            <div className="entry-screen"></div>
+            <div className="curtain-left"></div>
+            <div className="curtain-right"></div>
 
             <main className='mod-div'>
 
