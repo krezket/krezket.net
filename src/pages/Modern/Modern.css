@@ -14,7 +14,6 @@
     z-index: 1000;
     animation: open-curtain 2s forwards;
     animation-delay: 2s;
-    /* animation: fade-out 2s forwards; */
 }
 .curtain-left {
     left: 0;
@@ -25,14 +24,15 @@
 }
 
 @keyframes open-curtain {
-    from { width: 50%; }
-    to { width: 0; }
+    from { 
+        overflow: hidden;
+        width: 50%; 
+    }
+    to {
+        overflow: visible;
+        width: 0; 
+    }
 }
-/* 
-@keyframes fade-out {
-    from {opacity: 1;}
-    to {opacity: 0;}
-} */
 
 /* .scroll-watcher {
     height: 10px;
