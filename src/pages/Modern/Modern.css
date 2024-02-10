@@ -6,30 +6,69 @@
 
 .curtain-left,
 .curtain-right {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     height: 100vh;
     width: 50%;
     background-color: black;
     z-index: 1000;
-    animation: open-curtain 2s forwards;
-    animation-delay: 2s;
+    /* background-image: url(../../assets/wizbiz/death-demon.gif); */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+    /* animation: open-curtain 2s forwards; */
+    /* animation-delay: 2s; */
 }
 .curtain-left {
+    position: fixed;
     left: 0;
+    background-position: right;
+    /* background-image: url(../../assets/backgrounds/bg-27.gif); */
+    background-image: url(../../assets/welcome/welcome-1.gif);
+    /* background-image: url(../../assets/backgrounds/back-4.jpeg); */
+    animation: open-curtain 2s forwards;
+    animation-delay: 2s;
+    /* animation: rotateLeft 2s 2s forwards; */
+}
+.curtain-right {
+    position: fixed;
+    right: 0;
+    background-position: left;
+    /* background-image: url(../../assets/backgrounds/bg-27.gif); */
+    background-image: url(../../assets/wizbiz/death-demon-2.gif);
+    /* background-image: url(../../assets/backgrounds/back-4.jpeg); */
+    animation: open-curtain 2s forwards;
+    animation-delay: 2s;
+    /* animation: rotateRight 2s 2s forwards; */
 }
 
-.curtain-right {
-    right: 0;
+/* @keyframes rotateLeft {
+    from {
+        transform: rotate(0deg);
+        transform-origin: top right; 
+    }
+    to {
+        transform: rotate(90deg); 
+        transform-origin: top right;
+    }
 }
+@keyframes rotateRight {
+    from {
+        transform: rotate(0deg);
+        transform-origin: top left; 
+    }
+    to {
+        transform: rotate(-90deg); 
+        transform-origin: top left;
+    }
+} */
+
 
 @keyframes open-curtain {
     from { 
-        overflow: hidden;
         width: 50%; 
     }
     to {
-        overflow: visible;
         width: 0; 
     }
 }
