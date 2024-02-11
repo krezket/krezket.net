@@ -35,7 +35,7 @@
     right: 0;
     background-position: left;
     /* background-image: url(../../assets/backgrounds/bg-27.gif); */
-    background-image: url(../../assets/wizbiz/death-demon-2.gif);
+    background-image: url(../../assets/dragons/dragon1.gif);
     /* background-image: url(../../assets/backgrounds/back-4.jpeg); */
     animation: open-curtain 2s forwards;
     animation-delay: 2s;
@@ -91,14 +91,14 @@
 } */    
 
 
-/* MODERN TITLE */
-/* MODERN TITLE */
-/* MODERN TITLE */
+/* TITLE */
+/* TITLE */
+/* TITLE */
 .mod-div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 150px;
+    gap: 250px;
 }
 .mod-title {
     display: flex;
@@ -140,8 +140,13 @@
         opacity: 1;
     }
 }
+
+/* SECTION */
+/* SECTION */
+/* SECTION */
 .mod-section {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     background-size: cover;
     box-shadow: 0 0 8px 8px black inset;
@@ -154,8 +159,14 @@
     /* border-image-slice: 1; */
     /* border-style: solid; */
 }
+.h1-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
 #sec-1 {
-    margin-top: 100px;
     background-image: url('../../assets/backgrounds/back-1.jpeg');
     background-repeat: no-repeat;
     background-position: center;
@@ -178,13 +189,14 @@
     margin-top: 10px;
     color: aliceblue;
 }
-.mod-section h1 {
-    font-size: 45px;
+.mod-section h2 {
     font-family: sans-serif;
     margin-bottom: 0;
 }
-.mod-section h2 {
+.mod-section h1 {
+    font-size: 25px;
     font-family: sans-serif;
+    width: 85%;
     margin-bottom: 0;
 }
 
