@@ -69,10 +69,10 @@ export default function Modern(props) {
 
                 <Element name='section0' className='mod-section-0' style={slideStyles}>
                     <header className='mod-title'>
-                        <div className={'animated-heading'}>
+                        <div className='animated-heading'>
                             <h1>KREZKET</h1>
-                            {/* <p>Full-Stack Web Development</p> */}
-                            {/* <p>inquiries@krezket.net</p> */}
+                            <p>Full-Stack Web Development</p>
+                            <p>inquiries@krezket.net</p>
                         </div>
                     </header>
                 </Element>
