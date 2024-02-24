@@ -147,12 +147,11 @@
     justify-content: center;
     flex-direction: column;
     background-size: cover;
-    box-shadow: 0 0 8px 8px black inset;
-    border-radius: 50px;
     width: 95%;
     height: 70vh;
     padding: 30px;
     color: white;
+    background-color: rgb(28, 28, 28);
     /* border-image: linear-gradient(to right, darkred, red); */
     /* border-image-slice: 1; */
     /* border-style: solid; */
