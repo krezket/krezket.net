@@ -59,7 +59,7 @@ export default function Modern(props) {
 
         <div className='body'>
 
-            <NavBar></NavBar>
+            {/* <NavBar></NavBar> */}
             <div className='scroll-watcher'></div>
 
             <div className="curtain-left"></div>
