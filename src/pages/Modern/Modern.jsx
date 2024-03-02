@@ -59,7 +59,7 @@ export default function Modern(props) {
 
         <div className='body'>
 
-            <NavBar></NavBar>
+            {/* <NavBar></NavBar> */}
             <div className='scroll-watcher'></div>
 
             <div className="curtain-left"></div>
@@ -71,7 +71,7 @@ export default function Modern(props) {
                     <header className='mod-title'>
                         <div className='animated-heading'>
                             <h1>KREZKET</h1>
-                            <p>Full-Stack Web Development</p>
+                            <p>Web Development</p>
                             <p>inquiries@krezket.net</p>
                         </div>
                     </header>

@@ -1,7 +1,5 @@
-
 .body {
     background-color: black;
-    overflow: hidden;
 }
 
 .curtain-left,
@@ -35,7 +33,7 @@
     right: 0;
     background-position: left;
     /* background-image: url(../../assets/backgrounds/bg-27.gif); */
-    background-image: url(../../assets/dragons/dragon1.gif);
+    /* background-image: url(../../assets/dragons/dragon1.gif); */
     /* background-image: url(../../assets/backgrounds/back-4.jpeg); */
     animation: open-curtain 2s forwards;
     animation-delay: 2s;
@@ -149,12 +147,11 @@
     justify-content: center;
     flex-direction: column;
     background-size: cover;
-    box-shadow: 0 0 8px 8px black inset;
-    border-radius: 50px;
     width: 95%;
     height: 70vh;
     padding: 30px;
     color: white;
+    background-color: rgb(28, 28, 28);
     /* border-image: linear-gradient(to right, darkred, red); */
     /* border-image-slice: 1; */
     /* border-style: solid; */
@@ -168,22 +165,9 @@
 }
 #sec-1 {
     /* background-image: url('../../assets/backgrounds/back-1.jpeg'); */
-    background-repeat: no-repeat;
-    background-position: center;
-    scale: .8; opacity: 0;
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range: entry;
 }
 #sec-2 {
     /* background-image: url('../../assets/backgrounds/back-2.jpeg'); */
-    scale: .8; opacity: 0;
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range: entry;
-}
-@keyframes fade-in {
-    to {scale: 1; opacity: 1;}
 }
 #sec-5 a {
     margin-top: 10px;
