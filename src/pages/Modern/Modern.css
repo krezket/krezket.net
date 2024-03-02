@@ -16,8 +16,8 @@
     background-repeat: no-repeat;
     background-position: center;
     /* background-size: cover; */
-    /* animation: open-curtain 2s forwards; */
-    /* animation-delay: 2s; */
+
+    
 }
 .curtain-left {
     position: fixed;
