@@ -109,6 +109,7 @@
 }
 .mod-title h1 {
     font-size: 140px;
+    color: rgb(222, 0, 0);
     margin: 0;
 }
 .mod-title p {
@@ -163,7 +164,12 @@
     align-items: flex-start;
     height: 100%;
 }
-
+/* #sec-1 {
+    background-image: url('../../assets/backgrounds/back-1.jpeg');
+} */
+/* #sec-2 {
+    background-image: url('../../assets/backgrounds/back-2.jpeg');
+} */
 #sec-5 a {
     margin-top: 10px;
     color: aliceblue;
