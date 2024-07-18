@@ -1,6 +1,4 @@
-.body {
-    background-color: black;
-}
+
 
 .curtain-left,
 .curtain-right {
@@ -22,7 +20,7 @@
     left: 0;
     background-position: right;
     /* background-image: url(../../assets/backgrounds/bg-27.gif); */
-    background-image: url(../../assets/welcome/welcome-1.gif);
+    /* background-image: url(../../assets/welcome/welcome-1.gif); */
     /* background-image: url(../../assets/backgrounds/back-4.jpeg); */
     animation: open-curtain 2s forwards;
     animation-delay: 2s;
@@ -108,14 +106,15 @@
     color: var(--title-color);
 }
 .mod-title h1 {
-    font-size: 140px;
-    color: rgb(222, 0, 0);
+    font-size:70px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
     margin: 0;
 }
 .mod-title p {
     /* margin: 0; */
-    color: rgb(255, 255, 255);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 0, 0);
+    font-family: 'Bungee Hairline', cursive;
     font-size: 20px;
     margin: 0 0 20px 0;
 }
