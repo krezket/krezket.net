@@ -102,7 +102,6 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8), black);
     color: var(--title-color);
 }
 .mod-title h1 {
@@ -115,20 +114,23 @@
     /* margin: 0; */
     color: rgb(255, 0, 0);
     font-family: 'Bungee Hairline', cursive;
+    font-weight: 1000;
     font-size: 20px;
     margin: 0 0 20px 0;
 }
 
-/* .animated-heading {
+.animated-heading {
     display: flex;
     flex-direction: column;
     text-align: center;
-    opacity: 0;
+    /* background: linear-gradient(rgba(0,0,0,0), rgba(93, 93, 93, 0.8), black); */
+    padding: 20px;
+    border-radius: 30px;
     animation: slideInUp 2s ease-out forwards;
     animation-delay: 2.7s;
-} */
+}
 
-/* @keyframes slideInUp {
+@keyframes slideInUp {
     0% {
         transform: translate3d(0, 24%, 0);
         opacity: 0;
@@ -137,7 +139,7 @@
         transform: translate3d(0,0,0);
         opacity: 1;
     }
-} */
+}
 
 /* SECTION */
 /* SECTION */
