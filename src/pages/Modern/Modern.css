@@ -120,16 +120,16 @@
     margin: 0 0 20px 0;
 }
 
-.animated-heading {
+/* .animated-heading {
     display: flex;
     flex-direction: column;
     text-align: center;
     opacity: 0;
     animation: slideInUp 2s ease-out forwards;
     animation-delay: 2.7s;
-}
+} */
 
-@keyframes slideInUp {
+/* @keyframes slideInUp {
     0% {
         transform: translate3d(0, 24%, 0);
         opacity: 0;
@@ -138,7 +138,7 @@
         transform: translate3d(0,0,0);
         opacity: 1;
     }
-}
+} */
 
 /* SECTION */
 /* SECTION */
