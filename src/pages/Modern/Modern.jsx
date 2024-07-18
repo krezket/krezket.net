@@ -4,16 +4,6 @@ import { Link, Element } from 'react-scroll';
 import NavBar from '../../components/NavBar/NavBar';
 import './Modern.css';
 
-import bg1 from '../../assets/backgrounds/back-1.jpeg'
-import bg2 from '../../assets/backgrounds/back-2.jpeg'
-// import bg3 from '../../assets/backgrounds/deer2.png'
-// import bg4 from '../../assets/backgrounds/h1.jpg'
-import bg5 from '../../assets/backgrounds/wee.jpeg'
-import bg6 from '../../assets/backgrounds/bet.jpeg'
-import bg7 from '../../assets/backgrounds/h2.jpg'
-import bg8 from '../../assets/backgrounds/ato.jpeg'
-import bg9 from '../../assets/backgrounds/jac.jpg'
-
 export default function Modern(props) {
     // console.log(props)
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,17 +12,7 @@ export default function Modern(props) {
         window.scrollTo(0, 0);
     }, []);
 
-    const slides = [
-        { url: `${bg7}`, title: "seven" },
-        // { url: `${bg3}`, title: "three" },
-        { url: `${bg1}`, title: "one" },
-        { url: `${bg5}`, title: "five" },
-        // { url: `${bg4}`, title: "four" },
-        { url: `${bg8}`, title: "eight" },
-        { url: `${bg6}`, title: "six" },
-        { url: `${bg9}`, title: "nine" },
-        { url: `${bg2}`, title: "two" },
-    ]
+
     const slideStyles = {
         display: "flex",
         flexDirection: "column",
@@ -41,19 +21,18 @@ export default function Modern(props) {
         height: "100vh",
         backgroundPosition: "center",
         backgroundSize: "cover",
-        backgroundImage: `url("${slides[currentIndex].url}")`,
         transition: "background-image 0.5s ease",
         transitionDelay: "2s",
     }
 
     // MODERN CAROUSEL
-    useEffect(() => {
-        const nextSlide = () => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-        };
-        const intervalId = setInterval(nextSlide, 3000);
-        return () => clearInterval(intervalId);
-    }, [slides.length]);
+    // useEffect(() => {
+    //     const nextSlide = () => {
+    //         setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    //     };
+    //     const intervalId = setInterval(nextSlide, 3000);
+    //     return () => clearInterval(intervalId);
+    // }, [slides.length]);
 
     return (
 
@@ -70,8 +49,7 @@ export default function Modern(props) {
                 <Element name='section0' className='mod-section-0' style={slideStyles}>
                     <header className='mod-title'>
                         <div className='animated-heading'>
-                            <h1 className='auto-type'>KREZKET</h1>
-                            <p>Full Stack Web Development</p>
+                            <h1 className='auto-type'>"KREZKET"</h1>
                             <p>inquiries@krezket.net</p>
                         </div>
                     </header>

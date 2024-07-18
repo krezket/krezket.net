@@ -5,15 +5,7 @@
 
 
 body {
-  /* background-color: black; */
-  /* background-image: url(./assets/backgrounds/back-1.jpeg); */
-  /* background-image: url(./assets/backgrounds/back-2.jpeg); */
-  /* background-image: url(./assets/backgrounds/bg-27.gif); */
-  /* background-image: url(./assets/images/white-b.jpg); */
-  /* background-image: url(./assets/images/skull.jpeg); */
-  /* background-image: url(./assets/images/fan.jpeg); */
-  /* background-image: url(./assets/images/krez.jpeg); */
-  background-color: var(--bg-color);
+  background-color: black;
   margin: 0; 
   height: 100vh;
 }
@@ -23,15 +15,6 @@ body::-webkit-scrollbar {
 
 .huh {
   width: 30px;
-}
-
-.mod-title h1 {
-  /* font-family: 'Rock Salt', cursive; */
-  font-family: 'Bungee Hairline', cursive;
-
-}
-.mod-title p {
-  font-family: 'Bungee Hairline', cursive;
 }
 
 h1 {
