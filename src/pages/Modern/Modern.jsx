@@ -44,14 +44,12 @@ export default function Modern(props) {
             <div className="curtain-left"></div>
             <div className="curtain-right"></div>
 
-            <main className='mod-div'>
+            <main className='mod-main'>
 
                 <Element name='section0' className='mod-section-0' style={slideStyles}>
                     <header className='mod-title'>
-                        <div className='animated-heading'>
                             <h1 className='auto-type'>"KREZKET"</h1>
                             <p>inquiries@krezket.net</p>
-                        </div>
                     </header>
                 </Element>
 
@@ -60,8 +58,6 @@ export default function Modern(props) {
                 <Element name='section1' className='mod-section' id='sec-1'>
                     <h2>Intro</h2>
                     <div className='h1-con'>
-                        <h1>"Krezket" is a brand / platform for myself, Anthony Guerrero. I'm a Certified Full-Stack Web Developer with a passion for music, art, and design.</h1>
-                        <h1>I strive to be a reliable freelance web designer across a wide-range of creative media outlets.</h1>
 
                     </div>
                 </Element>
@@ -69,15 +65,15 @@ export default function Modern(props) {
                 <Element name='section2' className='mod-section' id='sec-2'>
                     <h2>Services</h2>
                     <div className='h1-con'>
-                        <h1>As a Certified Full-Stack Web Developer, I have the ability to build sites with server side functionality.</h1>
-
                     </div>
                 </Element>
 
                 <Element name='section5' className='mod-section' id='sec-5'>
                     <h2>Contact</h2>
-                    <a href="https://instagram.com/krezket" target="_blank" rel="noreferrer">Instagram</a>
-                    <a href="https://github.com/krezket" target="_blank" rel="noreferrer">GitHub</a>
+                    <div className='h1-con'>
+                        <a href="https://instagram.com/krezket" target="_blank" rel="noreferrer">Instagram</a>
+                        <a href="https://github.com/krezket" target="_blank" rel="noreferrer">GitHub</a>
+                    </div>
                 </Element>
 
                 {/* <Element name='section3' className='mod-section'>
@@ -97,4 +93,4 @@ export default function Modern(props) {
 
 
     )
-}
+}``
