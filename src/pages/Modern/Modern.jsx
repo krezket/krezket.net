@@ -17,7 +17,6 @@ export default function Modern(props) {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        width: "100%",
         height: "100vh",
         backgroundPosition: "center",
         backgroundSize: "cover",
@@ -46,11 +45,21 @@ export default function Modern(props) {
 
             <main className='mod-main'>
 
-                <Element name='section0' className='mod-section-0' style={slideStyles}>
-                    <header className='mod-title'>
+                <Element name='section0' style={slideStyles}>
+                    <div className='header-div'>
+                        <header className='mod-title'>
                             <h1 className='auto-type'>"KREZKET"</h1>
                             <p>inquiries@krezket.net</p>
-                    </header>
+                        </header>
+                        <nav>
+                            <Link className='nav-button'>
+                                <h2>Log in</h2>
+                            </Link>
+                            <Link className='nav-button'>
+                                <h2>Sign up</h2>
+                            </Link>
+                        </nav>
+                    </div>
                 </Element>
 
                 {/* <img className='divider' src={divider3} alt="ornate-divider" /> */}
