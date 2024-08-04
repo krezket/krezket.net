@@ -4,9 +4,9 @@ import enter from '../../assets/enter/enter-6.gif'
 import enter2 from '../../assets/enter/enter-2.gif'
 import enter3 from '../../assets/enter/enter-7.gif'
 import enter4 from '../../assets/enter/enter-8.gif'
-import './Gate.css'
+import './Info.css'
 
-export default function Gate(props) {
+export default function Info(props) {
     const navigate = useNavigate();
 
     const [isOpen1, setIsOpen1] = useState('');

@@ -23,7 +23,7 @@
     /* background-image: url(../../assets/welcome/welcome-1.gif); */
     /* background-image: url(../../assets/backgrounds/back-4.jpeg); */
     animation: open-curtain 2s forwards;
-    animation-delay: 2s;
+    animation-delay: 1s;
     /* animation: rotateLeft 2s 2s forwards; */
 }
 .curtain-right {
@@ -37,28 +37,6 @@
     animation-delay: 2s;
     /* animation: rotateRight 2s 2s forwards; */
 }
-
-/* @keyframes rotateLeft {
-    from {
-        transform: rotate(0deg);
-        transform-origin: top right; 
-    }
-    to {
-        transform: rotate(90deg); 
-        transform-origin: top right;
-    }
-}
-@keyframes rotateRight {
-    from {
-        transform: rotate(0deg);
-        transform-origin: top left; 
-    }
-    to {
-        transform: rotate(-90deg); 
-        transform-origin: top left;
-    }
-} */
-
 
 @keyframes open-curtain {
     from { 
@@ -90,16 +68,29 @@
 /* TITLE */
 /* TITLE */
 /* TITLE */
+
+.mod-main {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+.initial-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    transition: background-image 0.5s ease;
+    transition-delay: 1s;
+}
 .header-div {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
-.mod-main {
-    display: flex;
-    flex-direction: column;
-    gap: 150px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 .mod-title {
     /* align-items: flex-start; */
@@ -133,7 +124,11 @@ nav {
 }
 .nav-button {
     color: white;
+    text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+}
+.nav-button :hover {
+    color: red
 }
 
 /* SECTION */

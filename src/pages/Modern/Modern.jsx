@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Link, Element } from 'react-scroll';
-
+import { Link } from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar';
+import Info from '../Info/Info.jsx'
 import './Modern.css';
 
 export default function Modern(props) {
@@ -12,17 +12,8 @@ export default function Modern(props) {
         window.scrollTo(0, 0);
     }, []);
 
-
-    const slideStyles = {
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        height: "100vh",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        transition: "background-image 0.5s ease",
-        transitionDelay: "2s",
-    }
+    window.sessionStorage.setItem('ani', true);
+   const ani = window.sessionStorage.getItem('ani')
 
     // MODERN CAROUSEL
     // useEffect(() => {
@@ -36,70 +27,49 @@ export default function Modern(props) {
     return (
 
         <div className='body'>
+            {
+                ani ?
+                    <></>
+                    :
+                    <>
 
-            {/* <NavBar></NavBar> */}
-            <div className='scroll-watcher'></div>
-
-            <div className="curtain-left"></div>
-            <div className="curtain-right"></div>
+                        <div className="curtain-left"></div>
+                        <div className="curtain-right"></div>
+                    </>
+            }
 
             <main className='mod-main'>
 
-                <Element name='section0' style={slideStyles}>
+                <div className='initial-div'>
                     <div className='header-div'>
                         <header className='mod-title'>
                             <h1 className='auto-type'>"KREZKET"</h1>
                             <p>inquiries@krezket.net</p>
                         </header>
                         <nav>
-                            <Link className='nav-button'>
+                            <Link className='nav-button' to={'/LogIn'}>
                                 <h2>Log in</h2>
                             </Link>
-                            <Link className='nav-button'>
+                            <Link className='nav-button' to={'/SignUp'}>
                                 <h2>Sign up</h2>
                             </Link>
                         </nav>
                     </div>
-                </Element>
+                </div>
 
-                {/* <img className='divider' src={divider3} alt="ornate-divider" /> */}
-
-                <Element name='section1' className='mod-section' id='sec-1'>
-                    <h2>Intro</h2>
-                    <div className='h1-con'>
-
-                    </div>
-                </Element>
-
-                <Element name='section2' className='mod-section' id='sec-2'>
-                    <h2>Services</h2>
-                    <div className='h1-con'>
-                    </div>
-                </Element>
-
-                <Element name='section5' className='mod-section' id='sec-5'>
+		<Info />
+	    
+                <div name='section5' className='mod-section' id='sec-5'>
                     <h2>Contact</h2>
                     <div className='h1-con'>
                         <a href="https://instagram.com/krezket" target="_blank" rel="noreferrer">Instagram</a>
                         <a href="https://github.com/krezket" target="_blank" rel="noreferrer">GitHub</a>
                     </div>
-                </Element>
-
-                {/* <Element name='section3' className='mod-section'>
-                            <h2>
-                                Partners
-                            </h2>
-                        </Element> */}
-
-                {/* <Element name='section4' className='mod-section'>
-                            <h2>
-                                Clients
-                            </h2>
-                        </Element> */}
+                </div>
 
             </main>
         </div>
 
 
     )
-}``
+}
