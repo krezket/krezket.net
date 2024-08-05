@@ -7,6 +7,7 @@ import CcWeather from './pages/WeatherApp/ccWeather.jsx';
 import CcWeatherSearch from './pages/WeatherAppSearch/ccWeatherSearch.jsx';
 import LogIn from './pages/LogIn/LogIn.jsx';
 import SignUp from './pages/SignUp/SignUp.jsx'
+import Kreznote from './pages/Kreznote/Kreznote.jsx';
 import './App.css'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path='/oldweb' element={<OldWeb />}></Route>
         <Route path='/weather' element={<CcWeather />}></Route>
         <Route path='/weather-search' element={<CcWeatherSearch />}></Route>
+        <Route path='/Kreznote' element={<Kreznote />}></Route>
       </Routes>
     </Router>
 

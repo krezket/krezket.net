@@ -1,15 +1,14 @@
 .title {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
     height: 100vh;
-}
-.title * {
-    color: white;
-    font-family: fondamento, sans-serif;
+    background-color: rgb(28, 28, 28);
 }
 .title h1 {
+    color: white;
+    font-family: fondamento, sans-serif;
     margin: 0;
     color: var(--title-color);
     font-family: 'Rock Salt', cursive;
@@ -19,15 +18,16 @@
 .homepage {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100vh;
+    justify-content: space-between;
+    height: 70vh;
+    color: white;
 }
 .fe-main,
 .be-main {
     display: flex;
     justify-content: center;
     text-align: center;
-    height: 40%;
+    height: 60%;
     gap: 20px;
 }
 .door {
