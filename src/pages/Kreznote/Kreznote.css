@@ -1,7 +1,12 @@
 .k-main {
+    height: 100vh;
+    background-color: #121212;
     color: white;
+    text-align: center;
 }
 
 .k-main h1 {
     color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
