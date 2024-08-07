@@ -48,10 +48,7 @@ export default function Modern(props) {
                         </header>
                         <nav>
                             <Link className='nav-button' to={'/LogIn'}>
-                                <h2>Log in</h2>
-                            </Link>
-                            <Link className='nav-button' to={'/SignUp'}>
-                                <h2>Sign up</h2>
+                                <h2>Account</h2>
                             </Link>
                         </nav>
                     </div>
@@ -64,6 +61,7 @@ export default function Modern(props) {
                     <div className='h1-con'>
                         <a href="https://instagram.com/krezket" target="_blank" rel="noreferrer">Instagram</a>
                         <a href="https://github.com/krezket" target="_blank" rel="noreferrer">GitHub</a>
+                        <Link className='nav-button' to={'/SignUp'}>Create an account</Link>
                     </div>
                 </div>
 
