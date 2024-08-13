@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import enter from '../../assets/enter/enter-6.gif'
 import enter2 from '../../assets/enter/enter-2.gif'

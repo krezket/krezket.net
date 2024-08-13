@@ -1,12 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import NavBar from '../../components/NavBar/NavBar';
 import Info from '../Info/Info.jsx'
 import './Modern.css';
 
 export default function Modern(props) {
-    // console.log(props)
-    const [currentIndex, setCurrentIndex] = useState(0);
+    console.log(props)
 
     useEffect(() => {
         window.scrollTo(0, 0);
