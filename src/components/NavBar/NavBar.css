@@ -1,3 +1,42 @@
+.initial-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    transition: background-image 0.5s ease;
+    transition-delay: 1s;
+}
+.header-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.mod-title {
+    /* align-items: flex-start; */
+    /* position: relative; */
+    /* margin: 20px auto; */
+    border-radius: 75px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+  
+.mod-title h1 {
+    font-size: 30px;
+    font-weight: 100;
+    color: white; 
+    margin: 0;
+}
+.mod-title p {
+    font-size: 15px;
+    margin: 0;
+    color: rgb(255, 0, 0);
+}
 /* MODERN HEADER */
 /* MODERN HEADER */
 /* MODERN HEADER */
@@ -16,10 +55,9 @@
 .mod-header h1 {
     margin: 0;
     font-size: 50px;
-    color: black;
+    
 }
-.link-con {
-    display: flex;
+.link-con { display: flex;
     justify-content: space-evenly;
     width: 75%;
 }
