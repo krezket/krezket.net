@@ -1,4 +1,5 @@
 import { Link, Element } from 'react-scroll';
+import { Link as NavLink } from 'react-router-dom';
 import './NavBar.css'
 
 export default function NavBar() {
@@ -6,11 +7,11 @@ export default function NavBar() {
         <header className='mod-header'>
             <div className='link-con'>
                 <h2>
-                    <Link smooth={true} duration={500} to='section1' href="">Intro</Link>
+                    <Link smooth={true} duration={500} to='section1' href="">Info</Link>
                 </h2>
 
                 <h2>
-                    <Link smooth={true} duration={500} to='section2' href="">Services</Link>
+                    <Link smooth={true} duration={500} to='section2' href="">Projects</Link>
                 </h2>
 
                 {/* <h2>
@@ -22,7 +23,7 @@ export default function NavBar() {
                 </h2>
 
                 <h2>
-                    <a href='/'>Home</a>
+                    <NavLink to='/login'>Log in</NavLink>
                 </h2>
             </div>
     </header>

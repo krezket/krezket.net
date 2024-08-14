@@ -1,7 +1,14 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Info from '../../components/Info/Info.jsx'
+import { Element } from 'react-scroll';
+import enter from '../../assets/enter/enter-6.gif'
+import enter2 from '../../assets/enter/enter-2.gif'
+import enter3 from '../../assets/enter/enter-7.gif'
+import enter4 from '../../assets/enter/enter-8.gif'
+import Navbar from '../../components/NavBar/NavBar.jsx';
+import './Info.css'
 import './Modern.css';
+import NavBar from '../../components/NavBar/NavBar.jsx';
 
 export default function Modern(props) {
     console.log(props)
@@ -11,7 +18,7 @@ export default function Modern(props) {
     }, []);
 
     window.sessionStorage.setItem('ani', true);
-   const ani = window.sessionStorage.getItem('ani')
+    const ani = window.sessionStorage.getItem('ani')
 
     // MODERN CAROUSEL
     // useEffect(() => {
@@ -37,31 +44,89 @@ export default function Modern(props) {
             }
 
             <main className='mod-main'>
-
+                <NavBar/>
                 <div className='initial-div'>
                     <div className='header-div'>
                         <header className='mod-title'>
                             <h1>"KREZKET"</h1>
                             <p>inquiries@krezket.net</p>
                         </header>
-                        <nav>
-                            <Link className='nav-button' to={'/LogIn'}>
-                                <h2>Account</h2>
-                            </Link>
-                        </nav>
                     </div>
                 </div>
 
-		<Info />
-	    
-                <div name='section5' className='mod-section' id='sec-5'>
+                <Element name='section1' className='title'>
+                    <p>Krezket is a brand / platform for myself, Anthony Guerrero. I'm a Certified Full-Stack Web Developer with a passion for music, art, and design.</p>
+                    <p>I strive to be a reliable freelance web designer across a wide-range of creative media outlets.</p>
+                </Element>
+
+                <Element name='section2' className='homepage'>
+                    <h2>Front-End Projects</h2>
+
+                    <main className='fe-main'>
+
+                        <section className='door'  >
+                            <h3>Modern</h3>
+                            <div className='back' id='background1'>
+                                <Link className='gif'  to={'/modern'}>
+                                    <img src={enter} alt="enter-modern" />
+                                </Link>
+                            </div>
+                        </section>
+
+                        <section className='door' >
+                            <h3>Old Web</h3>
+                            <div className='back' id='background2'>
+                                <Link className='gif'  to={'/oldweb'}>
+                                    <img src={enter4} alt="enter-modern" />
+                                </Link>
+                            </div>
+                        </section>
+
+                        <section className='door' >
+                            <h3>Kreznote</h3>
+                            <div className='back' id='background2'>
+                                <Link className='gif'  to={'/Kreznote'}>
+                                    <img src={enter4} alt="enter-modern" />
+                                </Link>
+                            </div>
+                        </section>
+                    </main>
+                </Element>
+
+                <div className='homepage'>
+                    <h2>Back-End Projects</h2>
+
+                    <main className='be-main'>
+
+                        <section className='door' >
+                            <h3>Blog</h3>
+                            <div className='back' id='background3'>
+                                <Link className='gif'  to={'/blog'}>
+                                    <img src={enter2} alt="enter-modern" />
+                                </Link>
+                            </div>
+                        </section>
+
+                        <section className='door' >
+                            <h3>Weather</h3>
+                            <div className='back' id='background4'>
+                                <Link className='gif'  to={'/weather'}>
+                                    <img src={enter3} alt="enter-modern" />
+                                </Link>
+                            </div>
+                        </section>
+
+                    </main>
+                </div>
+
+                <Element name='section5' className='mod-section' id='sec-5'>
                     <h2>Contact</h2>
                     <div className='h1-con'>
                         <a href="https://instagram.com/krezket" target="_blank" rel="noreferrer">Instagram</a>
                         <a href="https://github.com/krezket" target="_blank" rel="noreferrer">GitHub</a>
                         <Link className='nav-button' to={'/SignUp'}>Create an account</Link>
                     </div>
-                </div>
+                </Element>
 
             </main>
         </div>

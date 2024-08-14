@@ -114,21 +114,6 @@
     margin: 0;
     color: rgb(255, 0, 0);
 }
-nav {
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
-}
-.nav-button {
-    color: white;
-    font-size: 0.8rem;
-    font-weight: 1;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-}
-.nav-button :hover {
-    color: red
-}
 
 /* SECTION */
 /* SECTION */
@@ -179,20 +164,6 @@ nav {
 
 @media only screen
 and (min-width : 0px)
-and (max-width : 1380px) {
-    .mod-section h1 {
-        font-size: 30px;
-    }
-}
-@media only screen
-and (min-width : 0px)
-and (max-width : 1280px) {
-    .mod-title h1 {
-        font-size: 100px;
-    }
-}
-@media only screen
-and (min-width : 0px)
 and (max-width : 1070px) {
 
     .mod-title {
@@ -208,16 +179,13 @@ and (max-height : 1000px) {
 }
 @media only screen
 and (min-width : 0px)
-and (max-width : 969px) {
-    .mod-title h1 {
-        font-size: 70px;
-    }
-}
-@media only screen
-and (min-width : 0px)
-and (max-width : 877px) {
+and (max-width : 500px) {
     .mod-header {
         display: none;
+    }
+    .initial-div {
+        align-items: center;
+        text-align: center;
     }
     .mod-section {
         height: 100vh;
@@ -225,9 +193,6 @@ and (max-width : 877px) {
         padding-right: 5px;
         width: 90%;
         color: white;
-    }
-    .mod-section h1 {
-        font-size: 25px;
     }
     /* .mod-div {
         margin-top: 200px;
@@ -244,15 +209,7 @@ and (max-width : 877px) {
     }
     .mod-title p {
         /* margin: 0; */
-        font-size: 20px;
         margin: 0 0 20px 0;
         padding: 0;
-    }
-}
-@media only screen
-and (min-width : 0px)
-and (max-width : 420px) {
-    .mod-title h1 {
-        font-size: 50px;
     }
 }
