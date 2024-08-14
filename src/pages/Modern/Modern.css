@@ -110,6 +110,11 @@
     margin: 0;
 }
 .mod-title p {
+<<<<<<< HEAD
+=======
+    font-size: 15px;
+    margin: 0;
+>>>>>>> 68819a2 (saved)
     color: rgb(255, 0, 0);
     margin: 0;
 }

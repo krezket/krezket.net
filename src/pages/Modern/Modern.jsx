@@ -26,7 +26,7 @@ export default function Modern(props) {
 
         <div className='body'>
             {
-                ani ?
+                ani === true ?
                     <></>
                     :
                     <>
