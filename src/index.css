@@ -5,10 +5,9 @@
 
 
 body {
-  background-color: black;
+  background-color: #121212;
   margin: 0; 
   padding: 0;
-  /* height: 100vh; */
 }
 body::-webkit-scrollbar {
   width: 0;

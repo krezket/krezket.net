@@ -17,11 +17,13 @@ export default function Info(props) {
             </div>
 
             <div className='homepage'>
-                    <h2>Front-End Projects</h2>
+                <h2>Front-End Projects</h2>
+
                 <main className='fe-main'>
+
                     <section className='door'  >
                         <h3>Modern</h3>
-                        <div className='back' id='back1'>
+                        <div className='back' id='background1'>
                             <Link className='gif'  to={'/modern'}>
                                 <img src={enter} alt="enter-modern" />
                             </Link>
@@ -30,7 +32,7 @@ export default function Info(props) {
 
                     <section className='door' >
                         <h3>Old Web</h3>
-                        <div className='back' id='back2'>
+                        <div className='back' id='background2'>
                             <Link className='gif'  to={'/oldweb'}>
                                 <img src={enter4} alt="enter-modern" />
                             </Link>
@@ -39,10 +41,7 @@ export default function Info(props) {
 
                     <section className='door' >
                         <h3>Kreznote</h3>
-                            <Link to={'/Kreznote'}>
-                                <img src={enter4} alt="enter-modern" />
-                            </Link>
-                        <div className='back' id='back2'>
+                        <div className='back' id='background2'>
                             <Link className='gif'  to={'/Kreznote'}>
                                 <img src={enter4} alt="enter-modern" />
                             </Link>
@@ -52,10 +51,13 @@ export default function Info(props) {
             </div>
 
             <div className='homepage'>
+                <h2>Back-End Projects</h2>
+
                 <main className='be-main'>
+
                     <section className='door' >
                         <h3>Blog</h3>
-                        <div className='back' id='back3'>
+                        <div className='back' id='background3'>
                             <Link className='gif'  to={'/blog'}>
                                 <img src={enter2} alt="enter-modern" />
                             </Link>
@@ -64,12 +66,13 @@ export default function Info(props) {
 
                     <section className='door' >
                         <h3>Weather</h3>
-                        <div className='back' id='back4'>
+                        <div className='back' id='background4'>
                             <Link className='gif'  to={'/weather'}>
                                 <img src={enter3} alt="enter-modern" />
                             </Link>
                         </div>
                     </section>
+
                 </main>
             </div>
         </>

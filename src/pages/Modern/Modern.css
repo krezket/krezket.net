@@ -104,18 +104,14 @@
 }
   
 .mod-title h1 {
-    /* font-size: 30px;
-    font-weight: 100; */
+    font-size: 30px;
+    font-weight: 100;
     color: rgb(255, 255, 255);
-    /* margin: 0; */
+    margin: 0;
 }
 .mod-title p {
-    /* margin: 0; */
     color: rgb(255, 0, 0);
-    /* font-family: 'Bungee Hairline', cursive;
-    font-weight: 1000;
-    font-size: 5px;
-    margin: 0 0 20px 0; */
+    margin: 0;
 }
 nav {
     display: flex;
@@ -124,6 +120,8 @@ nav {
 }
 .nav-button {
     color: white;
+    font-size: 0.8rem;
+    font-weight: 1;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }

@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Enter from './pages/Enter/Gate.jsx'
 import Modern from './pages/Modern/Modern.jsx';
 import OldWeb from './pages/OldWeb/OldWeb.jsx';
 import CcWeather from './pages/WeatherApp/ccWeather.jsx';
@@ -19,7 +18,6 @@ function App() {
         <Route path='/' element={<Modern />}></Route>
         <Route path='/LogIn' element={<LogIn />}></Route>
         <Route path='/SignUp' element={<SignUp />}></Route>
-        <Route path='/about' element={<Enter />}></Route>
         <Route path='/oldweb' element={<OldWeb />}></Route>
         <Route path='/weather' element={<CcWeather />}></Route>
         <Route path='/weather-search' element={<CcWeatherSearch />}></Route>
@@ -30,4 +28,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
