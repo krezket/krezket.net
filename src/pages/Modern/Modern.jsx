@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Info from '../Info/Info.jsx'
+import Info from '../../components/Info/Info.jsx'
 import './Modern.css';
 
 export default function Modern(props) {
