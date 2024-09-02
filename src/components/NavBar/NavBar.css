@@ -21,13 +21,12 @@
     /* margin: 20px auto; */
     border-radius: 75px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
     font-weight: lighter;
     letter-spacing: 2px;
 }
   
 .mod-title h1 {
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 100;
     color: white; 
     margin: 0;
@@ -51,11 +50,6 @@
     width: 100vw;
     /* border: 1px dashed rgb(0, 0, 0); */
     z-index: 10;
-}
-.mod-header h1 {
-    margin: 0;
-    font-size: 50px;
-    
 }
 .link-con { display: flex;
     justify-content: space-evenly;

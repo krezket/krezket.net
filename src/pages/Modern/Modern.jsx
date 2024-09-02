@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Element } from 'react-scroll';
-import enter from '../../assets/enter/enter-6.gif'
-import enter2 from '../../assets/enter/enter-2.gif'
-import enter3 from '../../assets/enter/enter-7.gif'
-import enter4 from '../../assets/enter/enter-8.gif'
+import enter from '../../assets/enter/enter-6.gif';
+import enter2 from '../../assets/enter/enter-2.gif';
+import enter3 from '../../assets/enter/enter-7.gif';
+import enter4 from '../../assets/enter/enter-8.gif';
 import Navbar from '../../components/NavBar/NavBar.jsx';
-import './Info.css'
+import './Info.css';
 import './Modern.css';
 import NavBar from '../../components/NavBar/NavBar.jsx';
 
@@ -29,22 +29,28 @@ export default function Modern(props) {
     //     return () => clearInterval(intervalId);
     // }, [slides.length]);
 
+    //            {
+    //                ani === true ?
+    //                    <></>
+    //                    :
+    //                    <>
+    //
+    //                        <div className="curtain-left"></div>
+    //                        <div className="curtain-right"></div>
+    //                    </>
+    //            }
     return (
 
         <div className='body'>
-            {
-                ani === true ?
-                    <></>
-                    :
-                    <>
-
-                        <div className="curtain-left"></div>
-                        <div className="curtain-right"></div>
-                    </>
-            }
 
             <main className='mod-main'>
                 <NavBar/>
+
+
+                <Element name='section1' className='title'>
+                    <p>Krezket is a brand / platform for myself, Anthony Guerrero. I'm a Certified Full-Stack Web Developer with a passion for music, art, and design.</p>
+                    <p>I strive to be a reliable freelance web designer across a wide-range of creative media outlets.</p>
+                </Element>
 
                 <Element name='section2' className='homepage'>
                     <h2>Front-End Projects</h2>
@@ -72,11 +78,6 @@ export default function Modern(props) {
                             </Link>
                         </section>
                     </main>
-                </Element>
-
-                <Element name='section1' className='title'>
-                    <p>Krezket is a brand / platform for myself, Anthony Guerrero. I'm a Certified Full-Stack Web Developer with a passion for music, art, and design.</p>
-                    <p>I strive to be a reliable freelance web designer across a wide-range of creative media outlets.</p>
                 </Element>
 
                 <div className='homepage'>
