@@ -4,7 +4,10 @@ header {
     background-image: url('./src/assets/lightlogo.png');
     background-position: center;
     background-color: gray;
-    border-bottom: 1px solid red;
+    border-top: 5px solid darkgray;
+    border-bottom: 5px solid darkgray;
+    border-left: 5px solid darkgray;
+    border-right: 5px solid darkgray;
 }
 .container {
     display: flex;
@@ -41,7 +44,7 @@ nav {
 @media (prefers-color-scheme: dark) {
     header {
         background-color: #121212;
-        background-image: url('./src/assets/darklogo.png');
+        background-image: url('./src/assets/darklogo-1.png');
     }
     h1 {
         color: white;
