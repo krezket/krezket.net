@@ -12,13 +12,23 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: transparent;
     background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     align-items: center;
     margin: 10px 0 10px 0;
     gap: 1rem;
+}
+.glass-header {
+    display: none;
+}
+.glass-header-active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
 }
 .logo {
     display: flex;
