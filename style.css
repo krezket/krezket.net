@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: center;
     background-image: url('./src/assets/backgrounds/bg-6.gif');
-    background-size: 20rem;
+    background-size: 15rem;
     background-position: center;
     background-color: #121212;
     border-top: 1px dashed darkred;
@@ -46,7 +46,7 @@ nav {
 @media (prefers-color-scheme: dark) {
     header {
         background-color: #121212;
-        background-image: url('./src/assets/backgrounds/bg-6.gif');
+        background-image: url('./src/assets/backgrounds/bg-27.gif');
     }
     h1 {
         color: white;
