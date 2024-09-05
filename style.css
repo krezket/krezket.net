@@ -103,7 +103,7 @@ nav a:hover {
     gap: 1rem;
 }
 
-.section-1 {
+.section-1, .section-2, .section-3, .section-4 {
     height: 100%;
 }
 
@@ -121,7 +121,7 @@ nav a:hover {
     .title-nav {
         color: white;
     }
-    .section-1 {
+    .section-1, .section-2, .section-3, .section-4 {
         background-color: black;
     }
 }
