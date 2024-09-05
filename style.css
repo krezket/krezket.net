@@ -1,6 +1,7 @@
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     background-image: url('./src/assets/backgrounds/bg-6.gif');
     background-size: 15rem;
     background-position: center;
@@ -18,6 +19,41 @@ header {
     align-items: center;
     margin: 10px 0 10px 0;
     gap: 1rem;
+    animation: fadeIn 0.2s ease-in forwards;
+}
+.glass-container-inactive {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+    margin: 10px 0 10px 0;
+    gap: 1rem;
+    opacity: 0;
+    animation: fadeOut 0.2s ease-in forwards;
+}
+nav {
+    display: flex;
+    gap: 4rem;
+}
+.nav-1, .nav-2 {
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    padding: 10px;
+    animation: fadeIn 0.2s ease-in forwards;
+}
+.nav-1-inactive, .nav-2-inactive {
+    opacity: 0;
+    padding: 10px;
+    animation: fadeOut 0.2s ease-in forwards;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    color: red;
 }
 @keyframes fadeOut{
     from {
@@ -27,9 +63,8 @@ header {
         opacity: 0;
     }
 }
-.glass-header {
+.glass-header-inactive {
     display: none;
-    animation: fadeOut 2s ease-out forwards;
 }
 @keyframes fadeIn {
     from {
@@ -46,10 +81,14 @@ header {
     left: 0;
     display: flex;
     align-items: center;
-    gap: 4rem;
+    justify-content: space-around;
+    width: 100%;
     background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(15px);
     border-radius: 10px;
+}
+.glass-header-active img {
+    width: 200px
 }
 .logo {
     display: flex;
@@ -60,14 +99,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 10px;
     gap: 1rem;
 }
 
-nav {
-    display: flex;
-    padding-bottom: 10px;
-    gap: 2rem;
-}
 .section-1 {
     height: 100%;
 }
