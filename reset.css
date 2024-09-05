@@ -1,7 +1,15 @@
 body, h1, p {
     margin: 0;
 }
-
+::-webkit-scrollbar {
+    background-color: #121212; 
+    width: 10px; /* width of the entire scrollbar */
+}
+::-webkit-scrollbar-thumb {
+    background-color: darkgrey; /* color of the scroll thumb */
+    border-radius: 6px; /* roundness of the scroll thumb */
+    border: 3px solid transparent; /* adds a border around the thumb */
+}
 main {
     height: 100vh;
 }

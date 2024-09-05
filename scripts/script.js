@@ -1,3 +1,5 @@
+const logo = document.querySelector(".logo");
+
 const projects = document.querySelector(".projects");
 const projects2 = document.querySelector(".projects-2");
 
@@ -10,10 +12,14 @@ const contact2 = document.querySelector(".contact-2");
 const about = document.querySelector(".about");
 const about2 = document.querySelector(".about-2");
 
-const sectionP = document.querySelector(".section-1");
-const sectionS = document.querySelector(".section-2");
-const sectionC = document.querySelector(".section-3");
-const sectionA = document.querySelector(".section-4");
+const sectionP = document.getElementById("section-1"); 
+const sectionS = document.getElementById("section-2"); 
+const sectionC = document.getElementById("section-3"); 
+const sectionA = document.getElementById("section-4");
+
+logo.addEventListener("click", () => {
+    scrollTo(0,0)
+});
 
 projects.addEventListener("click", () => {
     sectionP.scrollIntoView({ behavior: 'smooth' });

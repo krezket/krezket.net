@@ -2,10 +2,11 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: url('./src/assets/backgrounds/bg-6.gif');
+/*     background-image: url('./src/assets/backgrounds/bg-19.gif'); */
+/*     background-image: url('./src/assets/backgrounds/bg-27.gif'); */
+    background-color: #121212;
     background-size: 15rem;
     background-position: center;
-    background-color: #121212;
     border-top: 1px dashed darkred;
     border-bottom: 1px dashed darkred;
 }
@@ -32,6 +33,14 @@ header {
     opacity: 0;
     animation: fadeOut 0.2s ease-in forwards;
 }
+.title-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    color: white;
+    gap: 1rem;
+}
 nav {
     display: flex;
     gap: 4rem;
@@ -50,6 +59,7 @@ nav {
 }
 nav a {
     text-decoration: none;
+    cursor: pointer;
     color: white;
 }
 nav a:hover {
@@ -82,28 +92,25 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 10px 0 0 0;
     width: 100%;
     background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(15px);
     border-radius: 10px;
 }
 .glass-header-active img {
+    cursor: pointer;
     width: 200px
 }
-.logo {
+.logo-email{
     display: flex;
-    width: 100%;
-    height: 100px;
-}
-.title-nav {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    padding-bottom: 10px;
-    gap: 1rem;
+    gap: 4rem;
 }
-
-.section-1, .section-2, .section-3, .section-4 {
+.glass-nav a {
+    color: black;
+}
+.section {
     height: 100%;
 }
 
@@ -118,10 +125,10 @@ nav a:hover {
     p {
         color: white;
     }
-    .title-nav {
+    .glass-nav a {
         color: white;
     }
-    .section-1, .section-2, .section-3, .section-4 {
+    .section {
         background-color: black;
     }
 }
