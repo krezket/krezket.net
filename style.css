@@ -1,11 +1,12 @@
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    padding: 0 20px 0 20px;
 /*     background-image: url('./src/assets/backgrounds/bg-19.gif'); */
 /*     background-image: url('./src/assets/backgrounds/bg-27.gif'); */
     background-color: #121212;
-    background-size: 15rem;
+    background-size: 9rem;
     background-position: center;
     border-top: 1px dashed darkred;
     border-bottom: 1px dashed darkred;
@@ -37,22 +38,28 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     color: white;
     gap: 1rem;
 }
 nav {
     display: flex;
-    gap: 4rem;
+    gap: 5rem;
 }
-.nav-1, .nav-2 {
+.nav {
     background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(15px);
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px 10px 20px 10px;
     animation: fadeIn 0.2s ease-in forwards;
 }
-.nav-1-inactive, .nav-2-inactive {
+#nav-1 {
+    border-radius: 10px 0 0 10px;
+} 
+#nav-2 {
+    border-radius: 0 10px 10px 0;
+}
+#nav-1-inactive, #nav-2-inactive {
     opacity: 0;
     padding: 10px;
     animation: fadeOut 0.2s ease-in forwards;
@@ -92,11 +99,12 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 10px 0 0 0;
+    padding: 10px 0 10px 0;
     width: 100%;
     background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(15px);
     border-radius: 10px;
+/*     border-bottom: 1px dashed darkred; */
 }
 .glass-header-active img {
     cursor: pointer;
@@ -117,7 +125,8 @@ nav a:hover {
 @media (prefers-color-scheme: dark) {
     header {
         background-color: #121212;
-        background-image: url('./src/assets/backgrounds/bg-6.gif');
+        /* background-image: url('./src/assets/backgrounds/bg-6.gif'); */
+        background-image: url('./src/assets/darklogo-1.png');
     }
     h1 {
         color: white;
