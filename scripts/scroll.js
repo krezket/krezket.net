@@ -4,7 +4,7 @@ let nav1 = document.getElementById('nav-1');
 let nav2 = document.getElementById('nav-2');
 
 window.addEventListener('scroll', function() {
-    const scrollPosition = window.scrollY || window.pageYOffset;
+    const scrollPosition = window.scrollY; 
     console.log('Scroll Position:', scrollPosition);
     if (scrollPosition > 175) {
         staticHeader.className = 'glass-header-active';
