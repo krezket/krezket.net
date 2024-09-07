@@ -26,7 +26,7 @@ header {
     animation: fadeIn 0.2s ease-in forwards;
 }
 .logo-1 {
-    width: 600px;
+    width: 500px;
 }
 .divider {
     margin-top: 20px;
@@ -48,7 +48,7 @@ header {
     align-items: center;
     color: white;
     margin: 10px 0 40px 0;
-    gap: 4rem;
+    gap: 6rem;
 }
 nav {
     display: flex;
@@ -121,6 +121,9 @@ nav a:hover {
 #section-welcome {
     display: flex;
     justify-content: center;
+}
+.welcome {
+    padding-top: 10px;
 }
 
 @media (prefers-color-scheme: dark) {
