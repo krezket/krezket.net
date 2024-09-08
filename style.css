@@ -116,6 +116,9 @@ nav a:hover {
     color: black;
 }
 .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
 }
 #section-welcome {
