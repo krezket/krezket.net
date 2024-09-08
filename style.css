@@ -101,7 +101,6 @@ nav a:hover {
     background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(15px);
     border-radius: 10px;
-/*     border-bottom: 1px dashed darkred; */
 }
 .glass-header-active img {
     cursor: pointer;
