@@ -116,6 +116,7 @@ nav a:hover {
 }
 .section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -133,6 +134,15 @@ nav a:hover {
 } 
 .card.visible {
     opacity: 1;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-div {
+    display: flex;
+    flex-direction: column;
 }
 @media (prefers-color-scheme: dark) {
     header {
