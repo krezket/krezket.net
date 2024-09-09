@@ -2,8 +2,6 @@ const fadeInCards = document.querySelectorAll('.card');
 
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-        console.log(entry.target, entry.isIntersecting);
-
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
         }
