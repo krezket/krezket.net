@@ -11,55 +11,9 @@ header {
     border-top: 1px dashed darkred;
     border-bottom: 1px dashed darkred;
 }
-.glass-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: rgba(255, 255, 255, 0);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    align-items: center;
-    text-align: center;
-    margin: 20px 0 10px 0;
-    padding: 0 20px 0 20px;
-    gap: 1rem;
-    animation: fadeIn 0.2s ease-in forwards;
-}
-.logo-1 {
-    width: 500px;
-}
-.divider {
-    margin-top: 20px;
-} 
-.glass-container-inactive {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 10px;
-    align-items: center;
-    margin: 10px 0 10px 0;
-    padding: 0 20px 0 20px;
-    gap: 1rem;
-    opacity: 0;
-    animation: fadeOut 0.2s ease-in forwards;
-}
-.title-nav {
-    display: flex;
-    align-items: center;
-    color: white;
-    margin: 10px 0 40px 0;
-    gap: 6rem;
-}
 nav {
     display: flex;
     gap: 5rem;
-}
-.con {
-    background: rgba(255, 255, 255, 0);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    padding: 20px 10px 20px 10px;
-    animation: fadeIn 0.2s ease-in forwards;
 }
 nav a {
     text-decoration: none;
@@ -77,9 +31,6 @@ nav a:hover {
         opacity: 0;
     }
 }
-.glass-header-inactive {
-    display: none;
-}
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -88,62 +39,12 @@ nav a:hover {
         opacity: 1;
     }
 }
-.glass-header-active {
-    animation: fadeIn 0.2s ease-in forwards;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px 0 10px 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-}
-.glass-header-active img {
-    cursor: pointer;
-    width: 200px
-}
-.logo-email{
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-}
-.glass-nav a {
-    color: black;
-}
-.section {
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
-}
-#section-welcome {
-    display: flex;
-    justify-content: center;
-}
-.welcome {
-    padding-top: 10px;
-}
-.card{
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-} 
-.card.visible {
-    opacity: 1;
-}
-.form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.form-div {
-    display: flex;
-    flex-direction: column;
 }
 @media (prefers-color-scheme: dark) {
     header {
@@ -159,10 +60,10 @@ nav a:hover {
     p {
         color: white;
     }
+    section {
+        background-color: #121212;
+    }
     .glass-nav a {
         color: white;
-    }
-    .section {
-        background-color: #121212;
     }
 }

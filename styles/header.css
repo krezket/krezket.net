@@ -1,0 +1,40 @@
+.glass-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0 10px 0;
+    padding: 0 20px 0 20px;
+    gap: 1rem;
+    animation: fadeIn 0.2s ease-in forwards;
+}
+.logo-1 {
+    width: 500px;
+}
+.divider {
+    margin-top: 20px;
+} 
+.glass-container-inactive {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0 10px 0;
+    padding: 0 20px 0 20px;
+    gap: 1rem;
+    opacity: 0;
+    animation: fadeOut 0.2s ease-in forwards;
+}
+.title-nav {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 10px 0 40px 0;
+    gap: 6rem;
+}

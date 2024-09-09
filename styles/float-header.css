@@ -1,0 +1,30 @@
+.glass-header-inactive {
+    display: none;
+}
+.glass-header-active {
+    animation: fadeIn 0.2s ease-in forwards;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0 10px 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+}
+.glass-header-active img {
+    cursor: pointer;
+    width: 200px
+}
+.logo-email{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.glass-nav a {
+    color: white;
+}
