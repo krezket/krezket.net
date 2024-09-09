@@ -20,7 +20,7 @@ header {
     border-radius: 10px;
     align-items: center;
     text-align: center;
-    margin: 10px 0 10px 0;
+    margin: 20px 0 10px 0;
     padding: 0 20px 0 20px;
     gap: 1rem;
     animation: fadeIn 0.2s ease-in forwards;
@@ -127,7 +127,13 @@ nav a:hover {
 .welcome {
     padding-top: 10px;
 }
-
+.card{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+} 
+.card.visible {
+    opacity: 1;
+}
 @media (prefers-color-scheme: dark) {
     header {
         background-color: #121212;
