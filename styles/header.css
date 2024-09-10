@@ -18,6 +18,37 @@
 .divider {
     margin-top: 20px;
 } 
+.title-nav {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 10px 0 40px 0;
+    gap: 6rem;
+}
+@media (max-width: 777px) {
+    .glass-container {
+        height: 80vh;
+    }
+    .logo-1 {
+        width: 300px;
+    }
+    .divider {
+        margin: 0;    
+        width: 200px;
+    }
+    .title-nav {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+@media (max-width: 500px) {
+    .glass-container h1 {
+        font-size: 1.5rem;
+    }
+    .glass-container h2 {
+        font-size: 1rem;
+    }
+}
 .glass-container-inactive {
     display: flex;
     flex-direction: column;
@@ -30,11 +61,4 @@
     gap: 1rem;
     opacity: 0;
     animation: fadeOut 0.2s ease-in forwards;
-}
-.title-nav {
-    display: flex;
-    align-items: center;
-    color: white;
-    margin: 10px 0 40px 0;
-    gap: 6rem;
 }

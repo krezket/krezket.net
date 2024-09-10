@@ -28,3 +28,9 @@
 .glass-nav a {
     color: white;
 }
+
+@media (max-width: 1135px) {
+    .glass-header-active {
+        display: none;
+    }
+}
