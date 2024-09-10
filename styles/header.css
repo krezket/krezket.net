@@ -25,8 +25,21 @@
     margin: 10px 0 40px 0;
     gap: 6rem;
 }
+.glass-container-inactive {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0 10px 0;
+    padding: 0 20px 0 20px;
+    gap: 1rem;
+    opacity: 0;
+    animation: fadeOut 0.2s ease-out forwards;
+}
 @media (max-width: 777px) {
-    .glass-container {
+    .glass-container, .glass-container-inactive {
         height: 80vh;
     }
     .logo-1 {
@@ -42,23 +55,10 @@
     }
 }
 @media (max-width: 500px) {
-    .glass-container h1 {
+    .glass-container h1, .glass-container-inactive h1 {
         font-size: 1.5rem;
     }
-    .glass-container h2 {
+    .glass-container h2, .glass-container-inactive h2 {
         font-size: 1rem;
     }
-}
-.glass-container-inactive {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 10px;
-    align-items: center;
-    text-align: center;
-    margin: 20px 0 10px 0;
-    padding: 0 20px 0 20px;
-    gap: 1rem;
-    opacity: 0;
-    animation: fadeOut 0.2s ease-in forwards;
 }
