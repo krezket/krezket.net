@@ -12,7 +12,7 @@
     justify-content: space-around;
     padding: 10px 0 10px 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(15px);
     border-radius: 10px;
 }
@@ -29,7 +29,7 @@
     color: white;
 }
 
-@media (max-width: 1135px) {
+@media (max-width: 1110px) {
     .glass-header-active {
         display: none;
     }
