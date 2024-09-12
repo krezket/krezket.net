@@ -1,4 +1,5 @@
 const fadeInCards = document.querySelectorAll('.card');
+const fadeInForm = document.querySelectorAll('.form');
 
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
@@ -10,9 +11,12 @@ const observer = new IntersectionObserver((entries, observer) => {
         }
     })
 }, {
-    threshold: 1
+    threshold: 0.5 
 });
 
 fadeInCards.forEach(element => {
+    observer.observe(element);
+});
+fadeInForm.forEach(element => {
     observer.observe(element);
 });

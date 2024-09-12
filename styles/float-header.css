@@ -12,7 +12,7 @@
     justify-content: space-around;
     padding: 10px 0 10px 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.02);
     backdrop-filter: blur(15px);
     border-radius: 10px;
 }
@@ -27,6 +27,16 @@
 }
 .glass-nav a {
     color: white;
+}
+.glass-hamburger-inactive {
+    display: none;
+}
+.glass-hamburger-active {
+    animation: fadeIn 0.2s ease-in forwards;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
 }
 
 @media (max-width: 1110px) {

@@ -1,6 +1,6 @@
-.card{
+.card {
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 } 
 .card.visible {
     opacity: 1;
@@ -9,16 +9,32 @@
     display: flex;
     justify-content: center;
 }
-.welcome {
+#section-1 {
+        background-image: url('./src/assets/backgrounds/back-2.jpeg');
+}
+.welcome { 
     padding-top: 10px;
 }
-
+.html {
+    width: 140px;
+}
+.css {
+    width: 100px;
+}
 .form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.form.visible {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    opacity: 1;
 }
 .form-div {
-    display: flex;
+    display: flex; 
     flex-direction: column;
 }
