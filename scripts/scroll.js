@@ -1,6 +1,6 @@
 let staticHeader = document.querySelector('.glass-header-inactive');
 let staticHamburger= document.querySelector('.glass-hamburger-inactive');
-let staticContainer= document.querySelector('.glass-container');
+let staticContainer= document.querySelector('.border-ext');
 
 window.addEventListener('scroll', function() {
     const scrollPosition = window.scrollY; 
