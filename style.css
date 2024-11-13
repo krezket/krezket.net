@@ -1,16 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&family=Rock+Salt&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Fondamento&family=Rock+Salt&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee+Hairline&family=Rock+Salt&display=swap');
+
 header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 0 20px 0 20px;
     height: 90vh;
-    /* background-image: url('./src/assets/backgrounds/bg-19.gif'); */
-    /* background-image: url('./src/assets/backgrounds/back2.gif'); */
     background-color: #121212;
     background-size: cover;
     background-position: top;
     border-top: 1px dashed darkred;
     border-bottom: 1px dashed darkred;
+    transition: background-color 1s ease;
+}
+.carousel-1 {
+    background-image: url('./src/assets/backgrounds/back-2.jpeg');
+}
+.carousel-2 {
+    background-image: url('./src/assets/backgrounds/bg-19.gif');
+}
+.carousel-3 {
+    background-image: url('./src/assets/backgrounds/back-1.jpeg');
+}
+.fade-in {
+    opacity: 1;
+}
+.fade-out {
+    opacity: 0;
 }
 nav {
     display: flex;
@@ -46,25 +65,29 @@ section {
     justify-content: center;
     align-items: center;
     height: 100%;
+    background-color: #121212;
 }
-@media (prefers-color-scheme: dark) {
-    header {
-        background-color: #121212;
-        background-image: url('./src/assets/backgrounds/back-2.jpeg');
-    }
-    footer {
-        background-color: #121212;
-    }
-    h1, h2 {
-        color: white;
-    }
-    p {
-        color: white;
-    }
-    section {
-        background-color: #121212;
-    }
-    .glass-nav a {
-        color: white;
-    }
+footer {
+    background-color: #121212;
 }
+/* @media (prefers-color-scheme: dark) { */
+/*     header { */
+/*         background-color: #121212; */
+/*         background-image: url('./src/assets/backgrounds/back-2.jpeg'); */
+/*     } */
+/*     footer { */
+/*         background-color: #121212; */
+/*     } */
+/*     h1, h2 { */
+/*         color: white; */
+/*     } */
+/*     p { */
+/*         color: white; */
+/*     } */
+/*     section { */
+/*         background-color: #121212; */
+/*     } */
+/*     .glass-nav a { */
+/*         color: white; */
+/*     } */
+/* } */

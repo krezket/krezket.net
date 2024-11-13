@@ -9,9 +9,9 @@
     display: flex;
     justify-content: center;
 }
-#section-1 {
-        background-image: url('./src/assets/backgrounds/back-2.jpeg');
-}
+/* #section-1 { */
+/*         background-image: url('./src/assets/backgrounds/back-2.jpeg'); */
+/* } */
 .welcome { 
     padding-top: 10px;
 }
